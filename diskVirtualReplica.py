@@ -40,6 +40,14 @@ def createPatch(id, num_blocks):
 			unoccupied[index].num = currentvalue	
 		usedBlocks += num_blocks
 
+def getVirtualDiskNo(diskPatches, block_no):
+	total_blocks = 0
+	i = 0
+	while (diskPatches[i].num + total_blocks < block_no+1):
+		total_blocks += diskPatches[i].num
+		i += 1
+	return diskPatches[i].blockNo + block_no - total_blocks
+
 def readDiskBlock(id, block_no):
 	if not diskMap.has_key(id):
 		raise "Error : Disk does not exist"
@@ -50,12 +58,62 @@ def readDiskBlock(id, block_no):
 	print "Reading disk block..."
 	if random.randint(1, 100) < 10:
 		# return something
-	total_blocks = 0
-	i = 0
-	while (disk.patches[i].num + total_blocks < block_no+1):
-		total_blocks += disk.patches[i].num
-		i += 1
-	return readPhysicalBlock(disk.patches[i].blockNo + block_no - total_blocks)
+		replicaVirt = getVirtualDiskNo(disk.patches, getBlockReplica(block_no))
+		newBlock = patch(replicaVirt,1)
+		ans = readPhysicalBlock(replicaVirt)
+
+		if (len(unoccupied)==0):
+			raise "Error : Replica cannot be made"
+		else:
+			newReplicaBlock = unoccupied[0].blockNo
+			if (unoccupied[0].num == 1):
+				unoccupied.pop(0)
+			else:
+				unoccupied[0].num -= 1
+				unoccupied[0].blockNo += 1
+			usedBlocks += 1
+			newReplica = patch(newReplicaBlock,1)
+			patches_new = []
+			for i in xrange(1,len(patches)):
+				p = patches[i]
+				if (block_no < p.blockNo):
+					patches_new.append(p)
+				elif (block_no == p.blockNo):
+					patches_new.append(newBlock)
+					if not (p.num==1):
+						p.blockNo += 1
+						p.num -= 1
+						patches_new.append(p)
+				elif (block_no < p.blockNo + p.num):
+					newp1 = patch(p.blockNo,newReplica-p.blockNo+1)
+					patches_new.append(newp1)
+					patches_new.append(newBlock)
+					if not (block_no == p.blockNo + p.num - 1):
+						p.blockNo = block_no + 1
+						p.num -= (newp1.num + 1)
+						patches_new.append(p)
+				elif (block_no + (disk.numBlocks/2) < p.blockNo):
+					patches_new.append(p)
+				elif (block_no + (disk.numBlocks/2) == p.blockNo):
+					patches_new.append(Replica)
+					if not (p.num==1):
+						p.blockNo += 1
+						p.num -= 1
+						patches_new.append(p)
+				elif (block_no < p.blockNo + p.num):
+					newp1 = patch(p.blockNo,newReplica-p.blockNo+1)
+					patches_new.append(newp1)
+					patches_new.append(newReplica)
+					if not (block_no == p.blockNo + p.num - 1):
+						p.blockNo = block_no + 1
+						p.num -= (newp1.num + 1)
+						patches_new.append(p)
+				else:
+					patches_new.append(p)
+			disk.patches = patches_new		
+	else:
+		ans = readPhysicalBlock(getVirtualDiskNo(disk.patches, block_no))
+	return ans	
 
 def writeDiskBlock(id, block_no, write_data):
 	if not diskMap.has_key(id):
@@ -64,12 +122,7 @@ def writeDiskBlock(id, block_no, write_data):
 	if disk.numBlocks < block_no+1:
 		raise "Error : Invalid block number"
 	print "Finding disk block..."
-	total_blocks = 0
-	i = 0
-	while (disk.patches[i].num + total_blocks < block_no+1):
-		total_blocks += disk.patches[i].num
-		i += 1
-	writePhysicalBlock(disk.patches[i].blockNo + block_no - total_blocks, write_data)
+	writePhysicalBlock(getVirtualDiskNo(disk.patches, block_no), write_data)
 	print "Written disk block..."
 
 def deleteDisk(id):
