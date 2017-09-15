@@ -1,0 +1,6085 @@
+Finding disk block...
+Virtual replica block no :  175
+Written disk block...
+Finding disk block...
+Virtual replica block no :  176
+Written disk block...
+Finding disk block...
+Virtual replica block no :  177
+Written disk block...
+Finding disk block...
+Virtual replica block no :  178
+Written disk block...
+Finding disk block...
+Virtual replica block no :  179
+Written disk block...
+Finding disk block...
+Virtual replica block no :  180
+Written disk block...
+Finding disk block...
+Virtual replica block no :  181
+Written disk block...
+Finding disk block...
+Virtual replica block no :  182
+Written disk block...
+Finding disk block...
+Virtual replica block no :  183
+Written disk block...
+Finding disk block...
+Virtual replica block no :  184
+Written disk block...
+Finding disk block...
+Virtual replica block no :  185
+Written disk block...
+Finding disk block...
+Virtual replica block no :  186
+Written disk block...
+Finding disk block...
+Virtual replica block no :  187
+Written disk block...
+Finding disk block...
+Virtual replica block no :  188
+Written disk block...
+Finding disk block...
+Virtual replica block no :  189
+Written disk block...
+Finding disk block...
+Virtual replica block no :  190
+Written disk block...
+Finding disk block...
+Virtual replica block no :  191
+Written disk block...
+Finding disk block...
+Virtual replica block no :  192
+Written disk block...
+Finding disk block...
+Virtual replica block no :  193
+Written disk block...
+Finding disk block...
+Virtual replica block no :  194
+Written disk block...
+Finding disk block...
+Virtual replica block no :  195
+Written disk block...
+Finding disk block...
+Virtual replica block no :  196
+Written disk block...
+Finding disk block...
+Virtual replica block no :  197
+Written disk block...
+Finding disk block...
+Virtual replica block no :  198
+Written disk block...
+Finding disk block...
+Virtual replica block no :  199
+Written disk block...
+Finding disk block...
+Virtual replica block no :  200
+Written disk block...
+Finding disk block...
+Virtual replica block no :  201
+Written disk block...
+Finding disk block...
+Virtual replica block no :  202
+Written disk block...
+Finding disk block...
+Virtual replica block no :  203
+Written disk block...
+Finding disk block...
+Virtual replica block no :  204
+Written disk block...
+Reading 3 ka 0 Reading disk block...
+Old patches : 
+100 150
+(0, 100)
+3 ka 0
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : 3 ka 0, Replica : 175
+Data : 3 ka 1, Replica : 176
+Data : 3 ka 2, Replica : 177
+Data : 3 ka 3, Replica : 178
+Data : 3 ka 4, Replica : 179
+Data : 3 ka 5, Replica : 180
+Data : 3 ka 6, Replica : 181
+Data : 3 ka 7, Replica : 182
+Data : 3 ka 8, Replica : 183
+Data : 3 ka 9, Replica : 184
+Data : 3 ka 10, Replica : 185
+Data : 3 ka 11, Replica : 186
+Data : 3 ka 12, Replica : 187
+Data : 3 ka 13, Replica : 188
+Data : 3 ka 14, Replica : 189
+Data : 3 ka 15, Replica : 190
+Data : 3 ka 16, Replica : 191
+Data : 3 ka 17, Replica : 192
+Data : 3 ka 18, Replica : 193
+Data : 3 ka 19, Replica : 194
+Data : 3 ka 20, Replica : 195
+Data : 3 ka 21, Replica : 196
+Data : 3 ka 22, Replica : 197
+Data : 3 ka 23, Replica : 198
+Data : 3 ka 24, Replica : 199
+Data : 3 ka 25, Replica : 200
+Data : 3 ka 26, Replica : 201
+Data : 3 ka 27, Replica : 202
+Data : 3 ka 28, Replica : 203
+Data : 3 ka 29, Replica : 204
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : 3 ka 0, Replica : 100
+Data : 3 ka 1, Replica : 101
+Data : 3 ka 2, Replica : 102
+Data : 3 ka 3, Replica : 103
+Data : 3 ka 4, Replica : 104
+Data : 3 ka 5, Replica : 105
+Data : 3 ka 6, Replica : 106
+Data : 3 ka 7, Replica : 107
+Data : 3 ka 8, Replica : 108
+Data : 3 ka 9, Replica : 109
+Data : 3 ka 10, Replica : 110
+Data : 3 ka 11, Replica : 111
+Data : 3 ka 12, Replica : 112
+Data : 3 ka 13, Replica : 113
+Data : 3 ka 14, Replica : 114
+Data : 3 ka 15, Replica : 115
+Data : 3 ka 16, Replica : 116
+Data : 3 ka 17, Replica : 117
+Data : 3 ka 18, Replica : 118
+Data : 3 ka 19, Replica : 119
+Data : 3 ka 20, Replica : 120
+Data : 3 ka 21, Replica : 121
+Data : 3 ka 22, Replica : 122
+Data : 3 ka 23, Replica : 123
+Data : 3 ka 24, Replica : 124
+Data : 3 ka 25, Replica : 125
+Data : 3 ka 26, Replica : 126
+Data : 3 ka 27, Replica : 127
+Data : 3 ka 28, Replica : 128
+Data : 3 ka 29, Replica : 129
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Reading 3 ka 1 Reading disk block...
+Old patches : 
+100 150
+(0, 101)
+3 ka 1
+Reading 3 ka 2 Reading disk block...
+Old patches : 
+100 150
+(0, 102)
+3 ka 2
+Reading 3 ka 3 Reading disk block...
+Old patches : 
+100 150
+(0, 103)
+3 ka 3
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : 3 ka 0, Replica : 175
+Data : 3 ka 1, Replica : 176
+Data : 3 ka 2, Replica : 177
+Data : 3 ka 3, Replica : 178
+Data : 3 ka 4, Replica : 179
+Data : 3 ka 5, Replica : 180
+Data : 3 ka 6, Replica : 181
+Data : 3 ka 7, Replica : 182
+Data : 3 ka 8, Replica : 183
+Data : 3 ka 9, Replica : 184
+Data : 3 ka 10, Replica : 185
+Data : 3 ka 11, Replica : 186
+Data : 3 ka 12, Replica : 187
+Data : 3 ka 13, Replica : 188
+Data : 3 ka 14, Replica : 189
+Data : 3 ka 15, Replica : 190
+Data : 3 ka 16, Replica : 191
+Data : 3 ka 17, Replica : 192
+Data : 3 ka 18, Replica : 193
+Data : 3 ka 19, Replica : 194
+Data : 3 ka 20, Replica : 195
+Data : 3 ka 21, Replica : 196
+Data : 3 ka 22, Replica : 197
+Data : 3 ka 23, Replica : 198
+Data : 3 ka 24, Replica : 199
+Data : 3 ka 25, Replica : 200
+Data : 3 ka 26, Replica : 201
+Data : 3 ka 27, Replica : 202
+Data : 3 ka 28, Replica : 203
+Data : 3 ka 29, Replica : 204
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : 3 ka 0, Replica : 100
+Data : 3 ka 1, Replica : 101
+Data : 3 ka 2, Replica : 102
+Data : 3 ka 3, Replica : 103
+Data : 3 ka 4, Replica : 104
+Data : 3 ka 5, Replica : 105
+Data : 3 ka 6, Replica : 106
+Data : 3 ka 7, Replica : 107
+Data : 3 ka 8, Replica : 108
+Data : 3 ka 9, Replica : 109
+Data : 3 ka 10, Replica : 110
+Data : 3 ka 11, Replica : 111
+Data : 3 ka 12, Replica : 112
+Data : 3 ka 13, Replica : 113
+Data : 3 ka 14, Replica : 114
+Data : 3 ka 15, Replica : 115
+Data : 3 ka 16, Replica : 116
+Data : 3 ka 17, Replica : 117
+Data : 3 ka 18, Replica : 118
+Data : 3 ka 19, Replica : 119
+Data : 3 ka 20, Replica : 120
+Data : 3 ka 21, Replica : 121
+Data : 3 ka 22, Replica : 122
+Data : 3 ka 23, Replica : 123
+Data : 3 ka 24, Replica : 124
+Data : 3 ka 25, Replica : 125
+Data : 3 ka 26, Replica : 126
+Data : 3 ka 27, Replica : 127
+Data : 3 ka 28, Replica : 128
+Data : 3 ka 29, Replica : 129
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Reading 3 ka 4 Reading disk block...
+Old patches : 
+100 150
+(0, 104)
+3 ka 4
+Reading 3 ka 5 Reading disk block...
+Read error!
+(0, 180)
+New patches : 
+100 5
+180 1
+106 74
+350 1
+181 69
+3 ka 5
+Reading 3 ka 6 Reading disk block...
+Read error!
+(0, 181)
+New patches : 
+100 5
+181 1
+107 74
+351 1
+181 1
+107 73
+350 1
+351 1
+182 68
+3 ka 6
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : 3 ka 0, Replica : 175
+Data : 3 ka 1, Replica : 176
+Data : 3 ka 2, Replica : 177
+Data : 3 ka 3, Replica : 178
+Data : 3 ka 4, Replica : 179
+Data : 3 ka 5, Replica : 180
+Data : 3 ka 6, Replica : 181
+Data : 3 ka 7, Replica : 182
+Data : 3 ka 8, Replica : 183
+Data : 3 ka 9, Replica : 184
+Data : 3 ka 10, Replica : 185
+Data : 3 ka 11, Replica : 186
+Data : 3 ka 12, Replica : 187
+Data : 3 ka 13, Replica : 188
+Data : 3 ka 14, Replica : 189
+Data : 3 ka 15, Replica : 190
+Data : 3 ka 16, Replica : 191
+Data : 3 ka 17, Replica : 192
+Data : 3 ka 18, Replica : 193
+Data : 3 ka 19, Replica : 194
+Data : 3 ka 20, Replica : 195
+Data : 3 ka 21, Replica : 196
+Data : 3 ka 22, Replica : 197
+Data : 3 ka 23, Replica : 198
+Data : 3 ka 24, Replica : 199
+Data : 3 ka 25, Replica : 200
+Data : 3 ka 26, Replica : 201
+Data : 3 ka 27, Replica : 202
+Data : 3 ka 28, Replica : 203
+Data : 3 ka 29, Replica : 204
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : 3 ka 0, Replica : 100
+Data : 3 ka 1, Replica : 101
+Data : 3 ka 2, Replica : 102
+Data : 3 ka 3, Replica : 103
+Data : 3 ka 4, Replica : 104
+Data : 3 ka 5, Replica : 350
+Data : 3 ka 6, Replica : 351
+Data : 3 ka 7, Replica : 107
+Data : 3 ka 8, Replica : 108
+Data : 3 ka 9, Replica : 109
+Data : 3 ka 10, Replica : 110
+Data : 3 ka 11, Replica : 111
+Data : 3 ka 12, Replica : 112
+Data : 3 ka 13, Replica : 113
+Data : 3 ka 14, Replica : 114
+Data : 3 ka 15, Replica : 115
+Data : 3 ka 16, Replica : 116
+Data : 3 ka 17, Replica : 117
+Data : 3 ka 18, Replica : 118
+Data : 3 ka 19, Replica : 119
+Data : 3 ka 20, Replica : 120
+Data : 3 ka 21, Replica : 121
+Data : 3 ka 22, Replica : 122
+Data : 3 ka 23, Replica : 123
+Data : 3 ka 24, Replica : 124
+Data : 3 ka 25, Replica : 125
+Data : 3 ka 26, Replica : 126
+Data : 3 ka 27, Replica : 127
+Data : 3 ka 28, Replica : 128
+Data : 3 ka 29, Replica : 129
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : 3 ka 5, Replica : 180
+Data : 3 ka 6, Replica : 181
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Reading 3 ka 7 Reading disk block...
+Read error!
+(0, 183)
+New patches : 
+100 5
+181 1
+107 1
+183 1
+109 72
+351 1
+181 1
+107 1
+183 1
+109 71
+350 1
+351 1
+182 1
+352 1
+184 66
+3 ka 8
+Reading 3 ka 8 Reading disk block...
+Old patches : 
+100 5
+181 1
+107 1
+183 1
+109 72
+351 1
+181 1
+107 1
+183 1
+109 71
+350 1
+351 1
+182 1
+352 1
+184 66
+(0, 109)
+3 ka 9
+Reading 3 ka 9 Reading disk block...
+Old patches : 
+100 5
+181 1
+107 1
+183 1
+109 72
+351 1
+181 1
+107 1
+183 1
+109 71
+350 1
+351 1
+182 1
+352 1
+184 66
+(0, 110)
+3 ka 10
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : 3 ka 0, Replica : 175
+Data : 3 ka 1, Replica : 176
+Data : 3 ka 2, Replica : 177
+Data : 3 ka 3, Replica : 178
+Data : 3 ka 4, Replica : 179
+Data : 3 ka 5, Replica : 180
+Data : 3 ka 6, Replica : 181
+Data : 3 ka 7, Replica : 182
+Data : 3 ka 8, Replica : 183
+Data : 3 ka 9, Replica : 184
+Data : 3 ka 10, Replica : 185
+Data : 3 ka 11, Replica : 186
+Data : 3 ka 12, Replica : 187
+Data : 3 ka 13, Replica : 188
+Data : 3 ka 14, Replica : 189
+Data : 3 ka 15, Replica : 190
+Data : 3 ka 16, Replica : 191
+Data : 3 ka 17, Replica : 192
+Data : 3 ka 18, Replica : 193
+Data : 3 ka 19, Replica : 194
+Data : 3 ka 20, Replica : 195
+Data : 3 ka 21, Replica : 196
+Data : 3 ka 22, Replica : 197
+Data : 3 ka 23, Replica : 198
+Data : 3 ka 24, Replica : 199
+Data : 3 ka 25, Replica : 200
+Data : 3 ka 26, Replica : 201
+Data : 3 ka 27, Replica : 202
+Data : 3 ka 28, Replica : 203
+Data : 3 ka 29, Replica : 204
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : 3 ka 0, Replica : 100
+Data : 3 ka 1, Replica : 101
+Data : 3 ka 2, Replica : 102
+Data : 3 ka 3, Replica : 103
+Data : 3 ka 4, Replica : 104
+Data : 3 ka 5, Replica : 350
+Data : 3 ka 6, Replica : 351
+Data : 3 ka 7, Replica : 107
+Data : 3 ka 8, Replica : 352
+Data : 3 ka 9, Replica : 109
+Data : 3 ka 10, Replica : 110
+Data : 3 ka 11, Replica : 111
+Data : 3 ka 12, Replica : 112
+Data : 3 ka 13, Replica : 113
+Data : 3 ka 14, Replica : 114
+Data : 3 ka 15, Replica : 115
+Data : 3 ka 16, Replica : 116
+Data : 3 ka 17, Replica : 117
+Data : 3 ka 18, Replica : 118
+Data : 3 ka 19, Replica : 119
+Data : 3 ka 20, Replica : 120
+Data : 3 ka 21, Replica : 121
+Data : 3 ka 22, Replica : 122
+Data : 3 ka 23, Replica : 123
+Data : 3 ka 24, Replica : 124
+Data : 3 ka 25, Replica : 125
+Data : 3 ka 26, Replica : 126
+Data : 3 ka 27, Replica : 127
+Data : 3 ka 28, Replica : 128
+Data : 3 ka 29, Replica : 129
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : 3 ka 5, Replica : 180
+Data : 3 ka 6, Replica : 181
+Data : 3 ka 8, Replica : 183
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Reading 3 ka 10 Reading disk block...
+Read error!
+(0, 186)
+New patches : 
+100 5
+181 1
+107 1
+183 1
+109 2
+186 1
+112 69
+351 1
+181 1
+107 1
+183 1
+109 2
+186 1
+112 68
+350 1
+351 1
+182 1
+352 1
+184 2
+353 1
+187 63
+3 ka 11
+Reading 3 ka 11 Reading disk block...
+Old patches : 
+100 5
+181 1
+107 1
+183 1
+109 2
+186 1
+112 69
+351 1
+181 1
+107 1
+183 1
+109 2
+186 1
+112 68
+350 1
+351 1
+182 1
+352 1
+184 2
+353 1
+187 63
+(0, 112)
+3 ka 12
+Reading 3 ka 12 Reading disk block...
+Read error!
+(0, 188)
+New patches : 
+100 5
+181 1
+107 1
+183 1
+109 2
+186 1
+112 1
+188 1
+114 67
+351 1
+181 1
+107 1
+183 1
+109 2
+186 1
+112 1
+188 1
+114 66
+350 1
+351 1
+182 1
+352 1
+184 2
+353 1
+187 1
+354 1
+189 61
+3 ka 13
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : 3 ka 0, Replica : 175
+Data : 3 ka 1, Replica : 176
+Data : 3 ka 2, Replica : 177
+Data : 3 ka 3, Replica : 178
+Data : 3 ka 4, Replica : 179
+Data : 3 ka 5, Replica : 180
+Data : 3 ka 6, Replica : 181
+Data : 3 ka 7, Replica : 182
+Data : 3 ka 8, Replica : 183
+Data : 3 ka 9, Replica : 184
+Data : 3 ka 10, Replica : 185
+Data : 3 ka 11, Replica : 186
+Data : 3 ka 12, Replica : 187
+Data : 3 ka 13, Replica : 188
+Data : 3 ka 14, Replica : 189
+Data : 3 ka 15, Replica : 190
+Data : 3 ka 16, Replica : 191
+Data : 3 ka 17, Replica : 192
+Data : 3 ka 18, Replica : 193
+Data : 3 ka 19, Replica : 194
+Data : 3 ka 20, Replica : 195
+Data : 3 ka 21, Replica : 196
+Data : 3 ka 22, Replica : 197
+Data : 3 ka 23, Replica : 198
+Data : 3 ka 24, Replica : 199
+Data : 3 ka 25, Replica : 200
+Data : 3 ka 26, Replica : 201
+Data : 3 ka 27, Replica : 202
+Data : 3 ka 28, Replica : 203
+Data : 3 ka 29, Replica : 204
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : 3 ka 0, Replica : 100
+Data : 3 ka 1, Replica : 101
+Data : 3 ka 2, Replica : 102
+Data : 3 ka 3, Replica : 103
+Data : 3 ka 4, Replica : 104
+Data : 3 ka 5, Replica : 350
+Data : 3 ka 6, Replica : 351
+Data : 3 ka 7, Replica : 107
+Data : 3 ka 8, Replica : 352
+Data : 3 ka 9, Replica : 109
+Data : 3 ka 10, Replica : 110
+Data : 3 ka 11, Replica : 353
+Data : 3 ka 12, Replica : 112
+Data : 3 ka 13, Replica : 354
+Data : 3 ka 14, Replica : 114
+Data : 3 ka 15, Replica : 115
+Data : 3 ka 16, Replica : 116
+Data : 3 ka 17, Replica : 117
+Data : 3 ka 18, Replica : 118
+Data : 3 ka 19, Replica : 119
+Data : 3 ka 20, Replica : 120
+Data : 3 ka 21, Replica : 121
+Data : 3 ka 22, Replica : 122
+Data : 3 ka 23, Replica : 123
+Data : 3 ka 24, Replica : 124
+Data : 3 ka 25, Replica : 125
+Data : 3 ka 26, Replica : 126
+Data : 3 ka 27, Replica : 127
+Data : 3 ka 28, Replica : 128
+Data : 3 ka 29, Replica : 129
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : 3 ka 5, Replica : 180
+Data : 3 ka 6, Replica : 181
+Data : 3 ka 8, Replica : 183
+Data : 3 ka 11, Replica : 186
+Data : 3 ka 13, Replica : 188
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Reading 3 ka 13 Reading disk block...
+Old patches : 
+100 5
+181 1
+107 1
+183 1
+109 2
+186 1
+112 1
+188 1
+114 67
+351 1
+181 1
+107 1
+183 1
+109 2
+186 1
+112 1
+188 1
+114 66
+350 1
+351 1
+182 1
+352 1
+184 2
+353 1
+187 1
+354 1
+189 61
+(0, 114)
+3 ka 14
+Reading 3 ka 14 Reading disk block...
+Read error!
+(0, 190)
+New patches : 
+100 5
+181 1
+107 1
+183 1
+109 2
+186 1
+112 1
+188 1
+114 1
+190 1
+116 65
+351 1
+181 1
+107 1
+183 1
+109 2
+186 1
+112 1
+188 1
+114 1
+190 1
+116 64
+350 1
+351 1
+182 1
+352 1
+184 2
+353 1
+187 1
+354 1
+189 1
+355 1
+191 59
+3 ka 15
+Reading 3 ka 15 Reading disk block...
+Old patches : 
+100 5
+181 1
+107 1
+183 1
+109 2
+186 1
+112 1
+188 1
+114 1
+190 1
+116 65
+351 1
+181 1
+107 1
+183 1
+109 2
+186 1
+112 1
+188 1
+114 1
+190 1
+116 64
+350 1
+351 1
+182 1
+352 1
+184 2
+353 1
+187 1
+354 1
+189 1
+355 1
+191 59
+(0, 116)
+3 ka 16
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : 3 ka 0, Replica : 175
+Data : 3 ka 1, Replica : 176
+Data : 3 ka 2, Replica : 177
+Data : 3 ka 3, Replica : 178
+Data : 3 ka 4, Replica : 179
+Data : 3 ka 5, Replica : 180
+Data : 3 ka 6, Replica : 181
+Data : 3 ka 7, Replica : 182
+Data : 3 ka 8, Replica : 183
+Data : 3 ka 9, Replica : 184
+Data : 3 ka 10, Replica : 185
+Data : 3 ka 11, Replica : 186
+Data : 3 ka 12, Replica : 187
+Data : 3 ka 13, Replica : 188
+Data : 3 ka 14, Replica : 189
+Data : 3 ka 15, Replica : 190
+Data : 3 ka 16, Replica : 191
+Data : 3 ka 17, Replica : 192
+Data : 3 ka 18, Replica : 193
+Data : 3 ka 19, Replica : 194
+Data : 3 ka 20, Replica : 195
+Data : 3 ka 21, Replica : 196
+Data : 3 ka 22, Replica : 197
+Data : 3 ka 23, Replica : 198
+Data : 3 ka 24, Replica : 199
+Data : 3 ka 25, Replica : 200
+Data : 3 ka 26, Replica : 201
+Data : 3 ka 27, Replica : 202
+Data : 3 ka 28, Replica : 203
+Data : 3 ka 29, Replica : 204
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : 3 ka 0, Replica : 100
+Data : 3 ka 1, Replica : 101
+Data : 3 ka 2, Replica : 102
+Data : 3 ka 3, Replica : 103
+Data : 3 ka 4, Replica : 104
+Data : 3 ka 5, Replica : 350
+Data : 3 ka 6, Replica : 351
+Data : 3 ka 7, Replica : 107
+Data : 3 ka 8, Replica : 352
+Data : 3 ka 9, Replica : 109
+Data : 3 ka 10, Replica : 110
+Data : 3 ka 11, Replica : 353
+Data : 3 ka 12, Replica : 112
+Data : 3 ka 13, Replica : 354
+Data : 3 ka 14, Replica : 114
+Data : 3 ka 15, Replica : 355
+Data : 3 ka 16, Replica : 116
+Data : 3 ka 17, Replica : 117
+Data : 3 ka 18, Replica : 118
+Data : 3 ka 19, Replica : 119
+Data : 3 ka 20, Replica : 120
+Data : 3 ka 21, Replica : 121
+Data : 3 ka 22, Replica : 122
+Data : 3 ka 23, Replica : 123
+Data : 3 ka 24, Replica : 124
+Data : 3 ka 25, Replica : 125
+Data : 3 ka 26, Replica : 126
+Data : 3 ka 27, Replica : 127
+Data : 3 ka 28, Replica : 128
+Data : 3 ka 29, Replica : 129
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : 3 ka 5, Replica : 180
+Data : 3 ka 6, Replica : 181
+Data : 3 ka 8, Replica : 183
+Data : 3 ka 11, Replica : 186
+Data : 3 ka 13, Replica : 188
+Data : 3 ka 15, Replica : 190
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Reading 3 ka 16 Reading disk block...
+Read error!
+(0, 192)
+New patches : 
+100 5
+181 1
+107 1
+183 1
+109 2
+186 1
+112 1
+188 1
+114 1
+190 1
+116 1
+192 1
+118 63
+351 1
+181 1
+107 1
+183 1
+109 2
+186 1
+112 1
+188 1
+114 1
+190 1
+116 1
+192 1
+118 62
+350 1
+351 1
+182 1
+352 1
+184 2
+353 1
+187 1
+354 1
+189 1
+355 1
+191 1
+356 1
+193 57
+3 ka 17
+Reading 3 ka 17 Reading disk block...
+Old patches : 
+100 5
+181 1
+107 1
+183 1
+109 2
+186 1
+112 1
+188 1
+114 1
+190 1
+116 1
+192 1
+118 63
+351 1
+181 1
+107 1
+183 1
+109 2
+186 1
+112 1
+188 1
+114 1
+190 1
+116 1
+192 1
+118 62
+350 1
+351 1
+182 1
+352 1
+184 2
+353 1
+187 1
+354 1
+189 1
+355 1
+191 1
+356 1
+193 57
+(0, 118)
+3 ka 18
+Reading 3 ka 18 Reading disk block...
+Old patches : 
+100 5
+181 1
+107 1
+183 1
+109 2
+186 1
+112 1
+188 1
+114 1
+190 1
+116 1
+192 1
+118 63
+351 1
+181 1
+107 1
+183 1
+109 2
+186 1
+112 1
+188 1
+114 1
+190 1
+116 1
+192 1
+118 62
+350 1
+351 1
+182 1
+352 1
+184 2
+353 1
+187 1
+354 1
+189 1
+355 1
+191 1
+356 1
+193 57
+(0, 119)
+3 ka 19
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : 3 ka 0, Replica : 175
+Data : 3 ka 1, Replica : 176
+Data : 3 ka 2, Replica : 177
+Data : 3 ka 3, Replica : 178
+Data : 3 ka 4, Replica : 179
+Data : 3 ka 5, Replica : 180
+Data : 3 ka 6, Replica : 181
+Data : 3 ka 7, Replica : 182
+Data : 3 ka 8, Replica : 183
+Data : 3 ka 9, Replica : 184
+Data : 3 ka 10, Replica : 185
+Data : 3 ka 11, Replica : 186
+Data : 3 ka 12, Replica : 187
+Data : 3 ka 13, Replica : 188
+Data : 3 ka 14, Replica : 189
+Data : 3 ka 15, Replica : 190
+Data : 3 ka 16, Replica : 191
+Data : 3 ka 17, Replica : 192
+Data : 3 ka 18, Replica : 193
+Data : 3 ka 19, Replica : 194
+Data : 3 ka 20, Replica : 195
+Data : 3 ka 21, Replica : 196
+Data : 3 ka 22, Replica : 197
+Data : 3 ka 23, Replica : 198
+Data : 3 ka 24, Replica : 199
+Data : 3 ka 25, Replica : 200
+Data : 3 ka 26, Replica : 201
+Data : 3 ka 27, Replica : 202
+Data : 3 ka 28, Replica : 203
+Data : 3 ka 29, Replica : 204
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : 3 ka 0, Replica : 100
+Data : 3 ka 1, Replica : 101
+Data : 3 ka 2, Replica : 102
+Data : 3 ka 3, Replica : 103
+Data : 3 ka 4, Replica : 104
+Data : 3 ka 5, Replica : 350
+Data : 3 ka 6, Replica : 351
+Data : 3 ka 7, Replica : 107
+Data : 3 ka 8, Replica : 352
+Data : 3 ka 9, Replica : 109
+Data : 3 ka 10, Replica : 110
+Data : 3 ka 11, Replica : 353
+Data : 3 ka 12, Replica : 112
+Data : 3 ka 13, Replica : 354
+Data : 3 ka 14, Replica : 114
+Data : 3 ka 15, Replica : 355
+Data : 3 ka 16, Replica : 116
+Data : 3 ka 17, Replica : 356
+Data : 3 ka 18, Replica : 118
+Data : 3 ka 19, Replica : 119
+Data : 3 ka 20, Replica : 120
+Data : 3 ka 21, Replica : 121
+Data : 3 ka 22, Replica : 122
+Data : 3 ka 23, Replica : 123
+Data : 3 ka 24, Replica : 124
+Data : 3 ka 25, Replica : 125
+Data : 3 ka 26, Replica : 126
+Data : 3 ka 27, Replica : 127
+Data : 3 ka 28, Replica : 128
+Data : 3 ka 29, Replica : 129
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : 3 ka 5, Replica : 180
+Data : 3 ka 6, Replica : 181
+Data : 3 ka 8, Replica : 183
+Data : 3 ka 11, Replica : 186
+Data : 3 ka 13, Replica : 188
+Data : 3 ka 15, Replica : 190
+Data : 3 ka 17, Replica : 192
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Reading 3 ka 19 Reading disk block...
+Old patches : 
+100 5
+181 1
+107 1
+183 1
+109 2
+186 1
+112 1
+188 1
+114 1
+190 1
+116 1
+192 1
+118 63
+351 1
+181 1
+107 1
+183 1
+109 2
+186 1
+112 1
+188 1
+114 1
+190 1
+116 1
+192 1
+118 62
+350 1
+351 1
+182 1
+352 1
+184 2
+353 1
+187 1
+354 1
+189 1
+355 1
+191 1
+356 1
+193 57
+(0, 120)
+3 ka 20
+Reading 3 ka 20 Reading disk block...
+Old patches : 
+100 5
+181 1
+107 1
+183 1
+109 2
+186 1
+112 1
+188 1
+114 1
+190 1
+116 1
+192 1
+118 63
+351 1
+181 1
+107 1
+183 1
+109 2
+186 1
+112 1
+188 1
+114 1
+190 1
+116 1
+192 1
+118 62
+350 1
+351 1
+182 1
+352 1
+184 2
+353 1
+187 1
+354 1
+189 1
+355 1
+191 1
+356 1
+193 57
+(0, 121)
+3 ka 21
+Reading 3 ka 21 Reading disk block...
+Old patches : 
+100 5
+181 1
+107 1
+183 1
+109 2
+186 1
+112 1
+188 1
+114 1
+190 1
+116 1
+192 1
+118 63
+351 1
+181 1
+107 1
+183 1
+109 2
+186 1
+112 1
+188 1
+114 1
+190 1
+116 1
+192 1
+118 62
+350 1
+351 1
+182 1
+352 1
+184 2
+353 1
+187 1
+354 1
+189 1
+355 1
+191 1
+356 1
+193 57
+(0, 122)
+3 ka 22
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : 3 ka 0, Replica : 175
+Data : 3 ka 1, Replica : 176
+Data : 3 ka 2, Replica : 177
+Data : 3 ka 3, Replica : 178
+Data : 3 ka 4, Replica : 179
+Data : 3 ka 5, Replica : 180
+Data : 3 ka 6, Replica : 181
+Data : 3 ka 7, Replica : 182
+Data : 3 ka 8, Replica : 183
+Data : 3 ka 9, Replica : 184
+Data : 3 ka 10, Replica : 185
+Data : 3 ka 11, Replica : 186
+Data : 3 ka 12, Replica : 187
+Data : 3 ka 13, Replica : 188
+Data : 3 ka 14, Replica : 189
+Data : 3 ka 15, Replica : 190
+Data : 3 ka 16, Replica : 191
+Data : 3 ka 17, Replica : 192
+Data : 3 ka 18, Replica : 193
+Data : 3 ka 19, Replica : 194
+Data : 3 ka 20, Replica : 195
+Data : 3 ka 21, Replica : 196
+Data : 3 ka 22, Replica : 197
+Data : 3 ka 23, Replica : 198
+Data : 3 ka 24, Replica : 199
+Data : 3 ka 25, Replica : 200
+Data : 3 ka 26, Replica : 201
+Data : 3 ka 27, Replica : 202
+Data : 3 ka 28, Replica : 203
+Data : 3 ka 29, Replica : 204
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : 3 ka 0, Replica : 100
+Data : 3 ka 1, Replica : 101
+Data : 3 ka 2, Replica : 102
+Data : 3 ka 3, Replica : 103
+Data : 3 ka 4, Replica : 104
+Data : 3 ka 5, Replica : 350
+Data : 3 ka 6, Replica : 351
+Data : 3 ka 7, Replica : 107
+Data : 3 ka 8, Replica : 352
+Data : 3 ka 9, Replica : 109
+Data : 3 ka 10, Replica : 110
+Data : 3 ka 11, Replica : 353
+Data : 3 ka 12, Replica : 112
+Data : 3 ka 13, Replica : 354
+Data : 3 ka 14, Replica : 114
+Data : 3 ka 15, Replica : 355
+Data : 3 ka 16, Replica : 116
+Data : 3 ka 17, Replica : 356
+Data : 3 ka 18, Replica : 118
+Data : 3 ka 19, Replica : 119
+Data : 3 ka 20, Replica : 120
+Data : 3 ka 21, Replica : 121
+Data : 3 ka 22, Replica : 122
+Data : 3 ka 23, Replica : 123
+Data : 3 ka 24, Replica : 124
+Data : 3 ka 25, Replica : 125
+Data : 3 ka 26, Replica : 126
+Data : 3 ka 27, Replica : 127
+Data : 3 ka 28, Replica : 128
+Data : 3 ka 29, Replica : 129
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : 3 ka 5, Replica : 180
+Data : 3 ka 6, Replica : 181
+Data : 3 ka 8, Replica : 183
+Data : 3 ka 11, Replica : 186
+Data : 3 ka 13, Replica : 188
+Data : 3 ka 15, Replica : 190
+Data : 3 ka 17, Replica : 192
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Reading 3 ka 22 Reading disk block...
+Read error!
+(0, 198)
+New patches : 
+100 5
+181 1
+107 1
+183 1
+109 2
+186 1
+112 1
+188 1
+114 1
+190 1
+116 1
+192 1
+118 5
+198 1
+124 57
+351 1
+181 1
+107 1
+183 1
+109 2
+186 1
+112 1
+188 1
+114 1
+190 1
+116 1
+192 1
+118 5
+198 1
+124 56
+350 1
+351 1
+182 1
+352 1
+184 2
+353 1
+187 1
+354 1
+189 1
+355 1
+191 1
+356 1
+193 5
+357 1
+199 51
+3 ka 23
+Reading 3 ka 23 Reading disk block...
+Read error!
+(0, 199)
+New patches : 
+100 5
+181 1
+107 1
+183 1
+109 2
+186 1
+112 1
+188 1
+114 1
+190 1
+116 1
+192 1
+118 5
+199 1
+125 74
+358 1
+199 1
+125 56
+351 1
+181 1
+107 1
+183 1
+109 2
+186 1
+112 1
+188 1
+114 1
+190 1
+116 1
+192 1
+118 5
+199 1
+125 74
+358 1
+199 1
+125 55
+350 1
+351 1
+182 1
+352 1
+184 2
+353 1
+187 1
+354 1
+189 1
+355 1
+191 1
+356 1
+193 5
+357 1
+358 1
+200 50
+3 ka 24
+Reading 3 ka 24 Reading disk block...
+Read error!
+(1, 1)
+New patches : 
+100 5
+181 1
+107 1
+183 1
+109 2
+186 1
+112 1
+188 1
+114 1
+190 1
+116 1
+192 1
+118 5
+199 1
+125 1
+201 1
+127 72
+358 1
+199 1
+125 1
+201 1
+127 54
+351 1
+181 1
+107 1
+183 1
+109 2
+186 1
+112 1
+188 1
+114 1
+190 1
+116 1
+192 1
+118 5
+199 1
+125 1
+201 1
+127 72
+358 1
+199 1
+125 1
+201 1
+127 53
+350 1
+351 1
+182 1
+352 1
+184 2
+353 1
+187 1
+354 1
+189 1
+355 1
+191 1
+356 1
+193 5
+357 1
+358 1
+200 1
+359 1
+202 48
+3 ka 26
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : 3 ka 0, Replica : 175
+Data : 3 ka 1, Replica : 176
+Data : 3 ka 2, Replica : 177
+Data : 3 ka 3, Replica : 178
+Data : 3 ka 4, Replica : 179
+Data : 3 ka 5, Replica : 180
+Data : 3 ka 6, Replica : 181
+Data : 3 ka 7, Replica : 182
+Data : 3 ka 8, Replica : 183
+Data : 3 ka 9, Replica : 184
+Data : 3 ka 10, Replica : 185
+Data : 3 ka 11, Replica : 186
+Data : 3 ka 12, Replica : 187
+Data : 3 ka 13, Replica : 188
+Data : 3 ka 14, Replica : 189
+Data : 3 ka 15, Replica : 190
+Data : 3 ka 16, Replica : 191
+Data : 3 ka 17, Replica : 192
+Data : 3 ka 18, Replica : 193
+Data : 3 ka 19, Replica : 194
+Data : 3 ka 20, Replica : 195
+Data : 3 ka 21, Replica : 196
+Data : 3 ka 22, Replica : 197
+Data : 3 ka 23, Replica : 198
+Data : 3 ka 24, Replica : 199
+Data : 3 ka 25, Replica : 200
+Data : 3 ka 26, Replica : 201
+Data : 3 ka 27, Replica : 202
+Data : 3 ka 28, Replica : 203
+Data : 3 ka 29, Replica : 204
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : 3 ka 0, Replica : 100
+Data : 3 ka 1, Replica : 101
+Data : 3 ka 2, Replica : 102
+Data : 3 ka 3, Replica : 103
+Data : 3 ka 4, Replica : 104
+Data : 3 ka 5, Replica : 350
+Data : 3 ka 6, Replica : 351
+Data : 3 ka 7, Replica : 107
+Data : 3 ka 8, Replica : 352
+Data : 3 ka 9, Replica : 109
+Data : 3 ka 10, Replica : 110
+Data : 3 ka 11, Replica : 353
+Data : 3 ka 12, Replica : 112
+Data : 3 ka 13, Replica : 354
+Data : 3 ka 14, Replica : 114
+Data : 3 ka 15, Replica : 355
+Data : 3 ka 16, Replica : 116
+Data : 3 ka 17, Replica : 356
+Data : 3 ka 18, Replica : 118
+Data : 3 ka 19, Replica : 119
+Data : 3 ka 20, Replica : 120
+Data : 3 ka 21, Replica : 121
+Data : 3 ka 22, Replica : 122
+Data : 3 ka 23, Replica : 357
+Data : 3 ka 24, Replica : 358
+Data : 3 ka 25, Replica : 125
+Data : 3 ka 26, Replica : 359
+Data : 3 ka 27, Replica : 127
+Data : 3 ka 28, Replica : 128
+Data : 3 ka 29, Replica : 129
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : 3 ka 5, Replica : 180
+Data : 3 ka 6, Replica : 181
+Data : 3 ka 8, Replica : 183
+Data : 3 ka 11, Replica : 186
+Data : 3 ka 13, Replica : 188
+Data : 3 ka 15, Replica : 190
+Data : 3 ka 17, Replica : 192
+Data : 3 ka 23, Replica : 198
+Data : 3 ka 24, Replica : 199
+Data : 3 ka 26, Replica : 201
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Reading 3 ka 25 Reading disk block...
+Old patches : 
+100 5
+181 1
+107 1
+183 1
+109 2
+186 1
+112 1
+188 1
+114 1
+190 1
+116 1
+192 1
+118 5
+199 1
+125 1
+201 1
+127 72
+358 1
+199 1
+125 1
+201 1
+127 54
+351 1
+181 1
+107 1
+183 1
+109 2
+186 1
+112 1
+188 1
+114 1
+190 1
+116 1
+192 1
+118 5
+199 1
+125 1
+201 1
+127 72
+358 1
+199 1
+125 1
+201 1
+127 53
+350 1
+351 1
+182 1
+352 1
+184 2
+353 1
+187 1
+354 1
+189 1
+355 1
+191 1
+356 1
+193 5
+357 1
+358 1
+200 1
+359 1
+202 48
+(0, 127)
+3 ka 27
+Reading 3 ka 26 Reading disk block...
+Old patches : 
+100 5
+181 1
+107 1
+183 1
+109 2
+186 1
+112 1
+188 1
+114 1
+190 1
+116 1
+192 1
+118 5
+199 1
+125 1
+201 1
+127 72
+358 1
+199 1
+125 1
+201 1
+127 54
+351 1
+181 1
+107 1
+183 1
+109 2
+186 1
+112 1
+188 1
+114 1
+190 1
+116 1
+192 1
+118 5
+199 1
+125 1
+201 1
+127 72
+358 1
+199 1
+125 1
+201 1
+127 53
+350 1
+351 1
+182 1
+352 1
+184 2
+353 1
+187 1
+354 1
+189 1
+355 1
+191 1
+356 1
+193 5
+357 1
+358 1
+200 1
+359 1
+202 48
+(0, 128)
+3 ka 28
+Reading 3 ka 27 Reading disk block...
+Old patches : 
+100 5
+181 1
+107 1
+183 1
+109 2
+186 1
+112 1
+188 1
+114 1
+190 1
+116 1
+192 1
+118 5
+199 1
+125 1
+201 1
+127 72
+358 1
+199 1
+125 1
+201 1
+127 54
+351 1
+181 1
+107 1
+183 1
+109 2
+186 1
+112 1
+188 1
+114 1
+190 1
+116 1
+192 1
+118 5
+199 1
+125 1
+201 1
+127 72
+358 1
+199 1
+125 1
+201 1
+127 53
+350 1
+351 1
+182 1
+352 1
+184 2
+353 1
+187 1
+354 1
+189 1
+355 1
+191 1
+356 1
+193 5
+357 1
+358 1
+200 1
+359 1
+202 48
+(0, 129)
+3 ka 29
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : 3 ka 0, Replica : 175
+Data : 3 ka 1, Replica : 176
+Data : 3 ka 2, Replica : 177
+Data : 3 ka 3, Replica : 178
+Data : 3 ka 4, Replica : 179
+Data : 3 ka 5, Replica : 180
+Data : 3 ka 6, Replica : 181
+Data : 3 ka 7, Replica : 182
+Data : 3 ka 8, Replica : 183
+Data : 3 ka 9, Replica : 184
+Data : 3 ka 10, Replica : 185
+Data : 3 ka 11, Replica : 186
+Data : 3 ka 12, Replica : 187
+Data : 3 ka 13, Replica : 188
+Data : 3 ka 14, Replica : 189
+Data : 3 ka 15, Replica : 190
+Data : 3 ka 16, Replica : 191
+Data : 3 ka 17, Replica : 192
+Data : 3 ka 18, Replica : 193
+Data : 3 ka 19, Replica : 194
+Data : 3 ka 20, Replica : 195
+Data : 3 ka 21, Replica : 196
+Data : 3 ka 22, Replica : 197
+Data : 3 ka 23, Replica : 198
+Data : 3 ka 24, Replica : 199
+Data : 3 ka 25, Replica : 200
+Data : 3 ka 26, Replica : 201
+Data : 3 ka 27, Replica : 202
+Data : 3 ka 28, Replica : 203
+Data : 3 ka 29, Replica : 204
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : 3 ka 0, Replica : 100
+Data : 3 ka 1, Replica : 101
+Data : 3 ka 2, Replica : 102
+Data : 3 ka 3, Replica : 103
+Data : 3 ka 4, Replica : 104
+Data : 3 ka 5, Replica : 350
+Data : 3 ka 6, Replica : 351
+Data : 3 ka 7, Replica : 107
+Data : 3 ka 8, Replica : 352
+Data : 3 ka 9, Replica : 109
+Data : 3 ka 10, Replica : 110
+Data : 3 ka 11, Replica : 353
+Data : 3 ka 12, Replica : 112
+Data : 3 ka 13, Replica : 354
+Data : 3 ka 14, Replica : 114
+Data : 3 ka 15, Replica : 355
+Data : 3 ka 16, Replica : 116
+Data : 3 ka 17, Replica : 356
+Data : 3 ka 18, Replica : 118
+Data : 3 ka 19, Replica : 119
+Data : 3 ka 20, Replica : 120
+Data : 3 ka 21, Replica : 121
+Data : 3 ka 22, Replica : 122
+Data : 3 ka 23, Replica : 357
+Data : 3 ka 24, Replica : 358
+Data : 3 ka 25, Replica : 125
+Data : 3 ka 26, Replica : 359
+Data : 3 ka 27, Replica : 127
+Data : 3 ka 28, Replica : 128
+Data : 3 ka 29, Replica : 129
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : 3 ka 5, Replica : 180
+Data : 3 ka 6, Replica : 181
+Data : 3 ka 8, Replica : 183
+Data : 3 ka 11, Replica : 186
+Data : 3 ka 13, Replica : 188
+Data : 3 ka 15, Replica : 190
+Data : 3 ka 17, Replica : 192
+Data : 3 ka 23, Replica : 198
+Data : 3 ka 24, Replica : 199
+Data : 3 ka 26, Replica : 201
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Data : , Replica : -1
+Reading 3 ka 28 Reading disk block...
+Old patches : 
+100 5
+181 1
+107 1
+183 1
+109 2
+186 1
+112 1
+188 1
+114 1
+190 1
+116 1
+192 1
+118 5
+199 1
+125 1
+201 1
+127 72
+358 1
+199 1
+125 1
+201 1
+127 54
+351 1
+181 1
+107 1
+183 1
+109 2
+186 1
+112 1
+188 1
+114 1
+190 1
+116 1
+192 1
+118 5
+199 1
+125 1
+201 1
+127 72
+358 1
+199 1
+125 1
+201 1
+127 53
+350 1
+351 1
+182 1
+352 1
+184 2
+353 1
+187 1
+354 1
+189 1
+355 1
+191 1
+356 1
+193 5
+357 1
+358 1
+200 1
+359 1
+202 48
+(0, 130)
+
+Reading 3 ka 29 Reading disk block...
+Read error!
