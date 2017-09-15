@@ -122,7 +122,15 @@ def writeDiskBlock(id, block_no, write_data):
 	if disk.numBlocks < block_no+1:
 		raise "Error : Invalid block number"
 	print "Finding disk block..."
-	writePhysicalBlock(getVirtualDiskNo(disk.patches, block_no), write_data)
+	virtual_block_no = getVirtualDiskNo(disk.patches, block_no)
+	writePhysicalBlock(virtual_block_no, write_data)
+	if getBlockReplica(virtual_block_no) == -1:
+		delta = disk.numBlocks/2
+		block_replica_disk = (block_no + delta) if block_no < delta else (block_no - delta)
+		virtual_replica_block_no = getVirtualDiskNo(disk.patches, block_replica_disk)
+		setBlockReplica(virtual_block_no, virtual_replica_block_no)
+		setBlockReplica(virtual_replica_block_no, virtual_block_no)
+	writePhysicalBlock(getBlockReplica(virtual_block_no))
 	print "Written disk block..."
 
 def deleteDisk(id):
