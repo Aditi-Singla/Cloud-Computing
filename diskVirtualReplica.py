@@ -57,59 +57,61 @@ def readDiskBlock(id, block_no):
 	# random no in 1 to 100.
 	print "Reading disk block..."
 	if random.randint(1, 100) < 10:
-		# return something
-		replicaVirt = getVirtualDiskNo(disk.patches, getBlockReplica(block_no))
-		newBlock = patch(replicaVirt,1)
-		ans = readPhysicalBlock(replicaVirt)
-
+		# assuming replica always exists : ERROR?
 		if (len(unoccupied)==0):
 			raise "Error : Replica cannot be made"
 		else:
-			newReplicaBlock = unoccupied[0].blockNo
+			newReplicaBlockNo = unoccupied[0].blockNo
 			if (unoccupied[0].num == 1):
 				unoccupied.pop(0)
 			else:
 				unoccupied[0].num -= 1
 				unoccupied[0].blockNo += 1
 			usedBlocks += 1
-			newReplica = patch(newReplicaBlock,1)
 			patches_new = []
-			for i in xrange(1,len(patches)):
-				p = patches[i]
-				if (block_no < p.blockNo):
+			virt_original = getVirtualDiskNo(disk.patches, block_no)
+			virt_replica = getBlockReplica(virt_original)
+			virt_new_replica = newReplicaBlockNo
+			newOriginal = Patch(virt_replica, 1)
+			newReplica = Patch(virt_new_replica,1)
+
+			for p in disk.patches:
+				if ((virt_replica < p.blockNo and virt_original < p.blockNo) or (virt_original > (p.blockNo+p.num) and virt_replica > (p.blockNo+p.num))):
 					patches_new.append(p)
-				elif (block_no == p.blockNo):
-					patches_new.append(newBlock)
-					if not (p.num==1):
-						p.blockNo += 1
-						p.num -= 1
-						patches_new.append(p)
-				elif (block_no < p.blockNo + p.num):
-					newp1 = patch(p.blockNo,newReplica-p.blockNo+1)
-					patches_new.append(newp1)
-					patches_new.append(newBlock)
-					if not (block_no == p.blockNo + p.num - 1):
-						p.blockNo = block_no + 1
-						p.num -= (newp1.num + 1)
-						patches_new.append(p)
-				elif (block_no + (disk.numBlocks/2) < p.blockNo):
-					patches_new.append(p)
-				elif (block_no + (disk.numBlocks/2) == p.blockNo):
-					patches_new.append(Replica)
-					if not (p.num==1):
-						p.blockNo += 1
-						p.num -= 1
-						patches_new.append(p)
-				elif (block_no < p.blockNo + p.num):
-					newp1 = patch(p.blockNo,newReplica-p.blockNo+1)
-					patches_new.append(newp1)
+
+				elif ((virt_original < p.blockNo or virt_original > (p.blockNo+p.num)) and p.blockNo <= virt_replica and virt_replica < p.blockNo+p.num):
+					# only replica in this patch.
+					if virt_replica > p.blockNo:
+						left_patch = Patch(p.blockNo, virt_replica - p.blockNo)
+						patches_new.append(left_patch)
 					patches_new.append(newReplica)
-					if not (block_no == p.blockNo + p.num - 1):
-						p.blockNo = block_no + 1
-						p.num -= (newp1.num + 1)
-						patches_new.append(p)
+					if virt_replica < (p.blockNo + p.num - 1):
+						right_patch = Patch(virt_replica+1, p.num - (virt_replica - p.blockNo + 1))
+						patches_new.append(right_patch)
+
+				elif ((virt_replica > p.blockNo+p.num or virt_replica < p.blockNo) and p.blockNo <= virt_original and virt_original < p.blockNo+p.num):
+					# only original in this patch.
+					if virt_original > p.blockNo:
+						left_patch = Patch(p.blockNo, virt_original - p.blockNo)
+						patches_new.append(left_patch)
+					patches_new.append(newOriginal)
+					if virt_original < (p.blockNo + p.num - 1):
+						right_patch = Patch(virt_original+1, p.num - (virt_original - p.blockNo + 1))
+						patches_new.append(right_patch)
+
 				else:
-					patches_new.append(p)
+					if virt_original > p.blockNo:
+						left_patch = Patch(p.blockNo, virt_original - p.blockNo)
+						patches_new.append(left_patch)
+					patches_new.append(newOriginal)
+					if virt_original < virt_replica-1:
+						mid_patch = Patch(virt_original+1, virt_replica - virt_original - 1)
+						patches_new.append(mid_patch)
+					patches_new.append(newReplica)
+					if virt_replica < (p.blockNo + p.num - 1):
+						right_patch = Patch(virt_replica+1, p.num - (virt_replica - p.blockNo + 1))
+						patches_new.append(right_patch)
+
 			disk.patches = patches_new		
 	else:
 		ans = readPhysicalBlock(getVirtualDiskNo(disk.patches, block_no))
