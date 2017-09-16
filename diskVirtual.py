@@ -8,7 +8,7 @@ def readBlock(block_no):
 
 def createDisk(id, num_blocks):
 	if (diskPhysical.virtualDiskSize - diskPhysical.usedBlocks < num_blocks) or diskPhysical.diskMap.has_key(id):
-		return "Error : Either no space or disk id already there"
+		return "Error : Either not enough space or disk id already there"
 	else:
 		createPatch(id, num_blocks)
 
@@ -26,17 +26,19 @@ def createPatch(id, num_blocks):
 		createPatch(id,num_blocks-p.num)
 	else:
 		index = (l[0])[0]
-		obj = (l[0])[1]
-		(disk.patches).append(diskPhysical.Patch(obj.blockNo,num_blocks))
-		if (obj.num == num_blocks):
+		patchBlockNo = l[0][1].blockNo
+		patchNum = l[0][1].num
+		(disk.patches).append(diskPhysical.Patch(patchBlockNo,num_blocks))
+		if (patchNum == num_blocks):
 			diskPhysical.unoccupied.pop(index)
 		else:
-			currentvalue = obj.num - num_blocks
+			currentvalue = patchNum - num_blocks
 			while index > 0 and diskPhysical.unoccupied[index-1].num > currentvalue:
-				diskPhysical.unoccupied[index] = diskPhysical.unoccupied[index-1]
+				diskPhysical.unoccupied[index].blockNo = diskPhysical.unoccupied[index-1].blockNo
+				diskPhysical.unoccupied[index].num = diskPhysical.unoccupied[index-1].num
 				index -= 1
-			diskPhysical.unoccupied[index].blockNo = obj.blockNo + num_blocks
-			diskPhysical.unoccupied[index].num = currentvalue	
+			diskPhysical.unoccupied[index].blockNo = patchBlockNo + num_blocks
+			diskPhysical.unoccupied[index].num = currentvalue
 		diskPhysical.usedBlocks += num_blocks
 
 def getVirtualDiskNo(diskPatches, block_no):
@@ -71,18 +73,8 @@ def deleteDisk(id):
 	disk = diskPhysical.diskMap[id]
 	unoccupied = diskPhysical.unoccupied + disk.patches
 	unoccupied_sorted_index = sorted(unoccupied, key=lambda x: x.blockNo)
-	unoccupied_new = []
-	current_patch = unoccupied_sorted_index[0]
-	for i in xrange(1,len(unoccupied_sorted_index)):
-		p = unoccupied_sorted_index[i]
-		if p.blockNo == current_patch.blockNo + current_patch.num:
-			current_patch.num += p.num
-		else:
-			unoccupied_new.append(current_patch)
-			current_patch = p
-	diskPhysical.unoccupied.append(current_patch)
-	diskPhysical.unoccupied = unoccupied_new
-	diskPhysical.unoccupied = sorted(unoccupied, key=lambda x: x.num)
+	unoccupied_new = diskPhysical.mergePatches(unoccupied_sorted_index)
+	diskPhysical.unoccupied = sorted(unoccupied_new, key=lambda x: x.num)
 	diskPhysical.usedBlocks -= disk.numBlocks
 	diskPhysical.diskMap.pop(id)
-	print "Deleting disk..."
+	print "Deleted disk!"

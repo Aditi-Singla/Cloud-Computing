@@ -19,6 +19,8 @@ def createPatch(id, num_blocks):
 	disk = diskPhysical.diskMap[id]
 	# disk = diskMap[id] if (diskMap.has_key(id)) else Disk(id, num_blocks)
 	l = [(n,i) for n,i in enumerate(diskPhysical.unoccupied) if i.num >= num_blocks]
+	print "in create patch : ", str(id) + " " + str(num_blocks)
+	diskPhysical.printPatchList(diskPhysical.unoccupied)
 	if (len(l)==0):
 		p = diskPhysical.unoccupied[-1]
 		(disk.patches).append(p)
@@ -47,20 +49,6 @@ def getVirtualDiskNo(diskPatches, block_no):
 		total_blocks += diskPatches[i].num
 		i += 1
 	return diskPatches[i].blockNo + block_no - total_blocks
-
-def mergePatches(patches_list):
-	patches_new = []
-	current_patch = patches_list[0]
-	for i in xrange(1,len(patches_list)):
-		p = patches_list[i]
-		if p.blockNo == (current_patch.blockNo + current_patch.num):
-			current_patch.num += p.num
-		else:
-			patches_new.append(current_patch)
-			current_patch = p
-	patches_new.append(current_patch)
-	patches_list = patches_new
-	return patches_new
 
 def readDiskBlock(id, block_no):
 	if not diskPhysical.diskMap.has_key(id):
@@ -134,7 +122,7 @@ def readDiskBlock(id, block_no):
 					if virt_replica < (p.blockNo + p.num - 1):
 						right_patch = diskPhysical.Patch(virt_replica+1, p.num - (virt_replica - p.blockNo + 1))
 						patches_new.append(right_patch)
-			disk.patches = mergePatches(patches_new)
+			disk.patches = diskPhysical.mergePatches(patches_new)
 			print "New patches : "
 			for i in disk.patches:
 				print str(i.blockNo) + " " + str(i.num)
@@ -181,8 +169,8 @@ def deleteDisk(id):
 	# 		current_patch = p
 	# unoccupied_new.append(current_patch)
 	# unoccupied = unoccupied_new
-	unoccupied = mergePatches(unoccupied_sorted_index)
+	unoccupied = diskPhysical.mergePatches(unoccupied_sorted_index)
 	diskPhysical.unoccupied = sorted(unoccupied, key=lambda x: x.num)
 	diskPhysical.usedBlocks -= disk.numBlocks
 	diskPhysical.diskMap.pop(id)
-	print "Deleting disk..."
+	print "Deleted disk!"

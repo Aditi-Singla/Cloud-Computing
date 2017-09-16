@@ -32,7 +32,7 @@ def ReplicationTest():
 			diskPhysical.printDisks()
 
 
-	createDisk(6,70)
+	createDisk(6,54)
 	
 	for i in xrange(0, 20):
 		writeDiskBlock(6, i, "6 ka " + str(i))

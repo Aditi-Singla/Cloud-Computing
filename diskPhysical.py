@@ -6,12 +6,15 @@ class Block:
 class Disk:
 	id = 0
 	numBlocks = 0
+	commandList = []
+	checkPointMap = []
 	patches = []
 
 	def __init__(self,idname,n):
 		self.id = idname
 		self.numBlocks = n
 		self.patches = []
+		self.commandList = [("createDisk", idname, n)]
 
 class Patch:
 	blockNo = 0
@@ -57,7 +60,7 @@ def writePhysicalBlock(block_no, write_data):
 	disks[virtualToPhy[block_no][0]][virtualToPhy[block_no][1]].blockData = write_data
 
 def readPhysicalBlock(block_no):
-	print virtualToPhy[block_no]
+	# print virtualToPhy[block_no]
 	return disks[virtualToPhy[block_no][0]][virtualToPhy[block_no][1]].blockData
 
 def getBlockReplica(block_no):
@@ -70,3 +73,21 @@ def printDisks():
 	for i in disks:
 		for j in i:
 			print "Data : " + j.blockData + ", Replica : " + str(j.replica)
+
+def printPatchList(plist):
+	for p in plist:
+		print "Block no : " + str(p.blockNo) + ", num : " + str(p.num)
+
+def mergePatches(patches_list):
+	patches_new = []
+	current_patch = patches_list[0]
+	for i in xrange(1,len(patches_list)):
+		p = patches_list[i]
+		if p.blockNo == (current_patch.blockNo + current_patch.num):
+			current_patch.num += p.num
+		else:
+			patches_new.append(current_patch)
+			current_patch = p
+	patches_new.append(current_patch)
+	patches_list = patches_new
+	return patches_new
