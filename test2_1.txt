@@ -594,19 +594,34 @@ Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
 Reading 3 ka 1 Reading disk block...
-Old patches : 
-100 150
-(0, 101)
+Read error!
+(0, 176)
+New patches : 
+100 1
+176 1
+102 74
+350 1
+177 73
 3 ka 1
 Reading 3 ka 2 Reading disk block...
-Old patches : 
-100 150
-(0, 102)
+Read error!
+(0, 177)
+New patches : 
+100 1
+176 2
+103 73
+350 2
+178 72
 3 ka 2
 Reading 3 ka 3 Reading disk block...
-Old patches : 
-100 150
-(0, 103)
+Read error!
+(0, 178)
+New patches : 
+100 1
+176 3
+104 72
+350 3
+179 71
 3 ka 3
 Data : , Replica : -1
 Data : , Replica : -1
@@ -784,9 +799,9 @@ Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
 Data : 3 ka 0, Replica : 100
-Data : 3 ka 1, Replica : 101
-Data : 3 ka 2, Replica : 102
-Data : 3 ka 3, Replica : 103
+Data : 3 ka 1, Replica : 350
+Data : 3 ka 2, Replica : 351
+Data : 3 ka 3, Replica : 352
 Data : 3 ka 4, Replica : 104
 Data : 3 ka 5, Replica : 105
 Data : 3 ka 6, Replica : 106
@@ -958,9 +973,9 @@ Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
-Data : , Replica : -1
-Data : , Replica : -1
-Data : , Replica : -1
+Data : 3 ka 1, Replica : 176
+Data : 3 ka 2, Replica : 177
+Data : 3 ka 3, Replica : 178
 Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
@@ -1110,31 +1125,34 @@ Data : , Replica : -1
 Data : , Replica : -1
 Reading 3 ka 4 Reading disk block...
 Old patches : 
-100 150
+100 1
+176 3
+104 72
+350 3
+179 71
 (0, 104)
 3 ka 4
 Reading 3 ka 5 Reading disk block...
-Read error!
-(0, 180)
-New patches : 
-100 5
-180 1
-106 74
-350 1
-181 69
+Old patches : 
+100 1
+176 3
+104 72
+350 3
+179 71
+(0, 105)
 3 ka 5
 Reading 3 ka 6 Reading disk block...
 Read error!
 (0, 181)
 New patches : 
-100 5
+100 1
+176 3
+104 2
 181 1
-107 74
-351 1
-181 1
-107 73
-350 1
-351 1
+107 69
+350 3
+179 2
+353 1
 182 68
 3 ka 6
 Data : , Replica : -1
@@ -1313,12 +1331,12 @@ Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
 Data : 3 ka 0, Replica : 100
-Data : 3 ka 1, Replica : 101
-Data : 3 ka 2, Replica : 102
-Data : 3 ka 3, Replica : 103
+Data : 3 ka 1, Replica : 350
+Data : 3 ka 2, Replica : 351
+Data : 3 ka 3, Replica : 352
 Data : 3 ka 4, Replica : 104
-Data : 3 ka 5, Replica : 350
-Data : 3 ka 6, Replica : 351
+Data : 3 ka 5, Replica : 105
+Data : 3 ka 6, Replica : 353
 Data : 3 ka 7, Replica : 107
 Data : 3 ka 8, Replica : 108
 Data : 3 ka 9, Replica : 109
@@ -1487,7 +1505,9 @@ Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
-Data : 3 ka 5, Replica : 180
+Data : 3 ka 1, Replica : 176
+Data : 3 ka 2, Replica : 177
+Data : 3 ka 3, Replica : 178
 Data : 3 ka 6, Replica : 181
 Data : , Replica : -1
 Data : , Replica : -1
@@ -1635,66 +1655,54 @@ Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
-Data : , Replica : -1
-Data : , Replica : -1
 Reading 3 ka 7 Reading disk block...
+Old patches : 
+100 1
+176 3
+104 2
+181 1
+107 69
+350 3
+179 2
+353 1
+182 68
+(0, 107)
+3 ka 7
+Reading 3 ka 8 Reading disk block...
 Read error!
 (0, 183)
 New patches : 
-100 5
+100 1
+176 3
+104 2
 181 1
 107 1
 183 1
-109 72
-351 1
-181 1
-107 1
-183 1
-109 71
-350 1
-351 1
+109 67
+350 3
+179 2
+353 1
 182 1
-352 1
+354 1
 184 66
 3 ka 8
-Reading 3 ka 8 Reading disk block...
+Reading 3 ka 9 Reading disk block...
 Old patches : 
-100 5
+100 1
+176 3
+104 2
 181 1
 107 1
 183 1
-109 72
-351 1
-181 1
-107 1
-183 1
-109 71
-350 1
-351 1
+109 67
+350 3
+179 2
+353 1
 182 1
-352 1
+354 1
 184 66
 (0, 109)
 3 ka 9
-Reading 3 ka 9 Reading disk block...
-Old patches : 
-100 5
-181 1
-107 1
-183 1
-109 72
-351 1
-181 1
-107 1
-183 1
-109 71
-350 1
-351 1
-182 1
-352 1
-184 66
-(0, 110)
-3 ka 10
 Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
@@ -1871,14 +1879,14 @@ Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
 Data : 3 ka 0, Replica : 100
-Data : 3 ka 1, Replica : 101
-Data : 3 ka 2, Replica : 102
-Data : 3 ka 3, Replica : 103
+Data : 3 ka 1, Replica : 350
+Data : 3 ka 2, Replica : 351
+Data : 3 ka 3, Replica : 352
 Data : 3 ka 4, Replica : 104
-Data : 3 ka 5, Replica : 350
-Data : 3 ka 6, Replica : 351
+Data : 3 ka 5, Replica : 105
+Data : 3 ka 6, Replica : 353
 Data : 3 ka 7, Replica : 107
-Data : 3 ka 8, Replica : 352
+Data : 3 ka 8, Replica : 354
 Data : 3 ka 9, Replica : 109
 Data : 3 ka 10, Replica : 110
 Data : 3 ka 11, Replica : 111
@@ -2045,7 +2053,9 @@ Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
-Data : 3 ka 5, Replica : 180
+Data : 3 ka 1, Replica : 176
+Data : 3 ka 2, Replica : 177
+Data : 3 ka 3, Replica : 178
 Data : 3 ka 6, Replica : 181
 Data : 3 ka 8, Replica : 183
 Data : , Replica : -1
@@ -2193,91 +2203,71 @@ Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
-Data : , Replica : -1
-Data : , Replica : -1
 Reading 3 ka 10 Reading disk block...
+Read error!
+(0, 185)
+New patches : 
+100 1
+176 3
+104 2
+181 1
+107 1
+183 1
+109 1
+185 1
+111 65
+350 3
+179 2
+353 1
+182 1
+354 1
+184 1
+355 1
+186 64
+3 ka 10
+Reading 3 ka 11 Reading disk block...
 Read error!
 (0, 186)
 New patches : 
-100 5
+100 1
+176 3
+104 2
 181 1
 107 1
 183 1
-109 2
-186 1
-112 69
-351 1
-181 1
-107 1
-183 1
-109 2
-186 1
-112 68
-350 1
-351 1
-182 1
-352 1
-184 2
+109 1
+185 2
+112 64
+350 3
+179 2
 353 1
+182 1
+354 1
+184 1
+355 2
 187 63
 3 ka 11
-Reading 3 ka 11 Reading disk block...
+Reading 3 ka 12 Reading disk block...
 Old patches : 
-100 5
+100 1
+176 3
+104 2
 181 1
 107 1
 183 1
-109 2
-186 1
-112 69
-351 1
-181 1
-107 1
-183 1
-109 2
-186 1
-112 68
-350 1
-351 1
-182 1
-352 1
-184 2
+109 1
+185 2
+112 64
+350 3
+179 2
 353 1
+182 1
+354 1
+184 1
+355 2
 187 63
 (0, 112)
 3 ka 12
-Reading 3 ka 12 Reading disk block...
-Read error!
-(0, 188)
-New patches : 
-100 5
-181 1
-107 1
-183 1
-109 2
-186 1
-112 1
-188 1
-114 67
-351 1
-181 1
-107 1
-183 1
-109 2
-186 1
-112 1
-188 1
-114 66
-350 1
-351 1
-182 1
-352 1
-184 2
-353 1
-187 1
-354 1
-189 61
-3 ka 13
 Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
@@ -2454,19 +2444,19 @@ Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
 Data : 3 ka 0, Replica : 100
-Data : 3 ka 1, Replica : 101
-Data : 3 ka 2, Replica : 102
-Data : 3 ka 3, Replica : 103
+Data : 3 ka 1, Replica : 350
+Data : 3 ka 2, Replica : 351
+Data : 3 ka 3, Replica : 352
 Data : 3 ka 4, Replica : 104
-Data : 3 ka 5, Replica : 350
-Data : 3 ka 6, Replica : 351
+Data : 3 ka 5, Replica : 105
+Data : 3 ka 6, Replica : 353
 Data : 3 ka 7, Replica : 107
-Data : 3 ka 8, Replica : 352
+Data : 3 ka 8, Replica : 354
 Data : 3 ka 9, Replica : 109
-Data : 3 ka 10, Replica : 110
-Data : 3 ka 11, Replica : 353
+Data : 3 ka 10, Replica : 355
+Data : 3 ka 11, Replica : 356
 Data : 3 ka 12, Replica : 112
-Data : 3 ka 13, Replica : 354
+Data : 3 ka 13, Replica : 113
 Data : 3 ka 14, Replica : 114
 Data : 3 ka 15, Replica : 115
 Data : 3 ka 16, Replica : 116
@@ -2628,13 +2618,13 @@ Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
-Data : 3 ka 5, Replica : 180
+Data : 3 ka 1, Replica : 176
+Data : 3 ka 2, Replica : 177
+Data : 3 ka 3, Replica : 178
 Data : 3 ka 6, Replica : 181
 Data : 3 ka 8, Replica : 183
+Data : 3 ka 10, Replica : 185
 Data : 3 ka 11, Replica : 186
-Data : 3 ka 13, Replica : 188
-Data : , Replica : -1
-Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
@@ -2780,110 +2770,76 @@ Data : , Replica : -1
 Data : , Replica : -1
 Reading 3 ka 13 Reading disk block...
 Old patches : 
-100 5
+100 1
+176 3
+104 2
 181 1
 107 1
 183 1
-109 2
-186 1
-112 1
-188 1
-114 67
-351 1
-181 1
-107 1
-183 1
-109 2
-186 1
-112 1
-188 1
-114 66
-350 1
-351 1
-182 1
-352 1
-184 2
+109 1
+185 2
+112 64
+350 3
+179 2
 353 1
-187 1
+182 1
 354 1
-189 61
-(0, 114)
-3 ka 14
+184 1
+355 2
+187 63
+(0, 113)
+3 ka 13
 Reading 3 ka 14 Reading disk block...
 Read error!
-(0, 190)
+(0, 189)
 New patches : 
-100 5
+100 1
+176 3
+104 2
 181 1
 107 1
 183 1
-109 2
-186 1
-112 1
-188 1
-114 1
-190 1
-116 65
-351 1
-181 1
-107 1
-183 1
-109 2
-186 1
-112 1
-188 1
-114 1
-190 1
-116 64
-350 1
-351 1
-182 1
-352 1
-184 2
-353 1
-187 1
-354 1
+109 1
+185 2
+112 2
 189 1
-355 1
-191 59
-3 ka 15
+115 61
+350 3
+179 2
+353 1
+182 1
+354 1
+184 1
+355 2
+187 2
+357 1
+190 60
+3 ka 14
 Reading 3 ka 15 Reading disk block...
 Old patches : 
-100 5
+100 1
+176 3
+104 2
 181 1
 107 1
 183 1
-109 2
-186 1
-112 1
-188 1
-114 1
-190 1
-116 65
-351 1
-181 1
-107 1
-183 1
-109 2
-186 1
-112 1
-188 1
-114 1
-190 1
-116 64
-350 1
-351 1
-182 1
-352 1
-184 2
-353 1
-187 1
-354 1
+109 1
+185 2
+112 2
 189 1
-355 1
-191 59
-(0, 116)
-3 ka 16
+115 61
+350 3
+179 2
+353 1
+182 1
+354 1
+184 1
+355 2
+187 2
+357 1
+190 60
+(0, 115)
+3 ka 15
 Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
@@ -3060,21 +3016,21 @@ Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
 Data : 3 ka 0, Replica : 100
-Data : 3 ka 1, Replica : 101
-Data : 3 ka 2, Replica : 102
-Data : 3 ka 3, Replica : 103
+Data : 3 ka 1, Replica : 350
+Data : 3 ka 2, Replica : 351
+Data : 3 ka 3, Replica : 352
 Data : 3 ka 4, Replica : 104
-Data : 3 ka 5, Replica : 350
-Data : 3 ka 6, Replica : 351
+Data : 3 ka 5, Replica : 105
+Data : 3 ka 6, Replica : 353
 Data : 3 ka 7, Replica : 107
-Data : 3 ka 8, Replica : 352
+Data : 3 ka 8, Replica : 354
 Data : 3 ka 9, Replica : 109
-Data : 3 ka 10, Replica : 110
-Data : 3 ka 11, Replica : 353
+Data : 3 ka 10, Replica : 355
+Data : 3 ka 11, Replica : 356
 Data : 3 ka 12, Replica : 112
-Data : 3 ka 13, Replica : 354
-Data : 3 ka 14, Replica : 114
-Data : 3 ka 15, Replica : 355
+Data : 3 ka 13, Replica : 113
+Data : 3 ka 14, Replica : 357
+Data : 3 ka 15, Replica : 115
 Data : 3 ka 16, Replica : 116
 Data : 3 ka 17, Replica : 117
 Data : 3 ka 18, Replica : 118
@@ -3234,14 +3190,14 @@ Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
-Data : 3 ka 5, Replica : 180
+Data : 3 ka 1, Replica : 176
+Data : 3 ka 2, Replica : 177
+Data : 3 ka 3, Replica : 178
 Data : 3 ka 6, Replica : 181
 Data : 3 ka 8, Replica : 183
+Data : 3 ka 10, Replica : 185
 Data : 3 ka 11, Replica : 186
-Data : 3 ka 13, Replica : 188
-Data : 3 ka 15, Replica : 190
-Data : , Replica : -1
-Data : , Replica : -1
+Data : 3 ka 14, Replica : 189
 Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
@@ -3386,134 +3342,93 @@ Data : , Replica : -1
 Data : , Replica : -1
 Reading 3 ka 16 Reading disk block...
 Read error!
+(0, 191)
+New patches : 
+100 1
+176 3
+104 2
+181 1
+107 1
+183 1
+109 1
+185 2
+112 2
+189 1
+115 1
+191 1
+117 59
+350 3
+179 2
+353 1
+182 1
+354 1
+184 1
+355 2
+187 2
+357 1
+190 1
+358 1
+192 58
+3 ka 16
+Reading 3 ka 17 Reading disk block...
+Read error!
 (0, 192)
 New patches : 
-100 5
+100 1
+176 3
+104 2
 181 1
 107 1
 183 1
-109 2
-186 1
-112 1
-188 1
-114 1
-190 1
-116 1
-192 1
-118 63
-351 1
-181 1
-107 1
-183 1
-109 2
-186 1
-112 1
-188 1
-114 1
-190 1
-116 1
-192 1
-118 62
-350 1
-351 1
-182 1
-352 1
-184 2
-353 1
-187 1
-354 1
+109 1
+185 2
+112 2
 189 1
-355 1
-191 1
-356 1
+115 1
+191 2
+118 58
+350 3
+179 2
+353 1
+182 1
+354 1
+184 1
+355 2
+187 2
+357 1
+190 1
+358 2
 193 57
 3 ka 17
-Reading 3 ka 17 Reading disk block...
+Reading 3 ka 18 Reading disk block...
 Old patches : 
-100 5
+100 1
+176 3
+104 2
 181 1
 107 1
 183 1
-109 2
-186 1
-112 1
-188 1
-114 1
-190 1
-116 1
-192 1
-118 63
-351 1
-181 1
-107 1
-183 1
-109 2
-186 1
-112 1
-188 1
-114 1
-190 1
-116 1
-192 1
-118 62
-350 1
-351 1
-182 1
-352 1
-184 2
-353 1
-187 1
-354 1
+109 1
+185 2
+112 2
 189 1
-355 1
-191 1
-356 1
+115 1
+191 2
+118 58
+350 3
+179 2
+353 1
+182 1
+354 1
+184 1
+355 2
+187 2
+357 1
+190 1
+358 2
 193 57
 (0, 118)
 3 ka 18
-Reading 3 ka 18 Reading disk block...
-Old patches : 
-100 5
-181 1
-107 1
-183 1
-109 2
-186 1
-112 1
-188 1
-114 1
-190 1
-116 1
-192 1
-118 63
-351 1
-181 1
-107 1
-183 1
-109 2
-186 1
-112 1
-188 1
-114 1
-190 1
-116 1
-192 1
-118 62
-350 1
-351 1
-182 1
-352 1
-184 2
-353 1
-187 1
-354 1
-189 1
-355 1
-191 1
-356 1
-193 57
-(0, 119)
-3 ka 19
 Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
@@ -3690,23 +3605,23 @@ Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
 Data : 3 ka 0, Replica : 100
-Data : 3 ka 1, Replica : 101
-Data : 3 ka 2, Replica : 102
-Data : 3 ka 3, Replica : 103
+Data : 3 ka 1, Replica : 350
+Data : 3 ka 2, Replica : 351
+Data : 3 ka 3, Replica : 352
 Data : 3 ka 4, Replica : 104
-Data : 3 ka 5, Replica : 350
-Data : 3 ka 6, Replica : 351
+Data : 3 ka 5, Replica : 105
+Data : 3 ka 6, Replica : 353
 Data : 3 ka 7, Replica : 107
-Data : 3 ka 8, Replica : 352
+Data : 3 ka 8, Replica : 354
 Data : 3 ka 9, Replica : 109
-Data : 3 ka 10, Replica : 110
-Data : 3 ka 11, Replica : 353
+Data : 3 ka 10, Replica : 355
+Data : 3 ka 11, Replica : 356
 Data : 3 ka 12, Replica : 112
-Data : 3 ka 13, Replica : 354
-Data : 3 ka 14, Replica : 114
-Data : 3 ka 15, Replica : 355
-Data : 3 ka 16, Replica : 116
-Data : 3 ka 17, Replica : 356
+Data : 3 ka 13, Replica : 113
+Data : 3 ka 14, Replica : 357
+Data : 3 ka 15, Replica : 115
+Data : 3 ka 16, Replica : 358
+Data : 3 ka 17, Replica : 359
 Data : 3 ka 18, Replica : 118
 Data : 3 ka 19, Replica : 119
 Data : 3 ka 20, Replica : 120
@@ -3864,16 +3779,16 @@ Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
-Data : 3 ka 5, Replica : 180
+Data : 3 ka 1, Replica : 176
+Data : 3 ka 2, Replica : 177
+Data : 3 ka 3, Replica : 178
 Data : 3 ka 6, Replica : 181
 Data : 3 ka 8, Replica : 183
+Data : 3 ka 10, Replica : 185
 Data : 3 ka 11, Replica : 186
-Data : 3 ka 13, Replica : 188
-Data : 3 ka 15, Replica : 190
+Data : 3 ka 14, Replica : 189
+Data : 3 ka 16, Replica : 191
 Data : 3 ka 17, Replica : 192
-Data : , Replica : -1
-Data : , Replica : -1
-Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
@@ -4015,134 +3930,110 @@ Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
 Reading 3 ka 19 Reading disk block...
-Old patches : 
-100 5
+Read error!
+(0, 194)
+New patches : 
+100 1
+176 3
+104 2
 181 1
 107 1
 183 1
-109 2
-186 1
-112 1
-188 1
-114 1
-190 1
-116 1
-192 1
-118 63
-351 1
-181 1
-107 1
-183 1
-109 2
-186 1
-112 1
-188 1
-114 1
-190 1
-116 1
-192 1
-118 62
-350 1
-351 1
-182 1
-352 1
-184 2
-353 1
-187 1
-354 1
+109 1
+185 2
+112 2
 189 1
-355 1
-191 1
-356 1
-193 57
-(0, 120)
-3 ka 20
+115 1
+191 2
+118 1
+194 1
+120 56
+350 3
+179 2
+353 1
+182 1
+354 1
+184 1
+355 2
+187 2
+357 1
+190 1
+358 2
+193 1
+360 1
+195 55
+3 ka 19
 Reading 3 ka 20 Reading disk block...
 Old patches : 
-100 5
+100 1
+176 3
+104 2
 181 1
 107 1
 183 1
-109 2
-186 1
-112 1
-188 1
-114 1
-190 1
-116 1
-192 1
-118 63
-351 1
-181 1
-107 1
-183 1
-109 2
-186 1
-112 1
-188 1
-114 1
-190 1
-116 1
-192 1
-118 62
-350 1
-351 1
-182 1
-352 1
-184 2
-353 1
-187 1
-354 1
+109 1
+185 2
+112 2
 189 1
-355 1
-191 1
-356 1
-193 57
-(0, 121)
-3 ka 21
+115 1
+191 2
+118 1
+194 1
+120 56
+350 3
+179 2
+353 1
+182 1
+354 1
+184 1
+355 2
+187 2
+357 1
+190 1
+358 2
+193 1
+360 1
+195 55
+(0, 120)
+3 ka 20
 Reading 3 ka 21 Reading disk block...
-Old patches : 
-100 5
+Read error!
+(0, 196)
+New patches : 
+100 1
+176 3
+104 2
 181 1
 107 1
 183 1
-109 2
-186 1
-112 1
-188 1
-114 1
-190 1
-116 1
-192 1
-118 63
-351 1
-181 1
-107 1
-183 1
-109 2
-186 1
-112 1
-188 1
-114 1
-190 1
-116 1
-192 1
-118 62
-350 1
-351 1
-182 1
-352 1
-184 2
-353 1
-187 1
-354 1
+109 1
+185 2
+112 2
 189 1
-355 1
-191 1
-356 1
-193 57
-(0, 122)
-3 ka 22
+115 1
+191 2
+118 1
+194 1
+120 1
+196 1
+122 54
+350 3
+179 2
+353 1
+182 1
+354 1
+184 1
+355 2
+187 2
+357 1
+190 1
+358 2
+193 1
+360 1
+195 1
+361 1
+197 53
+3 ka 21
 Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
@@ -4319,27 +4210,27 @@ Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
 Data : 3 ka 0, Replica : 100
-Data : 3 ka 1, Replica : 101
-Data : 3 ka 2, Replica : 102
-Data : 3 ka 3, Replica : 103
+Data : 3 ka 1, Replica : 350
+Data : 3 ka 2, Replica : 351
+Data : 3 ka 3, Replica : 352
 Data : 3 ka 4, Replica : 104
-Data : 3 ka 5, Replica : 350
-Data : 3 ka 6, Replica : 351
+Data : 3 ka 5, Replica : 105
+Data : 3 ka 6, Replica : 353
 Data : 3 ka 7, Replica : 107
-Data : 3 ka 8, Replica : 352
+Data : 3 ka 8, Replica : 354
 Data : 3 ka 9, Replica : 109
-Data : 3 ka 10, Replica : 110
-Data : 3 ka 11, Replica : 353
+Data : 3 ka 10, Replica : 355
+Data : 3 ka 11, Replica : 356
 Data : 3 ka 12, Replica : 112
-Data : 3 ka 13, Replica : 354
-Data : 3 ka 14, Replica : 114
-Data : 3 ka 15, Replica : 355
-Data : 3 ka 16, Replica : 116
-Data : 3 ka 17, Replica : 356
+Data : 3 ka 13, Replica : 113
+Data : 3 ka 14, Replica : 357
+Data : 3 ka 15, Replica : 115
+Data : 3 ka 16, Replica : 358
+Data : 3 ka 17, Replica : 359
 Data : 3 ka 18, Replica : 118
-Data : 3 ka 19, Replica : 119
+Data : 3 ka 19, Replica : 360
 Data : 3 ka 20, Replica : 120
-Data : 3 ka 21, Replica : 121
+Data : 3 ka 21, Replica : 361
 Data : 3 ka 22, Replica : 122
 Data : 3 ka 23, Replica : 123
 Data : 3 ka 24, Replica : 124
@@ -4493,18 +4384,18 @@ Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
-Data : 3 ka 5, Replica : 180
+Data : 3 ka 1, Replica : 176
+Data : 3 ka 2, Replica : 177
+Data : 3 ka 3, Replica : 178
 Data : 3 ka 6, Replica : 181
 Data : 3 ka 8, Replica : 183
+Data : 3 ka 10, Replica : 185
 Data : 3 ka 11, Replica : 186
-Data : 3 ka 13, Replica : 188
-Data : 3 ka 15, Replica : 190
+Data : 3 ka 14, Replica : 189
+Data : 3 ka 16, Replica : 191
 Data : 3 ka 17, Replica : 192
-Data : , Replica : -1
-Data : , Replica : -1
-Data : , Replica : -1
-Data : , Replica : -1
-Data : , Replica : -1
+Data : 3 ka 19, Replica : 194
+Data : 3 ka 21, Replica : 196
 Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
@@ -4644,179 +4535,116 @@ Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
 Reading 3 ka 22 Reading disk block...
-Read error!
-(0, 198)
-New patches : 
-100 5
+Old patches : 
+100 1
+176 3
+104 2
 181 1
 107 1
 183 1
-109 2
-186 1
-112 1
-188 1
-114 1
-190 1
-116 1
-192 1
-118 5
-198 1
-124 57
-351 1
-181 1
-107 1
-183 1
-109 2
-186 1
-112 1
-188 1
-114 1
-190 1
-116 1
-192 1
-118 5
-198 1
-124 56
-350 1
-351 1
-182 1
-352 1
-184 2
-353 1
-187 1
-354 1
+109 1
+185 2
+112 2
 189 1
-355 1
-191 1
-356 1
-193 5
+115 1
+191 2
+118 1
+194 1
+120 1
+196 1
+122 54
+350 3
+179 2
+353 1
+182 1
+354 1
+184 1
+355 2
+187 2
 357 1
-199 51
-3 ka 23
+190 1
+358 2
+193 1
+360 1
+195 1
+361 1
+197 53
+(0, 122)
+3 ka 22
 Reading 3 ka 23 Reading disk block...
-Read error!
-(0, 199)
-New patches : 
-100 5
+Old patches : 
+100 1
+176 3
+104 2
 181 1
 107 1
 183 1
-109 2
-186 1
-112 1
-188 1
-114 1
-190 1
-116 1
-192 1
-118 5
-199 1
-125 74
-358 1
-199 1
-125 56
-351 1
-181 1
-107 1
-183 1
-109 2
-186 1
-112 1
-188 1
-114 1
-190 1
-116 1
-192 1
-118 5
-199 1
-125 74
-358 1
-199 1
-125 55
-350 1
-351 1
-182 1
-352 1
-184 2
-353 1
-187 1
-354 1
+109 1
+185 2
+112 2
 189 1
-355 1
-191 1
-356 1
-193 5
+115 1
+191 2
+118 1
+194 1
+120 1
+196 1
+122 54
+350 3
+179 2
+353 1
+182 1
+354 1
+184 1
+355 2
+187 2
 357 1
-358 1
-200 50
-3 ka 24
+190 1
+358 2
+193 1
+360 1
+195 1
+361 1
+197 53
+(0, 123)
+3 ka 23
 Reading 3 ka 24 Reading disk block...
-Read error!
-(1, 1)
-New patches : 
-100 5
+Old patches : 
+100 1
+176 3
+104 2
 181 1
 107 1
 183 1
-109 2
-186 1
-112 1
-188 1
-114 1
-190 1
-116 1
-192 1
-118 5
-199 1
-125 1
-201 1
-127 72
-358 1
-199 1
-125 1
-201 1
-127 54
-351 1
-181 1
-107 1
-183 1
-109 2
-186 1
-112 1
-188 1
-114 1
-190 1
-116 1
-192 1
-118 5
-199 1
-125 1
-201 1
-127 72
-358 1
-199 1
-125 1
-201 1
-127 53
-350 1
-351 1
-182 1
-352 1
-184 2
-353 1
-187 1
-354 1
+109 1
+185 2
+112 2
 189 1
-355 1
-191 1
-356 1
-193 5
+115 1
+191 2
+118 1
+194 1
+120 1
+196 1
+122 54
+350 3
+179 2
+353 1
+182 1
+354 1
+184 1
+355 2
+187 2
 357 1
-358 1
-200 1
-359 1
-202 48
-3 ka 26
+190 1
+358 2
+193 1
+360 1
+195 1
+361 1
+197 53
+(0, 124)
+3 ka 24
 Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
@@ -4993,32 +4821,32 @@ Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
 Data : 3 ka 0, Replica : 100
-Data : 3 ka 1, Replica : 101
-Data : 3 ka 2, Replica : 102
-Data : 3 ka 3, Replica : 103
+Data : 3 ka 1, Replica : 350
+Data : 3 ka 2, Replica : 351
+Data : 3 ka 3, Replica : 352
 Data : 3 ka 4, Replica : 104
-Data : 3 ka 5, Replica : 350
-Data : 3 ka 6, Replica : 351
+Data : 3 ka 5, Replica : 105
+Data : 3 ka 6, Replica : 353
 Data : 3 ka 7, Replica : 107
-Data : 3 ka 8, Replica : 352
+Data : 3 ka 8, Replica : 354
 Data : 3 ka 9, Replica : 109
-Data : 3 ka 10, Replica : 110
-Data : 3 ka 11, Replica : 353
+Data : 3 ka 10, Replica : 355
+Data : 3 ka 11, Replica : 356
 Data : 3 ka 12, Replica : 112
-Data : 3 ka 13, Replica : 354
-Data : 3 ka 14, Replica : 114
-Data : 3 ka 15, Replica : 355
-Data : 3 ka 16, Replica : 116
-Data : 3 ka 17, Replica : 356
+Data : 3 ka 13, Replica : 113
+Data : 3 ka 14, Replica : 357
+Data : 3 ka 15, Replica : 115
+Data : 3 ka 16, Replica : 358
+Data : 3 ka 17, Replica : 359
 Data : 3 ka 18, Replica : 118
-Data : 3 ka 19, Replica : 119
+Data : 3 ka 19, Replica : 360
 Data : 3 ka 20, Replica : 120
-Data : 3 ka 21, Replica : 121
+Data : 3 ka 21, Replica : 361
 Data : 3 ka 22, Replica : 122
-Data : 3 ka 23, Replica : 357
-Data : 3 ka 24, Replica : 358
+Data : 3 ka 23, Replica : 123
+Data : 3 ka 24, Replica : 124
 Data : 3 ka 25, Replica : 125
-Data : 3 ka 26, Replica : 359
+Data : 3 ka 26, Replica : 126
 Data : 3 ka 27, Replica : 127
 Data : 3 ka 28, Replica : 128
 Data : 3 ka 29, Replica : 129
@@ -5167,18 +4995,18 @@ Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
-Data : 3 ka 5, Replica : 180
+Data : 3 ka 1, Replica : 176
+Data : 3 ka 2, Replica : 177
+Data : 3 ka 3, Replica : 178
 Data : 3 ka 6, Replica : 181
 Data : 3 ka 8, Replica : 183
+Data : 3 ka 10, Replica : 185
 Data : 3 ka 11, Replica : 186
-Data : 3 ka 13, Replica : 188
-Data : 3 ka 15, Replica : 190
+Data : 3 ka 14, Replica : 189
+Data : 3 ka 16, Replica : 191
 Data : 3 ka 17, Replica : 192
-Data : 3 ka 23, Replica : 198
-Data : 3 ka 24, Replica : 199
-Data : 3 ka 26, Replica : 201
-Data : , Replica : -1
-Data : , Replica : -1
+Data : 3 ka 19, Replica : 194
+Data : 3 ka 21, Replica : 196
 Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
@@ -5319,202 +5147,120 @@ Data : , Replica : -1
 Data : , Replica : -1
 Reading 3 ka 25 Reading disk block...
 Old patches : 
-100 5
+100 1
+176 3
+104 2
 181 1
 107 1
 183 1
-109 2
-186 1
-112 1
-188 1
-114 1
-190 1
-116 1
-192 1
-118 5
-199 1
-125 1
-201 1
-127 72
-358 1
-199 1
-125 1
-201 1
-127 54
-351 1
-181 1
-107 1
-183 1
-109 2
-186 1
-112 1
-188 1
-114 1
-190 1
-116 1
-192 1
-118 5
-199 1
-125 1
-201 1
-127 72
-358 1
-199 1
-125 1
-201 1
-127 53
-350 1
-351 1
-182 1
-352 1
-184 2
-353 1
-187 1
-354 1
+109 1
+185 2
+112 2
 189 1
-355 1
-191 1
-356 1
-193 5
+115 1
+191 2
+118 1
+194 1
+120 1
+196 1
+122 54
+350 3
+179 2
+353 1
+182 1
+354 1
+184 1
+355 2
+187 2
 357 1
-358 1
-200 1
-359 1
-202 48
-(0, 127)
-3 ka 27
+190 1
+358 2
+193 1
+360 1
+195 1
+361 1
+197 53
+(0, 125)
+3 ka 25
 Reading 3 ka 26 Reading disk block...
 Old patches : 
-100 5
+100 1
+176 3
+104 2
 181 1
 107 1
 183 1
-109 2
-186 1
-112 1
-188 1
-114 1
-190 1
-116 1
-192 1
-118 5
-199 1
-125 1
-201 1
-127 72
-358 1
-199 1
-125 1
-201 1
-127 54
-351 1
-181 1
-107 1
-183 1
-109 2
-186 1
-112 1
-188 1
-114 1
-190 1
-116 1
-192 1
-118 5
-199 1
-125 1
-201 1
-127 72
-358 1
-199 1
-125 1
-201 1
-127 53
-350 1
-351 1
-182 1
-352 1
-184 2
-353 1
-187 1
-354 1
+109 1
+185 2
+112 2
 189 1
-355 1
-191 1
-356 1
-193 5
+115 1
+191 2
+118 1
+194 1
+120 1
+196 1
+122 54
+350 3
+179 2
+353 1
+182 1
+354 1
+184 1
+355 2
+187 2
 357 1
-358 1
-200 1
-359 1
-202 48
-(0, 128)
-3 ka 28
+190 1
+358 2
+193 1
+360 1
+195 1
+361 1
+197 53
+(0, 126)
+3 ka 26
 Reading 3 ka 27 Reading disk block...
-Old patches : 
-100 5
+Read error!
+(1, 2)
+New patches : 
+100 1
+176 3
+104 2
 181 1
 107 1
 183 1
-109 2
-186 1
-112 1
-188 1
-114 1
-190 1
-116 1
-192 1
-118 5
-199 1
-125 1
-201 1
-127 72
-358 1
-199 1
-125 1
-201 1
-127 54
-351 1
-181 1
-107 1
-183 1
-109 2
-186 1
-112 1
-188 1
-114 1
-190 1
-116 1
-192 1
-118 5
-199 1
-125 1
-201 1
-127 72
-358 1
-199 1
-125 1
-201 1
-127 53
-350 1
-351 1
-182 1
-352 1
-184 2
-353 1
-187 1
-354 1
+109 1
+185 2
+112 2
 189 1
-355 1
-191 1
-356 1
-193 5
+115 1
+191 2
+118 1
+194 1
+120 1
+196 1
+122 5
+202 1
+128 48
+350 3
+179 2
+353 1
+182 1
+354 1
+184 1
+355 2
+187 2
 357 1
-358 1
-200 1
-359 1
-202 48
-(0, 129)
-3 ka 29
+190 1
+358 2
+193 1
+360 1
+195 1
+361 1
+197 5
+362 1
+203 47
+3 ka 27
 Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
@@ -5691,33 +5437,33 @@ Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
 Data : 3 ka 0, Replica : 100
-Data : 3 ka 1, Replica : 101
-Data : 3 ka 2, Replica : 102
-Data : 3 ka 3, Replica : 103
+Data : 3 ka 1, Replica : 350
+Data : 3 ka 2, Replica : 351
+Data : 3 ka 3, Replica : 352
 Data : 3 ka 4, Replica : 104
-Data : 3 ka 5, Replica : 350
-Data : 3 ka 6, Replica : 351
+Data : 3 ka 5, Replica : 105
+Data : 3 ka 6, Replica : 353
 Data : 3 ka 7, Replica : 107
-Data : 3 ka 8, Replica : 352
+Data : 3 ka 8, Replica : 354
 Data : 3 ka 9, Replica : 109
-Data : 3 ka 10, Replica : 110
-Data : 3 ka 11, Replica : 353
+Data : 3 ka 10, Replica : 355
+Data : 3 ka 11, Replica : 356
 Data : 3 ka 12, Replica : 112
-Data : 3 ka 13, Replica : 354
-Data : 3 ka 14, Replica : 114
-Data : 3 ka 15, Replica : 355
-Data : 3 ka 16, Replica : 116
-Data : 3 ka 17, Replica : 356
+Data : 3 ka 13, Replica : 113
+Data : 3 ka 14, Replica : 357
+Data : 3 ka 15, Replica : 115
+Data : 3 ka 16, Replica : 358
+Data : 3 ka 17, Replica : 359
 Data : 3 ka 18, Replica : 118
-Data : 3 ka 19, Replica : 119
+Data : 3 ka 19, Replica : 360
 Data : 3 ka 20, Replica : 120
-Data : 3 ka 21, Replica : 121
+Data : 3 ka 21, Replica : 361
 Data : 3 ka 22, Replica : 122
-Data : 3 ka 23, Replica : 357
-Data : 3 ka 24, Replica : 358
+Data : 3 ka 23, Replica : 123
+Data : 3 ka 24, Replica : 124
 Data : 3 ka 25, Replica : 125
-Data : 3 ka 26, Replica : 359
-Data : 3 ka 27, Replica : 127
+Data : 3 ka 26, Replica : 126
+Data : 3 ka 27, Replica : 362
 Data : 3 ka 28, Replica : 128
 Data : 3 ka 29, Replica : 129
 Data : , Replica : -1
@@ -5865,19 +5611,19 @@ Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
-Data : 3 ka 5, Replica : 180
+Data : 3 ka 1, Replica : 176
+Data : 3 ka 2, Replica : 177
+Data : 3 ka 3, Replica : 178
 Data : 3 ka 6, Replica : 181
 Data : 3 ka 8, Replica : 183
+Data : 3 ka 10, Replica : 185
 Data : 3 ka 11, Replica : 186
-Data : 3 ka 13, Replica : 188
-Data : 3 ka 15, Replica : 190
+Data : 3 ka 14, Replica : 189
+Data : 3 ka 16, Replica : 191
 Data : 3 ka 17, Replica : 192
-Data : 3 ka 23, Replica : 198
-Data : 3 ka 24, Replica : 199
-Data : 3 ka 26, Replica : 201
-Data : , Replica : -1
-Data : , Replica : -1
-Data : , Replica : -1
+Data : 3 ka 19, Replica : 194
+Data : 3 ka 21, Replica : 196
+Data : 3 ka 27, Replica : 202
 Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
@@ -6017,69 +5763,88 @@ Data : , Replica : -1
 Data : , Replica : -1
 Reading 3 ka 28 Reading disk block...
 Old patches : 
-100 5
+100 1
+176 3
+104 2
 181 1
 107 1
 183 1
-109 2
-186 1
-112 1
-188 1
-114 1
-190 1
-116 1
-192 1
-118 5
-199 1
-125 1
-201 1
-127 72
-358 1
-199 1
-125 1
-201 1
-127 54
-351 1
-181 1
-107 1
-183 1
-109 2
-186 1
-112 1
-188 1
-114 1
-190 1
-116 1
-192 1
-118 5
-199 1
-125 1
-201 1
-127 72
-358 1
-199 1
-125 1
-201 1
-127 53
-350 1
-351 1
-182 1
-352 1
-184 2
-353 1
-187 1
-354 1
+109 1
+185 2
+112 2
 189 1
-355 1
-191 1
-356 1
-193 5
+115 1
+191 2
+118 1
+194 1
+120 1
+196 1
+122 5
+202 1
+128 48
+350 3
+179 2
+353 1
+182 1
+354 1
+184 1
+355 2
+187 2
 357 1
-358 1
-200 1
-359 1
-202 48
-(0, 130)
-
+190 1
+358 2
+193 1
+360 1
+195 1
+361 1
+197 5
+362 1
+203 47
+(0, 128)
+3 ka 28
 Reading 3 ka 29 Reading disk block...
 Read error!
+(1, 4)
+New patches : 
+100 1
+176 3
+104 2
+181 1
+107 1
+183 1
+109 1
+185 2
+112 2
+189 1
+115 1
+191 2
+118 1
+194 1
+120 1
+196 1
+122 5
+202 1
+128 1
+204 1
+130 46
+350 3
+179 2
+353 1
+182 1
+354 1
+184 1
+355 2
+187 2
+357 1
+190 1
+358 2
+193 1
+360 1
+195 1
+361 1
+197 5
+362 1
+203 1
+363 1
+205 45
+3 ka 29
