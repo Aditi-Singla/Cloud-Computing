@@ -25,11 +25,6 @@ class Patch:
 		self.blockNo = block
 		self.num = n
 
-	def __init__(self,p):
-		self.blockNo = p.blockNo
-		self.num = p.num
-
-
 sizeA = 200
 sizeB = 300
 virtualDiskSize = sizeA + sizeB
@@ -75,7 +70,10 @@ def setBlockReplica(block_no, replica_block_no_virt):
 	disks[virtualToPhy[block_no][0]][virtualToPhy[block_no][1]].replica = replica_block_no_virt
 
 def printDisks():
+	count = 0
 	for i in disks:
+		print "\nDisk No. " + str(count)
+		count += 1
 		for j in i:
 			print "Data : " + j.blockData + ", Replica : " + str(j.replica)
 

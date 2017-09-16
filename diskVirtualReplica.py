@@ -21,7 +21,7 @@ def createPatch(id, num_blocks):
 	l = [(n,i) for n,i in enumerate(diskPhysical.unoccupied) if i.num >= num_blocks]
 	
 	if (len(l)==0):
-		p = diskPhysical.Patch(diskPhysical.unoccupied[-1])
+		p = diskPhysical.Patch(diskPhysical.unoccupied[-1].blockNo, diskPhysical.unoccupied[-1].num)
 		(disk.patches).append(p)
 		diskPhysical.unoccupied.pop()
 		diskPhysical.usedBlocks += p.num 

@@ -9,18 +9,19 @@ def readBlock(block_no):
 
 def createDisk(id, num_blocks):
 	if (diskPhysical.virtualDiskSize - diskPhysical.usedBlocks < num_blocks) or diskPhysical.diskMap.has_key(id):
-		return "Error : Either not enough space or disk id already there"
+		raise Exception("Error : Either not enough space or disk id already there")
 	else:
 		createPatch(id, num_blocks)
 
 def createPatch(id, num_blocks):
 	if not diskPhysical.diskMap.has_key(id):
 		diskPhysical.diskMap[id] = diskPhysical.Disk(id, num_blocks)
+	
 	disk = diskPhysical.diskMap[id]
-	# disk = diskMap[id] if (diskMap.has_key(id)) else Disk(id, num_blocks)
 	l = [(n,i) for n,i in enumerate(diskPhysical.unoccupied) if i.num >= num_blocks]
+	
 	if (len(l)==0):
-		p = Patch(diskPhysical.unoccupied[-1])
+		p = diskPhysical.Patch(diskPhysical.unoccupied[-1].blockNo, diskPhysical.unoccupied[-1].num)
 		(disk.patches).append(p)
 		diskPhysical.unoccupied.pop()
 		diskPhysical.usedBlocks += p.num 
@@ -52,10 +53,12 @@ def getVirtualDiskNo(diskPatches, block_no):
 
 def readDiskBlock(id, block_no):
 	if not diskPhysical.diskMap.has_key(id):
-		raise "Error : Invalid disk id"
+		raise Exception("Error : Invalid disk id")
+	
 	disk = diskPhysical.diskMap[id]
 	if disk.numBlocks < block_no+1:
-		raise "Error : Invalid block number"
+		raise Exception("Error : Invalid block number")
+	
 	disk.commandList.append(("readDiskBlock", block_no))
 	print "Reading disk block..."
 	# path no known.
@@ -64,11 +67,13 @@ def readDiskBlock(id, block_no):
 
 def writeDiskBlock(id, block_no, write_data):
 	if not diskPhysical.diskMap.has_key(id):
-		raise "Error : Invalid disk id"
+		raise Exception("Error : Invalid disk id")
+
 	disk = diskPhysical.diskMap[id]
 	disk.commandList.append(("writeDiskBlock", block_no, write_data))
 	if disk.numBlocks < block_no+1:
-		raise "Error : Invalid block number"
+		raise Exception("Error : Invalid block number")
+	
 	print "Finding disk block..."
 	print "Virtual disk no : ", getVirtualDiskNo(disk.patches, block_no)
 	diskPhysical.writePhysicalBlock(getVirtualDiskNo(disk.patches, block_no), write_data)
@@ -76,7 +81,8 @@ def writeDiskBlock(id, block_no, write_data):
 
 def deleteDisk(id):
 	if not diskPhysical.diskMap.has_key(id):
-		raise "Error : Invalid disk id"
+		raise Exception("Error : Invalid disk id")
+
 	disk = diskPhysical.diskMap[id]
 	unoccupied = diskPhysical.unoccupied + disk.patches
 	unoccupied_sorted_index = sorted(unoccupied, key=lambda x: x.blockNo)
@@ -84,7 +90,7 @@ def deleteDisk(id):
 	diskPhysical.unoccupied = sorted(unoccupied_new, key=lambda x: x.num)
 	diskPhysical.usedBlocks -= disk.numBlocks
 	diskPhysical.diskMap.pop(id)
-	print "Deleted disk!"
+	print "Deleted disk..."
 
 def checkPoint(disk_id):
 	disk = diskPhysical.diskMap[disk_id]
@@ -92,14 +98,14 @@ def checkPoint(disk_id):
 	return len(disk.checkPointMap)-1
 
 def rollBack(disk_id, checkpoint_id):
-	# save checkpoint tk command List
+	# save checkpoint to command List
 	if not diskPhysical.diskMap.has_key(disk_id):
-		raise "Error : Invalid disk id"
+		raise Exception("Error : Invalid disk id")
+	
 	disk = diskPhysical.diskMap[disk_id]
-	print "Checkpoint id : ", checkpoint_id
 	checkpoints = disk.checkPointMap[:(checkpoint_id)] # excluding the current one
 	commands = disk.commandList[:(disk.checkPointMap[checkpoint_id])]
-	print disk.checkPointMap
+	
 	# delete disk from diskMap
 	deleteDisk(disk_id)
 	# create new disk, exec all cmds
