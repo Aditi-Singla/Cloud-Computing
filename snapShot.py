@@ -20,7 +20,7 @@ def createPatch(id, num_blocks):
 	# disk = diskMap[id] if (diskMap.has_key(id)) else Disk(id, num_blocks)
 	l = [(n,i) for n,i in enumerate(diskPhysical.unoccupied) if i.num >= num_blocks]
 	if (len(l)==0):
-		p = diskPhysical.unoccupied[-1]
+		p = Patch(diskPhysical.unoccupied[-1])
 		(disk.patches).append(p)
 		diskPhysical.unoccupied.pop()
 		diskPhysical.usedBlocks += p.num 
@@ -95,8 +95,24 @@ def rollBack(disk_id, checkpoint_id):
 	# save checkpoint tk command List
 	if not diskPhysical.diskMap.has_key(disk_id):
 		raise "Error : Invalid disk id"
-	disk = diskPhysical.diskMap[id]
-	checkpoints = disk.checkPointMap[:checkpoint_id] # excluding the current one
+	disk = diskPhysical.diskMap[disk_id]
+	print "Checkpoint id : ", checkpoint_id
+	checkpoints = disk.checkPointMap[:(checkpoint_id)] # excluding the current one
 	commands = disk.commandList[:(disk.checkPointMap[checkpoint_id])]
+	print disk.checkPointMap
 	# delete disk from diskMap
+	deleteDisk(disk_id)
 	# create new disk, exec all cmds
+	for cmd in commands:
+		if cmd[0] == "createDisk":
+			createDisk(cmd[1], cmd[2])
+			disk = diskPhysical.diskMap[disk_id]
+		elif cmd[0] == "readDiskBlock":
+			x = readDiskBlock(disk_id, cmd[1])
+		else:
+			writeDiskBlock(disk_id, cmd[1], cmd[2])
+	disk.checkPointMap = checkpoints
+	disk.commandList = commands
+
+	print disk.commandList
+	print disk.checkPointMap

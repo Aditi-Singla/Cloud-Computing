@@ -15,6 +15,7 @@ class Disk:
 		self.numBlocks = n
 		self.patches = []
 		self.commandList = [("createDisk", idname, n)]
+		self.checkPointMap = []
 
 class Patch:
 	blockNo = 0
@@ -23,6 +24,10 @@ class Patch:
 	def __init__(self,block,n):
 		self.blockNo = block
 		self.num = n
+
+	def __init__(self,p):
+		self.blockNo = p.blockNo
+		self.num = p.num
 
 
 sizeA = 200
