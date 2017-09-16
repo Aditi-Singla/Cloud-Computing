@@ -49,6 +49,8 @@ def getVirtualDiskNo(diskPatches, block_no):
 	return diskPatches[i].blockNo + block_no - total_blocks
 
 def readDiskBlock(id, block_no):
+	if not diskPhysical.diskMap.has_key(id):
+		raise "Error : Invalid disk id"
 	disk = diskPhysical.diskMap[id]
 	if disk.numBlocks < block_no+1:
 		raise "Error : Invalid block number"
@@ -58,6 +60,8 @@ def readDiskBlock(id, block_no):
 	return diskPhysical.readPhysicalBlock(getVirtualDiskNo(disk.patches, block_no))
 
 def writeDiskBlock(id, block_no, write_data):
+	if not diskPhysical.diskMap.has_key(id):
+		raise "Error : Invalid disk id"
 	disk = diskPhysical.diskMap[id]
 	if disk.numBlocks < block_no+1:
 		raise "Error : Invalid block number"
