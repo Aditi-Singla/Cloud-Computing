@@ -43,19 +43,6 @@ for i in xrange(0,len(disks)):
 		virtualToPhy[total_blocks + j] = (i, j)
 	total_blocks += len(disks[i])
 
-def initialize():
-	sizeA = 200
-	sizeB = 300
-	virtualDiskSize = sizeA + sizeB
-	diskA = [Block() for i in xrange(sizeA)]
-	diskB = [Block() for i in xrange(sizeB)]
-	disks = [diskA, diskB]
-	usedBlocks = 0
-	diskMap = {}
-	p = Patch(0,virtualDiskSize)
-	unoccupied = [p]
-	virtualToPhy = {}
-
 def writePhysicalBlock(block_no, write_data):
 	disks[virtualToPhy[block_no][0]][virtualToPhy[block_no][1]].blockData = write_data
 
