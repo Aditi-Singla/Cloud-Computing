@@ -62,7 +62,7 @@ def readDiskBlock(id, block_no):
 	disk.commandList.append(("readDiskBlock", block_no))
 	# random no in 1 to 100.
 	print "Reading disk block..."
-	if random.randint(1, 100) < 50:
+	if random.randint(1, 100) < 10:
 		# assuming replica always exists : ERROR?
 		print "Read error!"
 		if (len(diskPhysical.unoccupied)==0):

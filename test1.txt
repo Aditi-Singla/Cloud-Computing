@@ -5,6 +5,8 @@ Written disk block...
 Finding disk block...
 Virtual disk no :  110
 Written disk block...
+
+Disk No. 0
 Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
@@ -205,6 +207,8 @@ Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
+
+Disk No. 1
 Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
@@ -518,8 +522,10 @@ None
 Reading disk 1 :  Reading disk block...
 Virtual disk no :  5
 Six
-Deleting disk 2 :  Deleted disk!
+Deleting disk 2 :  Deleted disk...
 None
+
+Disk No. 0
 Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
@@ -720,6 +726,8 @@ Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
+
+Disk No. 1
 Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
@@ -1020,8 +1028,10 @@ Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
-Deleting disk 1 :  Deleted disk!
+Deleting disk 1 :  Deleted disk...
 None
+
+Disk No. 0
 Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
@@ -1222,6 +1232,8 @@ Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1
+
+Disk No. 1
 Data : , Replica : -1
 Data : , Replica : -1
 Data : , Replica : -1

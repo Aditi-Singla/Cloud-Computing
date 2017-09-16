@@ -2,7 +2,6 @@ import diskPhysical
 from diskVirtual import *
 
 def BasicTest():
-    diskPhysical.initialize()
     createDisk(1, 100)
     createDisk(2, 200)
     writeDiskBlock(1, 5, "Five")
@@ -18,7 +17,6 @@ def BasicTest():
     diskPhysical.printDisks()
 
 def FragmentationTest1():
-    diskPhysical.initialize()
     createDisk(1, 50)
     createDisk(2, 50)
     createDisk(3, 160)
@@ -33,7 +31,6 @@ def FragmentationTest1():
     diskPhysical.printDisks()
 
 def FragmentationTest2():
-    diskPhysical.initialize()
     createDisk(1, 50)
     createDisk(2, 50)
     createDisk(3, 150)
