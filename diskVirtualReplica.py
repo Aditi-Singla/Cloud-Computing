@@ -23,7 +23,7 @@ def createPatch(id, num_blocks):
 		p = diskPhysical.unoccupied[-1]
 		(disk.patches).append(p)
 		diskPhysical.unoccupied.pop()
-		diskPhysical.usedBlocks = usedBlocks + p.num 
+		diskPhysical.usedBlocks += p.num 
 		createPatch(id,num_blocks-p.num)
 	else:
 		index = (l[0])[0]
