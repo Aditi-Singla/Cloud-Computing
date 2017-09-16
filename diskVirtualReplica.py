@@ -29,17 +29,19 @@ def createPatch(id, num_blocks):
 		createPatch(id,num_blocks-p.num)
 	else:
 		index = (l[0])[0]
-		obj = (l[0])[1]
-		(disk.patches).append(diskPhysical.Patch(obj.blockNo,num_blocks))
-		if (obj.num == num_blocks):
+		objBlockNo = (l[0])[1].blockNo
+		objNum = (l[0])[1].num
+		(disk.patches).append(diskPhysical.Patch(objBlockNo,num_blocks))
+		if (objNum == num_blocks):
 			diskPhysical.unoccupied.pop(index)
 		else:
-			currentvalue = obj.num - num_blocks
+			currentvalue = objNum - num_blocks
 			while index > 0 and diskPhysical.unoccupied[index-1].num > currentvalue:
-				diskPhysical.unoccupied[index] = diskPhysical.unoccupied[index-1]
+				diskPhysical.unoccupied[index].blockNo = diskPhysical.unoccupied[index-1].blockNo
+				diskPhysical.unoccupied[index].num = diskPhysical.unoccupied[index-1].num
 				index -= 1
-			diskPhysical.unoccupied[index].blockNo = obj.blockNo + num_blocks
-			diskPhysical.unoccupied[index].num = currentvalue	
+			diskPhysical.unoccupied[index].blockNo = objBlockNo + num_blocks
+			diskPhysical.unoccupied[index].num = currentvalue
 		diskPhysical.usedBlocks += num_blocks
 
 def getVirtualDiskNo(diskPatches, block_no):
@@ -157,7 +159,9 @@ def deleteDisk(id):
 		raise "Error : Invalid disk id"
 	disk = diskPhysical.diskMap[id]
 	unoccupied = diskPhysical.unoccupied + disk.patches
+	diskPhysical.printPatchList(unoccupied)
 	unoccupied_sorted_index = sorted(unoccupied, key=lambda x: x.blockNo)
+	diskPhysical.printPatchList(unoccupied_sorted_index)
 	# unoccupied_new = []
 	# current_patch = unoccupied_sorted_index[0]
 	# for i in xrange(1,len(unoccupied_sorted_index)):
