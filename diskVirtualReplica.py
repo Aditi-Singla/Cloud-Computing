@@ -146,16 +146,17 @@ def writeDiskBlock(id, block_no, write_data):
 	print "Finding disk block..."
 	virtual_block_no = getVirtualDiskNo(disk.patches, block_no)
 	diskPhysical.writePhysicalBlock(virtual_block_no, write_data)
-	if diskPhysical.getBlockReplica(virtual_block_no) == -1:
-		delta = disk.numBlocks/2
-		block_replica_disk = (block_no + delta) if block_no < delta else (block_no - delta)
-		virtual_replica_block_no = getVirtualDiskNo(disk.patches, block_replica_disk)
+	delta = disk.numBlocks/2
+	block_replica_disk = (block_no + delta) if block_no < delta else (block_no - delta)
+	virtual_replica_block_no = getVirtualDiskNo(disk.patches, block_replica_disk)
+	curr_replica = diskPhysical.getBlockReplica(virtual_block_no)
+	if curr_replica == -1 or curr_replica != virtual_replica_block_no:
 		diskPhysical.setBlockReplica(virtual_block_no, virtual_replica_block_no)
 		diskPhysical.setBlockReplica(virtual_replica_block_no, virtual_block_no)
-	
+
 	print "Virtual replica block no : ", str(diskPhysical.getBlockReplica(virtual_block_no))
 	diskPhysical.writePhysicalBlock(diskPhysical.getBlockReplica(virtual_block_no), write_data)
-	print "Written disk block..."	
+	print "Written disk block..."
 
 def deleteDisk(id):
 	if not diskPhysical.diskMap.has_key(id):

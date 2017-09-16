@@ -70,9 +70,9 @@ def writeDiskBlock(id, block_no, write_data):
 		raise Exception("Error : Invalid disk id")
 
 	disk = diskPhysical.diskMap[id]
-	disk.commandList.append(("writeDiskBlock", block_no, write_data))
 	if disk.numBlocks < block_no+1:
 		raise Exception("Error : Invalid block number")
+	disk.commandList.append(("writeDiskBlock", block_no, write_data))
 	
 	print "Finding disk block..."
 	print "Virtual disk no : ", getVirtualDiskNo(disk.patches, block_no)
