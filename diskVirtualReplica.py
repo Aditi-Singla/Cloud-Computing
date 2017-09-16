@@ -87,7 +87,6 @@ def readDiskBlock(id, block_no):
 			newOriginal = diskPhysical.Patch(virt_replica, 1)
 			newReplica = diskPhysical.Patch(virt_new_replica,1)
 			for p in disk.patches:
-				# TODO : CASE WHEN BLOCK 5 ME ERROR, THEN, BLOCK  ME ERROR.
 				# if ((virt_replica < p.blockNo and virt_original < p.blockNo) or (virt_original > (p.blockNo+p.num) and virt_replica > (p.blockNo+p.num))):
 				if ((virt_replica < p.blockNo or virt_replica >= (p.blockNo + p.num)) and (virt_original < p.blockNo or virt_original >= (p.blockNo + p.num))):
 					patches_new.append(p)
@@ -159,20 +158,7 @@ def deleteDisk(id):
 		raise "Error : Invalid disk id"
 	disk = diskPhysical.diskMap[id]
 	unoccupied = diskPhysical.unoccupied + disk.patches
-	diskPhysical.printPatchList(unoccupied)
 	unoccupied_sorted_index = sorted(unoccupied, key=lambda x: x.blockNo)
-	diskPhysical.printPatchList(unoccupied_sorted_index)
-	# unoccupied_new = []
-	# current_patch = unoccupied_sorted_index[0]
-	# for i in xrange(1,len(unoccupied_sorted_index)):
-	# 	p = unoccupied_sorted_index[i]
-	# 	if p.blockNo == current_patch.blockNo + current_patch.num:
-	# 		current_patch.num += p.num
-	# 	else:
-	# 		unoccupied_new.append(current_patch)
-	# 		current_patch = p
-	# unoccupied_new.append(current_patch)
-	# unoccupied = unoccupied_new
 	unoccupied = diskPhysical.mergePatches(unoccupied_sorted_index)
 	diskPhysical.unoccupied = sorted(unoccupied, key=lambda x: x.num)
 	diskPhysical.usedBlocks -= disk.numBlocks

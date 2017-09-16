@@ -16,7 +16,6 @@ def createPatch(id, num_blocks):
 	if not diskPhysical.diskMap.has_key(id):
 		diskPhysical.diskMap[id] = diskPhysical.Disk(id, num_blocks)
 	disk = diskPhysical.diskMap[id]
-	# disk = diskMap[id] if (diskMap.has_key(id)) else Disk(id, num_blocks)
 	l = [(n,i) for n,i in enumerate(diskPhysical.unoccupied) if i.num >= num_blocks]
 	if (len(l)==0):
 		p = diskPhysical.unoccupied[-1]
