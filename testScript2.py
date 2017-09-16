@@ -19,7 +19,11 @@ def ReplicationTest():
 			diskPhysical.printDisks()
 
 	deleteDisk(2)
+	print diskPhysical.printPatchList(diskPhysical.unoccupied)
+
 	createDisk(5,100)
+	print diskPhysical.printPatchList(diskPhysical.unoccupied)
+	
 	
 	for i in xrange(0, 30):
 		writeDiskBlock(5, i, "5 ka " + str(i))
@@ -30,9 +34,13 @@ def ReplicationTest():
 		print "Reading 5 ka " + str(i), readDiskBlock(5, i)
 		if (i%3 == 0):
 			diskPhysical.printDisks()
+			print diskPhysical.printPatchList(diskPhysical.unoccupied)
 
 
-	createDisk(6,70)
+	print diskPhysical.usedBlocks
+	print diskPhysical.printPatchList(diskPhysical.unoccupied)
+
+	createDisk(6,55)
 	
 	for i in xrange(0, 20):
 		writeDiskBlock(6, i, "6 ka " + str(i))

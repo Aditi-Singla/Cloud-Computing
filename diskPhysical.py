@@ -70,3 +70,7 @@ def printDisks():
 	for i in disks:
 		for j in i:
 			print "Data : " + j.blockData + ", Replica : " + str(j.replica)
+
+def printPatchList(plist):
+	for p in plist:
+		print "Block no : " + str(p.blockNo) + ", num : " + str(p.num)
