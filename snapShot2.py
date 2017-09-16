@@ -59,6 +59,7 @@ def readDiskBlock(id, block_no):
 	if disk.numBlocks < block_no+1:
 		raise Exception("Error : Invalid block number")
 	
+	disk.commandList.append(("readDiskBlock", block_no))
 	# random no in 1 to 100.
 	print "Reading disk block..."
 	if random.randint(1, 100) < 50:
@@ -142,7 +143,7 @@ def writeDiskBlock(id, block_no, write_data):
 	disk = diskPhysical.diskMap[id]
 	if disk.numBlocks < block_no+1:
 		raise Exception("Error : Invalid block number")
-
+	disk.commandList.append(("writeDiskBlock", block_no, write_data))
 	print "Finding disk block..."
 	virtual_block_no = getVirtualDiskNo(disk.patches, block_no)
 	diskPhysical.writePhysicalBlock(virtual_block_no, write_data)
@@ -170,3 +171,34 @@ def deleteDisk(id):
 	diskPhysical.usedBlocks -= disk.numBlocks
 	diskPhysical.diskMap.pop(id)
 	print "Deleted disk..."
+
+def checkPoint(disk_id):
+	disk = diskPhysical.diskMap[disk_id]
+	disk.checkPointMap.append(len(disk.commandList))
+	return len(disk.checkPointMap)-1
+
+def rollBack(disk_id, checkpoint_id):
+	# save checkpoint to command List
+	if not diskPhysical.diskMap.has_key(disk_id):
+		raise Exception("Error : Invalid disk id")
+	
+	disk = diskPhysical.diskMap[disk_id]
+	checkpoints = disk.checkPointMap[:(checkpoint_id)] # excluding the current one
+	commands = disk.commandList[:(disk.checkPointMap[checkpoint_id])]
+	
+	# delete disk from diskMap
+	deleteDisk(disk_id)
+	# create new disk, exec all cmds
+	for cmd in commands:
+		if cmd[0] == "createDisk":
+			createDisk(cmd[1], cmd[2])
+			disk = diskPhysical.diskMap[disk_id]
+		elif cmd[0] == "readDiskBlock":
+			x = readDiskBlock(disk_id, cmd[1])
+		else:
+			writeDiskBlock(disk_id, cmd[1], cmd[2])
+	disk.checkPointMap = checkpoints
+	disk.commandList = commands
+
+	print disk.commandList
+	print disk.checkPointMap
