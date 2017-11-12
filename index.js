@@ -12,7 +12,6 @@ app.get('/',function(req,res){
 
      res.render('./code/index.html');
 
-
 });
 
 app.listen(port);
