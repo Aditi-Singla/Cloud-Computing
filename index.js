@@ -2,13 +2,23 @@ var express = require('express');
 var assert = require('assert');
 var crypto = require('crypto');
 var jwt = require("jsonwebtoken");
+var bodyParser = require('body-parser');
+
+var secret = "aditicubecloudInstaBooksAzureApp";
 
 var app = express();
 
 var port = process.env.PORT || 3000;
 
+app.use(bodyParser.urlencoded({
+  extended: true
+}))
+
+app.use(bodyParser.json())
+
 app.use(express.static(__dirname + '/code'));
 
+app.set('superSecret',secret);
 // app.get('/',function(req,res){
 
 //     console.log('hello from server');
@@ -67,7 +77,8 @@ mongoClient.connect(dbUrl, function(err, db) {
 
 	// API for authenticating a user
 	apiRoutes.post('/login_user', function(req, res) {
-		var userName = req.body.user_name;
+		// console.log(req);
+		var userName = req.body.username;
 		var passwd = crypto.createHash('sha1').update(req.body.password).digest('hex');
 
 		allUsers.find({"user_name" : userName, "password" : passwd}).toArray(function (err, result) {
@@ -87,10 +98,10 @@ mongoClient.connect(dbUrl, function(err, db) {
 					"user_name" : result[0].user_name,
 					"followers" : result[0].followers,
 					"following" : result[0].following,
-				})
+				});
 			}
 		})
-	})
+	});
 
 	// API for creating new user (get just for now)
 	apiRoutes.get('/register', function(req, res) {
@@ -106,10 +117,10 @@ mongoClient.connect(dbUrl, function(err, db) {
 			console.log(result);
 		})
 
-		res.send({"x" : "blah" , "y" : "abc"})
-	})
+		res.send({"x" : "blah" , "y" : "abc"});
+	});
 
-
+	app.use('/api', apiRoutes);
 
 	// addUser(db, function() {
 	// 	db.close();

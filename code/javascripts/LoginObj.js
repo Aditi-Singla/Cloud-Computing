@@ -77,7 +77,7 @@ function LoginObj()
 				//Pass the input to the server here
 				$.post(server_url+"/login_user",
 			    {
-			        user_name: uname,
+			        username: uname,
 			        password: passw
 			    },
 			    function(data, status){
