@@ -104,7 +104,7 @@ function SignupObj()
 			var emailid = $("#EmailIdInput").val();
 			var passw = $("#PasswordInput").val();
 			var pp = $("#ProfilePicInput").val();
-			if (uname != "" && passw != "" && dob != "" && gender != "" && emailid != "" && pp != "")
+			if (uname != "" && passw != "" && dob1 != "" && gender1 != "" && emailid != "" && pp != "")
 			{
 				//Pass the input to the server here
 				$.post(server_url+"/register",

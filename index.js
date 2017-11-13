@@ -109,9 +109,9 @@ mongoClient.connect(dbUrl, function(err, db) {
 				"gender" : req.body.gender,
 				"name" : req.body.name,
 				"pic_link" : req.body.pic_link
-			}
+			},
 			"user_name" : req.body.user_name,
-			"password" : crypto.createHash('sha1').update(req.query.password).digest('hex'),
+			"password" : crypto.createHash('sha1').update(req.body.password).digest('hex'),
 			"following" : [],
 			"followers" : [],
 			"posts" : []
@@ -120,20 +120,22 @@ mongoClient.connect(dbUrl, function(err, db) {
 		allUsers.find({"user_name" : req.body.user_name}).toArray(function (err, result) {
 			if (err)
 				res.send({"success" : false, "message" : "Error processing Request"})
-			else if (result.length > 0):
+			else if (result.length > 0)
 				res.send({"success" : false, "message" : "Email Id already exists"})
 			else
 			{
 				// token needed for session maintainance
-				var token = jwt.sign(result[0], app.get('superSecret'), {
-				});
 				allUsers.insertOne(newUser, function(err, result) {
 					if (err)
 						res.send({"success" : false, "message" : "Error adding user"})
 					else
 					{
+						var response = {"success" : true, "message" : result}
+						var token = jwt.sign(response, app.get('superSecret'), {
+						});
 						console.log(result);
-						res.send({"success" : true, "token" : token, "message" : result});
+						response["token"] = token;
+						res.send(response);
 					}
 				})
 			}
@@ -176,7 +178,7 @@ mongoClient.connect(dbUrl, function(err, db) {
 		allUsers.find({"user_name" : req.body.user_name}).toArray(function (err, result) {
 			if (err)
 				res.send({"success" : false, "message" : "Error processing Request"})
-			else if (result.length == 0):
+			else if (result.length == 0)
 				res.send({"success" : false, "message" : "User not found"})
 			else
 			{
@@ -210,8 +212,9 @@ mongoClient.connect(dbUrl, function(err, db) {
 
 	// // API for getting list of all users whom a user is not following
 	// apiRoutes.get('/get_user_list', function(req, res) {
-		
+		// allUsers.find().toArray()
 	// })
+
 	app.use('/api', apiRoutes);
 
 });

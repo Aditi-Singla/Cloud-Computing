@@ -16,7 +16,7 @@ function AccountPageOne()
 
 	this.edit = function()
 	{
-		document.getElementById( "WelcomeName_Div"+Object.Index+"" ).innerHTML = "Welcome: "+Object.AssociatedData.user_name+" ";
+		document.getElementById( "WelcomeName_Div"+Object.Index+"" ).innerHTML = "Welcome: "+Object.AssociatedData.profile.name+" ";
 	}
 
 	// Initialization
