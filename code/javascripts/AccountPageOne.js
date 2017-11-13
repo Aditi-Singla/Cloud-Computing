@@ -31,7 +31,7 @@ function AccountPageOne()
 		this.Height = Height;
 		this.Opacity = Opacity;
 		this.AssociatedData = AssociatedData;
-
+		console.log(AssociatedData);
 		this.Render();
 
 	}
@@ -45,8 +45,7 @@ function AccountPageOne()
 					"<div id='AccountPage"+Object.Index+"' style='position: absolute; top: "+Object.Top+"%; left: "+Object.Left+"%; height: "+Object.Height+"%; width: "+Object.Width+"%; opacity: "+Object.Opacity+"; border: 0px solid #000000; border-radius: 0px 0px 0px 0px; overflow: hidden;'></div>";
 	
 		$( "#"+Object.Parent+"" ).append(Object.AccountPageDiv);
-		// $( "#"+"AccountPage"+Object.Index+"" ).css({"background": "url('./bkgacct1.jpg')"});
-
+		
 		Object.FunctionDiv = 	
 					"<div id='Function_Div"+Object.Index+"' style='position: absolute; top: 40px; left: 0px; bottom: 0px; width: 25%; opacity: "+Object.Opacity+"; border: 2px solid rgb(0,0,255);background-color:#AFC9FA; border-radius: 0px 0px 0px 0px; overflow: hidden;'></div>";
 
@@ -83,7 +82,7 @@ function AccountPageOne()
 		$( "#Function_Div"+Object.Index+"" ).append(Object.ListComplaintsButton);
 		$( "#ListComplaintsButton" ).css( {"position":"absolute","top":"70%","left":"20%", "width":"60%" , "height":"20%", "font-size":"1.2em", "font-weight": "semibold","color":"#FFFFFF","background-color":"#276FF5","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"0px", "padding-right":"0px", "box-shadow":"2px 2px 5px #888888", "text-align":"center"});
 		
-	// Begin Event Handlers
+		// Event Handlers
 	
 		$( "#AddUserButton" ).on('mouseover',function(){ $( this ).css( {"background-color": "#0B197D","border":"1px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #333333"}); });
 		$( "#AddUserButton" ).on('mouseout',function(){ $( this ).css( {"background-color": "#276FF5","border":"0px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #999999"}); });
