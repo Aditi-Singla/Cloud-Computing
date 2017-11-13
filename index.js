@@ -3,6 +3,7 @@ var assert = require('assert');
 var crypto = require('crypto');
 var jwt = require("jsonwebtoken");
 var bodyParser = require('body-parser');
+var azure = require('azure-storage');
 
 var secret = "aditicubecloudInstaBooksAzureApp";
 
@@ -103,7 +104,7 @@ mongoClient.connect(dbUrl, function(err, db) {
 
 	// API for creating new user (get just for now)
 	apiRoutes.post('/register', function(req, res) {
-		var newUser = {
+		var new_user = {
 			"profile" : {
 				"dob" : req.body.dob,
 				"gender" : req.body.gender,
@@ -125,7 +126,7 @@ mongoClient.connect(dbUrl, function(err, db) {
 			else
 			{
 				// token needed for session maintainance
-				allUsers.insertOne(newUser, function(err, result) {
+				allUsers.insertOne(new_user, function(err, result) {
 					if (err)
 						res.send({"success" : false, "message" : "Error adding user"})
 					else
@@ -142,40 +143,39 @@ mongoClient.connect(dbUrl, function(err, db) {
 		})
 	});
 
-
 	// All further APIs need to send a token with them.
-	apiRoutes.use(function(req, res, next) {
-		// check header or url parameters or post parameters for token
-		var token = req.body.token || req.query.token || req.headers['x-access-token'];
-		// decode token
-		if (token)
-		{
-			// verifies secret and checks exp
-			jwt.verify(token, app.get('superSecret'), function(err, decoded) {      
-				if (err)
-					return res.json({ success: false, message: 'Failed to authenticate token.' });    
-				else
-				{
-					// if everything is good, save to request for use in other routes
-					req.decoded = decoded;    
-					next();
-				}
-			});
-		}
-		else
-		{
-			// if there is no token, return an error
-			return res.status(403).send({ 
-				success: false, 
-				message: 'No token provided.' 
-			});
-		}
-	});
+	// apiRoutes.use(function(req, res, next) {
+	// 	// check header or url parameters or post parameters for token
+	// 	var token = req.body.token || req.query.token || req.headers['x-access-token'];
+	// 	// decode token
+	// 	if (token)
+	// 	{
+	// 		// verifies secret and checks exp
+	// 		jwt.verify(token, app.get('superSecret'), function(err, decoded) {      
+	// 			if (err)
+	// 				return res.json({ success: false, message: 'Failed to authenticate token.' });    
+	// 			else
+	// 			{
+	// 				// if everything is good, save to request for use in other routes
+	// 				req.decoded = decoded;    
+	// 				next();
+	// 			}
+	// 		});
+	// 	}
+	// 	else
+	// 	{
+	// 		// if there is no token, return an error
+	// 		return res.status(403).send({ 
+	// 			success: false, 
+	// 			message: 'No token provided.' 
+	// 		});
+	// 	}
+	// });
 
 
 	// API for getting a particular user's info.
 	apiRoutes.get('/get_user_info', function(req, res) {
-		allUsers.find({"user_name" : req.body.user_name}).toArray(function (err, result) {
+		allUsers.find({"user_name" : req.query.user_name}).toArray(function (err, result) {
 			if (err)
 				res.send({"success" : false, "message" : "Error processing Request"})
 			else if (result.length == 0)
@@ -193,27 +193,69 @@ mongoClient.connect(dbUrl, function(err, db) {
 		})
 	})
 
-	// // API for adding a post
-	// apiRoutes.get('/add_post', function(req, res) {
-	// 	var new_posts_list = [req.body.new_post].concat(req.body.old_posts)
-	// 	allUsers.updateOne(
-	// 		{"user_name" : req.body.user_name},
-	// 		{
-	// 			$set: {"posts" : new_posts_list },
-	// 		},
-	// 		function (err, result) {
-	// 			if (err)
-	// 				res.send({"success" : false, "message" : "Error processing Request"})
-	// 			else
-	// 				res.send({"success" : true, "message" : result, "posts" : new_posts_list})
-	// 		}
-	// 	)
-	// })
+	// API for adding a post
+	apiRoutes.get('/add_post', function(req, res) {
+		allUsers.updateOne(
+			{"user_name" : req.query.user_name},
+			{
+				$push: {"posts" : JSON.parse(req.query.new_post)},
+			},
+			function (err, result) {
+				if (err)
+					res.send({"success" : false, "message" : "Error processing Request"})
+				else
+					res.send({"success" : true, "message" : result})
+			}
+		)
+	})
 
-	// // API for getting list of all users whom a user is not following
-	// apiRoutes.get('/get_user_list', function(req, res) {
-		// allUsers.find().toArray()
-	// })
+	// API for getting list of all users whom a user is not following  (Not Tested)
+	apiRoutes.get('/get_user_list', function(req, res) {
+		var current_following = JSON.parse(req.query.current_following);
+		var final_list = [];
+		allUsers.find().toArray(function (err, result) {
+			if (err)
+				res.send({"success" : false, "message" : "Error processing Request"});
+			else
+			{
+				result.forEach(function(user) {
+					if ((!(user["user_name"] in current_following)) && (user["user_name"] != req.query.user_name))
+						final_list.push({"user_name" : user["user_name"], "name" : user["profile"]["name"], "pic_link" : user["profile"]["pic_link"]});
+				})
+				res.send({"success" : true, "user_list" : final_list})
+			}
+		})
+	})
+
+	// API for a user to follow a user
+	apiRoutes.get('/follow_user', function(req, res) {
+		var new_follow_obj = JSON.parse(req.query.new_follow);
+		// since we only display the users who were not being followed, we know both these updates must be done.
+		// update follower
+		allUsers.updateOne(
+			{"user_name" : req.query.user_name},
+			{
+				$push: {"following" : new_follow_obj},
+			},
+			function(err, result) {
+				if (err)
+					res.send({"success" : false, "message" : "1. Error processing Request"})
+			}
+		)
+		// update following
+		allUsers.updateOne(
+			{"user_name" : new_follow_obj["user_name"]},
+			{
+				$push: {"followers" : {"user_name": req.query.user_name, "name": req.query.name, "pic_link": req.query.pic_link}},
+			},
+			function(err, result) {
+				if (err)
+					res.send({"success" : false, "message" : "2. Error processing Request"})
+				else
+					res.send({"success" : true, "message" : result})
+			}
+		)
+	})
 
 	app.use('/api', apiRoutes);
 

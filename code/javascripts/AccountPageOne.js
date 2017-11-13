@@ -14,7 +14,7 @@ function AccountPageOne()
 
 	var Object = this;
 
-	this.edit = function()
+	this.Edit = function()
 	{
 		document.getElementById( "WelcomeName_Div"+Object.Index+"" ).innerHTML = "Welcome: "+Object.AssociatedData.profile.name+" ";
 	}
@@ -31,8 +31,9 @@ function AccountPageOne()
 		this.Height = Height;
 		this.Opacity = Opacity;
 		this.AssociatedData = AssociatedData;
-		console.log(AssociatedData);
+		// console.log(AssociatedData);
 		this.Render();
+		this.Edit();
 
 	}
 
@@ -142,7 +143,7 @@ function AccountPageOne()
 		$( "#LogoutButton" ).on('click',function()  //edit
 		{ 
 			document.getElementById("AccountPage"+Object.Index).remove();
-			login.Initialize( "LoginObj1", 25 , 30 , "HomeDiv" , 50 , 40 , 1.0);
+			login.Initialize( "LoginObj1", 25 , 30 , "LoginDiv" , 50 , 40 , 1.0);
 		});
 
 	}
