@@ -39,7 +39,7 @@ function LoginObj()
 
 		$( "#"+Object.Parent+"" ).append(Object.LoginPageDiv);
 		
-		Object.LoginText = "<div id='logintext' style='color:blue;font-size:1em;font-family:Garamond;font-weight:bold;text-align:center;position: absolute; left:5%;top:10%;width:40%;height:20%;line-height:300%'>Username :</div>";
+		Object.LoginText = "<div id='logintext' style='color:blue;font-size:1em;font-family:Garamond;font-weight:bold;text-align:center;position: absolute; left:5%;top:10%;width:40%;height:20%;line-height:300%'>Email Id :</div>";
 
 		$( "#Login_Div"+Object.Index+"" ).append(Object.LoginText);
 
@@ -58,9 +58,13 @@ function LoginObj()
 		$( "#Login_Div"+Object.Index+"" ).append(Object.PasswordInput);
 		$( "#PasswordInput" ).css( {"position":"absolute","top":"35%","left":"55%", "width":"40%" , "height":"20%", "font-size":"1em", "font-weight": "none","color":"#000000","background-color":"rgb(258,258,255)","border":"0px solid rgb(88,151,19)","border-radius":"60px","padding":"0px", "padding-left":"10px", "padding-right":"0px", "box-shadow":"0px 0px 15px #888888"});
 
-		Object.GoButton = "<input type='button' id='GoButton' value='Go'/>";
+		Object.GoButton = "<input type='button' id='GoButton' value='Login'/>";
 		$( "#Login_Div"+Object.Index+"" ).append(Object.GoButton);
-		$( "#GoButton" ).css( {"position":"absolute","top":"65%","left":"35%","height":"25%","width":"30%","background-color":"#276FF5","border":"0px solid rgb(88,151,19)","color":"#FFFFFF","font-size":"1em","border-radius":"5px", "box-shadow":"2px 2px 5px #000000"});
+		$( "#GoButton" ).css( {"position":"absolute","top":"65%","left":"20%","height":"25%","width":"30%","background-color":"#276FF5","border":"0px solid rgb(88,151,19)","color":"#FFFFFF","font-size":"1em","border-radius":"5px", "box-shadow":"2px 2px 5px #000000"});
+
+		Object.SignupButton = "<input type='button' id='SignupButton' value='Signup'/>";
+		$( "#Login_Div"+Object.Index+"" ).append(Object.SignupButton);
+		$( "#SignupButton" ).css( {"position":"absolute","top":"65%","left":"60%","height":"25%","width":"30%","background-color":"#276FF5","border":"0px solid rgb(88,151,19)","color":"#FFFFFF","font-size":"1em","border-radius":"5px", "box-shadow":"2px 2px 5px #000000"});
 
 		
 	// Begin Event Handlers
@@ -91,7 +95,7 @@ function LoginObj()
 				        acctPage.Initialize("acctpage1", 0 , 0 , "LoginDiv" , 100 , 100 , 1, data);
 				    }
 				    else
-				    	alert("PLease check your credentials");
+				    	alert("Please check your credentials");
 			    });
 			}
 
@@ -106,6 +110,15 @@ function LoginObj()
 				$("#PasswordInput").focus();
 			}
 
+		});
+
+		$( "#SignupButton" ).on('mouseover',function(){ $( this ).css( {"background-color": "#0B197D","border":"1px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #333333"}); });
+		$( "#SignupButton" ).on('mouseout',function(){ $( this ).css( {"background-color": "#276FF5","border":"0px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #999999"}); });
+
+		$( "#SignupButton" ).on('click',function()  //edit
+		{ 
+			$("#LoginDiv").empty();
+			signup.Initialize( "SignupObj1", 20 , 10 , "LoginDiv" , 60 , 80 , 1.0);
 		});
 
 	}
