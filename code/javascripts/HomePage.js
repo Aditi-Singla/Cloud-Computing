@@ -17,7 +17,7 @@ function HomePageOne()
 
 	this.edit = function()
 	{
-		document.getElementById( "WelcomeName_Div"+Object.Index + "").innerHTML = "Welcome: "+Object.AssociatedData.profile.name+" ";
+		document.getElementById( "WelcomeName_Div"+Object.Index + "").innerHTML = "Hola, "+Object.AssociatedData.profile.name+" !";
 	}
 
 	// Initialization
@@ -60,7 +60,7 @@ function HomePageOne()
 					"<div id='WorkArea_Div"+Object.Index+"' style='position: absolute; top: 43px; left: 25%; bottom: 0px; width: 75%; opacity: "+Object.Opacity+"; border: 2px solid rgb(0,0,255);background-color:transparent; border-radius: 0px 0px 0px 0px; overflow: scroll;'></div>";
 
 		$( "#AccountPage"+Object.Index+"" ).append(Object.WorkAreaDiv);
-		Object.uo.Initialize("ViewDO", 10 , 10 , "WorkArea_Div" + Object.Index , 80 , 80 , 1.0, Object.AssociatedData);
+		Object.uo.Initialize("ViewDO", 10 , 10 , "WorkArea_Div" + Object.Index , 80 , 80 , 1.0, Object.AssociatedData, true);
 
 		Object.WelcomeNameDiv =
 					"<div id='WelcomeName_Div"+Object.Index+"' style='position: absolute; top: 0px; left: 0px; height: 40px; width: 45%; opacity: "+Object.Opacity+"; border: 0px solid #4d004d;background-color:transparent; border-radius: 0px 0px 0px 0px; overflow: hidden; text-align: left; line-height: 40px; color: #FFFFFF; padding-left:10px;'>Welcome: "+Object.AssociatedData.name+" "+"</div>"; 
@@ -73,41 +73,41 @@ function HomePageOne()
 		
 		Object.MyProfileButton = "<input type='button' id='MyProfileButton' value='My Profile' />";
 		$( "#Function_Div"+Object.Index+"" ).append(Object.MyProfileButton);
-		$( "#MyProfileButton" ).css( {"position":"absolute","top":"10%","left":"20%", "width":"60%" , "height":"15%", "font-size":"1.2em", "font-weight": "semibold","color":"#FFFFFF","background-color":"#276FF5","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"0px", "padding-right":"0px", "box-shadow":"2px 2px 5px #888888", "text-align":"center"});
+		$( "#MyProfileButton" ).css( {"position":"absolute","top":"10%","left":"20%", "width":"60%" , "height":"15%", "font-size":"1.2em", "font-weight": "semibold","color":"#FFFFFF","background-color":"#800080","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"0px", "padding-right":"0px", "box-shadow":"2px 2px 5px #888888", "text-align":"center"});
 
 		Object.FollowButton = "<input type='button' id='FollowButton' value='Follow' />";
 		$( "#Function_Div"+Object.Index+"" ).append(Object.FollowButton);
-		$( "#FollowButton" ).css( {"position":"absolute","top":"30%","left":"20%", "width":"60%" , "height":"15%", "font-size":"1.2em", "font-weight": "semibold","color":"#FFFFFF","background-color":"#276FF5","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"0px", "padding-right":"0px", "box-shadow":"2px 2px 5px #888888", "text-align":"center"});
+		$( "#FollowButton" ).css( {"position":"absolute","top":"30%","left":"20%", "width":"60%" , "height":"15%", "font-size":"1.2em", "font-weight": "semibold","color":"#FFFFFF","background-color":"#800080","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"0px", "padding-right":"0px", "box-shadow":"2px 2px 5px #888888", "text-align":"center"});
 
 		Object.FollowersButton = "<input type='button' id='FollowersButton' value='Followers' />";
 		$( "#Function_Div"+Object.Index+"" ).append(Object.FollowersButton);
-		$( "#FollowersButton" ).css( {"position":"absolute","top":"50%","left":"20%", "width":"60%" , "height":"15%", "font-size":"1.2em", "font-weight": "semibold","color":"#FFFFFF","background-color":"#276FF5","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"0px", "padding-right":"0px", "box-shadow":"2px 2px 5px #888888", "text-align":"center"});
+		$( "#FollowersButton" ).css( {"position":"absolute","top":"50%","left":"20%", "width":"60%" , "height":"15%", "font-size":"1.2em", "font-weight": "semibold","color":"#FFFFFF","background-color":"#800080","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"0px", "padding-right":"0px", "box-shadow":"2px 2px 5px #888888", "text-align":"center"});
 
 		Object.FollowingButton = "<input type='button' id='FollowingButton' value='Following' />";
 		$( "#Function_Div"+Object.Index+"" ).append(Object.FollowingButton);
-		$( "#FollowingButton" ).css( {"position":"absolute","top":"70%","left":"20%", "width":"60%" , "height":"15%", "font-size":"1.2em", "font-weight": "semibold","color":"#FFFFFF","background-color":"#276FF5","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"0px", "padding-right":"0px", "box-shadow":"2px 2px 5px #888888", "text-align":"center"});
+		$( "#FollowingButton" ).css( {"position":"absolute","top":"70%","left":"20%", "width":"60%" , "height":"15%", "font-size":"1.2em", "font-weight": "semibold","color":"#FFFFFF","background-color":"#800080","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"0px", "padding-right":"0px", "box-shadow":"2px 2px 5px #888888", "text-align":"center"});
 		
 		// Event Handlers
 	
 		$( "#MyProfileButton" ).on('mouseover',function(){ $( this ).css( {"background-color": "#4d004d","border":"1px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #333333"}); });
-		$( "#MyProfileButton" ).on('mouseout',function(){ $( this ).css( {"background-color": "#276FF5","border":"0px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #999999"}); });
+		$( "#MyProfileButton" ).on('mouseout',function(){ $( this ).css( {"background-color": "#800080","border":"0px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #999999"}); });
 
 		$( "#FollowButton" ).on('mouseover',function(){ $( this ).css( {"background-color": "#4d004d","border":"1px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #333333"}); });
-		$( "#FollowButton" ).on('mouseout',function(){ $( this ).css( {"background-color": "#276FF5","border":"0px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #999999"}); });
+		$( "#FollowButton" ).on('mouseout',function(){ $( this ).css( {"background-color": "#800080","border":"0px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #999999"}); });
 
 		$( "#FollowersButton" ).on('mouseover',function(){ $( this ).css( {"background-color": "#4d004d","border":"1px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #333333"}); });
-		$( "#FollowersButton" ).on('mouseout',function(){ $( this ).css( {"background-color": "#276FF5","border":"0px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #999999"}); });
+		$( "#FollowersButton" ).on('mouseout',function(){ $( this ).css( {"background-color": "#800080","border":"0px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #999999"}); });
 
 		$( "#FollowingButton" ).on('mouseover',function(){ $( this ).css( {"background-color": "#4d004d","border":"1px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #333333"}); });
-		$( "#FollowingButton" ).on('mouseout',function(){ $( this ).css( {"background-color": "#276FF5","border":"0px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #999999"}); });
+		$( "#FollowingButton" ).on('mouseout',function(){ $( this ).css( {"background-color": "#800080","border":"0px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #999999"}); });
 
-		$( "#LogoutButton" ).on('mouseover',function(){ $( this ).css( {"background-color": "#276FF5","border":"1px solid rgb(10,10,200)", "color": "#4d004d","box-shadow":"0px 0px 10px #333333"}); });
+		$( "#LogoutButton" ).on('mouseover',function(){ $( this ).css( {"background-color": "#800080","border":"1px solid rgb(10,10,200)", "color": "#4d004d","box-shadow":"0px 0px 10px #333333"}); });
 		$( "#LogoutButton" ).on('mouseout',function(){ $( this ).css( {"background-color": "transparent","border":"0px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 0px #999999"}); });
 
 		$( "#MyProfileButton" ).on('click',function()  //edit
 		{ 
 	        $("#WorkArea_Div"+Object.Index).empty();
-			Object.uo.Initialize("ViewDO", 10 , 10 , "WorkArea_Div" + Object.Index , 80 , 80 , 1.0, Object.AssociatedData);			
+			Object.uo.Initialize("ViewDO", 10 , 10 , "WorkArea_Div" + Object.Index , 80 , 80 , 1.0, Object.AssociatedData, true);			
 		});
 
 		function followUser (i) {
@@ -115,9 +115,9 @@ function HomePageOne()
 			var p = Object.UserList[i];
 			Object.FollowButton1 = "<input type='button' id='FollowButton"+i+"' value='"+ p.name +"' />";
 			$( "#WorkArea_Div"+Object.Index+"" ).append(Object.FollowButton1);
-			$( "#FollowButton"+i ).css( {"width":"60%" , "height":"15%", "font-size":"1.2em", "font-weight": "semibold","color":"#FFFFFF","background-color":"#276FF5","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"0px", "padding-right":"0px", "box-shadow":"2px 2px 5px #888888", "text-align":"center"});
+			$( "#FollowButton"+i ).css( {"width":"60%" , "height":"15%", "font-size":"1.2em", "font-weight": "semibold","color":"#FFFFFF","background-color":"#800080","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"0px", "padding-right":"0px", "box-shadow":"2px 2px 5px #888888", "text-align":"center"});
 			$( "#FollowButton"+i ).on('mouseover',function(){ $( this ).css( {"background-color": "#4d004d","border":"1px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #333333"}); });
-			$( "#FollowButton"+i ).on('mouseout',function(){ $( this ).css( {"background-color": "#276FF5","border":"0px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #999999"}); });
+			$( "#FollowButton"+i ).on('mouseout',function(){ $( this ).css( {"background-color": "#800080","border":"0px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #999999"}); });
 			$( "#FollowButton"+i ).on('click',function()  //edit
 			{
 				var i = parseInt(this.id.substr(12));
@@ -143,6 +143,7 @@ function HomePageOne()
 										pic_link: p.pic_link
 									}
 								);
+							$( "#FollowButton" ).click();
 							alert("User followed");
 				    });	
 			});			
@@ -195,9 +196,9 @@ function HomePageOne()
 			// console.log(p);
 			Object.FollowingButton1 = "<input type='button' id='FollowingButton"+i+"' value='"+ p.name +"' />";
 			$( "#WorkArea_Div"+Object.Index+"" ).append(Object.FollowingButton1);
-			$( "#FollowingButton"+i ).css( {"width":"60%" , "height":"15%", "font-size":"1.2em", "font-weight": "semibold","color":"#FFFFFF","background-color":"#276FF5","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"0px", "padding-right":"0px", "box-shadow":"2px 2px 5px #888888", "text-align":"center"});
+			$( "#FollowingButton"+i ).css( {"width":"60%" , "height":"15%", "font-size":"1.2em", "font-weight": "semibold","color":"#FFFFFF","background-color":"#800080","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"0px", "padding-right":"0px", "box-shadow":"2px 2px 5px #888888", "text-align":"center"});
 			$( "#FollowingButton"+i ).on('mouseover',function(){ $( this ).css( {"background-color": "#4d004d","border":"1px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #333333"}); });
-			$( "#FollowingButton"+i ).on('mouseout',function(){ $( this ).css( {"background-color": "#276FF5","border":"0px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #999999"}); });
+			$( "#FollowingButton"+i ).on('mouseout',function(){ $( this ).css( {"background-color": "#800080","border":"0px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #999999"}); });
 			$( "#FollowingButton"+i ).on('click', function() {
 				var i = parseInt(this.id.substr(15));
 				console.log("called" + i);
@@ -211,7 +212,7 @@ function HomePageOne()
 				        console.log("Data: " + data + "\nStatus: " + status);
 
 					        $("#WorkArea_Div"+Object.Index).empty();
-							Object.uo.Initialize("ViewDO", 10 , 10 , "WorkArea_Div" + Object.Index , 80 , 80 , 1.0, data);			
+							Object.uo.Initialize("ViewDO", 10 , 10 , "WorkArea_Div" + Object.Index , 80 , 80 , 1.0, data,false);			
 				    });	
 			});
 		};
