@@ -4,7 +4,6 @@ var crypto = require('crypto');
 var jwt = require("jsonwebtoken");
 var bodyParser = require('body-parser');
 var azure = require('azure-storage');
-var cors = require('cors');
 
 var secret = "aditicubecloudInstaBooksAzureApp";
 
@@ -14,28 +13,13 @@ var port = process.env.PORT || 3000;
 
 app.use(bodyParser.urlencoded({
   extended: true
-}))
+}));
 
 app.use(bodyParser.json());
-
-// app.use(function(req, res, next) {
-//   res.header("Access-Control-Allow-Origin", "*");
-//   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-//   next();
-// });
-
-app.use(cors());
 
 app.use(express.static(__dirname + '/code'));
 
 app.set('superSecret',secret);
-// app.get('/',function(req,res){
-
-//     console.log('hello from server');
-
-//      res.render('./code/index.html');
-
-// });
 
 app.listen(port);
 
