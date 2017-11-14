@@ -84,7 +84,7 @@ function LoginObj()
 			        password: passw
 			    },
 			    function(data, status){
-			        console.log("Data: " + data + "\nStatus: " + status);
+			        // console.log("Data: " + data + "\nStatus: " + status);
 
 			        if (data.success === true)
 			        {

@@ -33,11 +33,20 @@ function UserObject()
 
 		Object.TitleText = "<div id='titletext"+Object.Index+"' style='color:#4d004d;font-size:1.5em;font-family:Garamond;font-weight:bold;text-align:center;position: absolute; left:35%;top:2%;width:30%;height:7%;line-height:200%'>" + this.UserData.profile.name +" </div>";
 
-		$( "#User_Div"+Object.Index+"" ).append(Object.TitleText);
-
-		Object.PPText = "<div  id='pptext"+Object.Index + "'style='background-image:url('"+this.UserData.profile.pic_link+"') ; background color:#FFFFFF;position: absolute; left:5%;top:2%;width:30%;height:7%;line-height:200%; height:75px;width:20%;float:left;margin:0px 25px 0px 5px;'></div>";
-
 		$( "#User_Div"+Object.Index+"" ).append(Object.PPText);		
+
+		$.get(Object.UserData.profile.pic_link,
+		    function(data, status){
+		        console.log("Data: " + data + "\nStatus: " + status);
+
+		        Object.PPText = "<img id='Image"+Object.Index+"' src="+ Object.UserData.profile.pic_link +">";
+		        $( "#User_Div"+Object.Index+"" ).append(Object.PPText);
+		        
+			    $( "#Image" + Object.Index).attr("src",data);
+				$( "#Image" + Object.Index).css({"visibility":"visible", "position":"absolute", "top":"2%", "left":"5%", "width":"30%", "height":"7%"});
+			    
+		    });
+
 
 		Object.DobText = "<div id='Dobtext"+Object.Index+"' style='color:#4d004d;font-size:1.2em;font-family:Garamond;font-weight:bold;text-align:left;position: absolute; left:40%;top:10%;width:40%;height:7%;line-height:300%'> " + this.UserData.profile.dob +" </div>";
 

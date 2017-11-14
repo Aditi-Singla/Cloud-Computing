@@ -13,6 +13,7 @@ function HomePageOne()
 
 
 	var Object = this;
+	Object.UserList = [];
 
 	this.edit = function()
 	{
@@ -32,7 +33,7 @@ function HomePageOne()
 		this.Opacity = Opacity;
 		this.AssociatedData = AssociatedData;
 		this.Render();
-
+		this.edit();
 	}
 
 	this.Render = function()
@@ -105,67 +106,70 @@ function HomePageOne()
 
 		$( "#MyProfileButton" ).on('click',function()  //edit
 		{ 
-			//List followers
-			$.get(server_url+"/get_user_info?token="+Object.AssociatedData.token,
-			    function(data, status){
-			        console.log("Data: " + data + "\nStatus: " + status);
-
-				        $("#WorkArea_Div"+Object.Index).empty();
-						Object.uo.Initialize("ViewDO", 10 , 10 , "WorkArea_Div" + Object.Index , 80 , 80 , 1.0, Object.AssociatedData);			
-			    });	
+	        $("#WorkArea_Div"+Object.Index).empty();
+			Object.uo.Initialize("ViewDO", 10 , 10 , "WorkArea_Div" + Object.Index , 80 , 80 , 1.0, Object.AssociatedData);			
 		});
+
+		function followUser (i) {
+			console.log("called followUser button for " + i);
+			var p = Object.UserList[i];
+			Object.FollowButton1 = "<input type='button' id='FollowButton"+i+"' value='"+ p.name +"' />";
+			$( "#WorkArea_Div"+Object.Index+"" ).append(Object.FollowButton1);
+			$( "#FollowButton"+i ).css( {"width":"60%" , "height":"15%", "font-size":"1.2em", "font-weight": "semibold","color":"#FFFFFF","background-color":"#276FF5","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"0px", "padding-right":"0px", "box-shadow":"2px 2px 5px #888888", "text-align":"center"});
+			$( "#FollowButton"+i ).on('mouseover',function(){ $( this ).css( {"background-color": "#4d004d","border":"1px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #333333"}); });
+			$( "#FollowButton"+i ).on('mouseout',function(){ $( this ).css( {"background-color": "#276FF5","border":"0px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #999999"}); });
+			$( "#FollowButton"+i ).on('click',function()  //edit
+			{
+				var i = parseInt(this.id.substr(12));
+				var p = Object.UserList[i];
+				$.post(server_url+"/follow_user",
+					{
+						token: Object.AssociatedData.token,
+						new_follow: {
+										"user_name": p.user_name,
+										"name": p.name,
+										"pic_link": p.pic_link
+									},
+						user_name: Object.AssociatedData.user_name,
+						name: Object.AssociatedData.profile.name,
+						pic_link: Object.AssociatedData.profile.pic_link,
+					},
+				    function(data, status){
+				        console.log("Data: " + data + "\nStatus: " + status);
+							(Object.AssociatedData.following).append(
+									{
+										user_name: p.user_name,
+										name: p.name,
+										pic_link: p.pic_link
+									}
+								);
+							alert("User followed");
+				    });	
+			});			
+		};
 
 		$( "#FollowButton" ).on('click',function()  //edit
 		{ 
-			var d = dict();
-			var list = Object.AssociatedData.followers;
+			var d = {};
+			var list = Object.AssociatedData.following;
+			// console.log(list);
 			list.forEach(function(x) {d[x["user_name"]] = "0"});
+			console.log(d);
 
-			$.get(server_url+"/get_user_list",
+			$.post(server_url+"/get_user_list",
 				{
 					token: Object.AssociatedData.token,
-					user_name: uname,
+					user_name: Object.AssociatedData.user_name,
 					current_following: d
 				},
 			    function(data, status){
 			        console.log("Data: " + data + "\nStatus: " + status);
 
 				        $("#WorkArea_Div"+Object.Index).empty();
-						for (var i = 0; i < data.user_list; i++) {
-							var p = data.user_list[i];
-							Object.FollowButton1 = "<input type='button' id='FollowButton"+i+"' value='"+ p.user_name +"' />";
-							$( "#WorkArea_Div"+Object.Index+"" ).append(Object.FollowButton);
-							$( "#FollowButton"+i ).css( {"width":"60%" , "height":"15%", "font-size":"1.2em", "font-weight": "semibold","color":"#FFFFFF","background-color":"#276FF5","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"0px", "padding-right":"0px", "box-shadow":"2px 2px 5px #888888", "text-align":"center"});
-							$( "#FollowButton"+i ).on('mouseover',function(){ $( this ).css( {"background-color": "#4d004d","border":"1px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #333333"}); });
-							$( "#FollowButton"+i ).on('mouseout',function(){ $( this ).css( {"background-color": "#276FF5","border":"0px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #999999"}); });
-							$( "#FollowButton" ).on('click',function()  //edit
-							{
-								$.post(server_url+"/follow_user",
-									{
-										token: Object.AssociatedData.token,
-										new_follow: {
-														user_name: p.user_name,
-														name: p.name,
-														pic_link: p.pic_link
-													},
-										user_name: Object.AssociatedData.profile.user_name,
-										name: Object.AssociatedData.profile.name,
-										pic_link: Object.AssociatedData.profile.pic_link,
-									},
-								    function(data, status){
-								        console.log("Data: " + data + "\nStatus: " + status);
-											Object.AssociatedData.following.append(
-													{
-														user_name: p.user_name,
-														name: p.name,
-														pic_link: p.pic_link
-													}
-												);
-											alert("User followed");
-								    });	
-							});
-
-						}			
+				        Object.UserList = data.user_list;
+						for (var i = 0; i < data.user_list.length; i++) {
+							followUser(i);
+						}	
 			    });
 		});
 		
@@ -181,39 +185,47 @@ function HomePageOne()
 				var str = p.name+"\n";
 				totalStr1 +=  str;
 			}
-			$( "Followerstext"+Object.Index+"" ).append(totalStr1);
+			$( "#Followerstext"+Object.Index+"" ).append(totalStr1);
 		});
+
+
+		function insert_button (i) {
+			console.log("i = " + i);
+			var p = Object.AssociatedData.following[i];
+			// console.log(p);
+			Object.FollowingButton1 = "<input type='button' id='FollowingButton"+i+"' value='"+ p.name +"' />";
+			$( "#WorkArea_Div"+Object.Index+"" ).append(Object.FollowingButton1);
+			$( "#FollowingButton"+i ).css( {"width":"60%" , "height":"15%", "font-size":"1.2em", "font-weight": "semibold","color":"#FFFFFF","background-color":"#276FF5","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"0px", "padding-right":"0px", "box-shadow":"2px 2px 5px #888888", "text-align":"center"});
+			$( "#FollowingButton"+i ).on('mouseover',function(){ $( this ).css( {"background-color": "#4d004d","border":"1px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #333333"}); });
+			$( "#FollowingButton"+i ).on('mouseout',function(){ $( this ).css( {"background-color": "#276FF5","border":"0px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #999999"}); });
+			$( "#FollowingButton"+i ).on('click', function() {
+				var i = parseInt(this.id.substr(15));
+				console.log("called" + i);
+				var uname = Object.AssociatedData.following[i].user_name;
+				$.get(server_url+"/get_user_info",
+					{
+						token: Object.AssociatedData.token,
+						user_name: uname
+					},
+				    function(data, status){
+				        console.log("Data: " + data + "\nStatus: " + status);
+
+					        $("#WorkArea_Div"+Object.Index).empty();
+							Object.uo.Initialize("ViewDO", 10 , 10 , "WorkArea_Div" + Object.Index , 80 , 80 , 1.0, data);			
+				    });	
+			});
+		};
 
 		$( "#FollowingButton" ).on('click',function()  //edit
 		{ 
 			$("#WorkArea_Div"+Object.Index).empty();
 		
 			for (var i = 0; i < Object.AssociatedData.following.length; i++) {
-				var p = Object.AssociatedData.following[i];
-				Object.FollowingButton1 = "<input type='button' id='FollowingButton"+i+"' value='"+ p.user_name +"' />";
-				$( "#WorkArea_Div"+Object.Index+"" ).append(Object.FollowingButton);
-				$( "#FollowingButton"+i ).css( {"width":"60%" , "height":"15%", "font-size":"1.2em", "font-weight": "semibold","color":"#FFFFFF","background-color":"#276FF5","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"0px", "padding-right":"0px", "box-shadow":"2px 2px 5px #888888", "text-align":"center"});
-				$( "#FollowingButton"+i ).on('mouseover',function(){ $( this ).css( {"background-color": "#4d004d","border":"1px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #333333"}); });
-				$( "#FollowingButton"+i ).on('mouseout',function(){ $( this ).css( {"background-color": "#276FF5","border":"0px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #999999"}); });
-				$( "#FollowingButton" ).on('click',function()  //edit
-				{
-					var uname = $("#FollowingButton"+i).val();
-					$.post(server_url+"/get_user_info",
-						{
-							token: Object.AssociatedData.token,
-							user_name: uname
-						},
-					    function(data, status){
-					        console.log("Data: " + data + "\nStatus: " + status);
-
-						        $("#WorkArea_Div"+Object.Index).empty();
-								Object.uo.Initialize("ViewDO", 10 , 10 , "WorkArea_Div" + Object.Index , 80 , 80 , 1.0, data);			
-					    });	
-				});
-
+				insert_button(i);
 			}
 		});
 		
+
 
 		$( "#LogoutButton" ).on('click',function()  //edit
 		{ 

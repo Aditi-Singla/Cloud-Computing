@@ -109,6 +109,7 @@ function SignupObj()
 			var passw = $("#PasswordInput").val();
 			// var pp = $("#ProfilePicInput").val();
 			var pp = Object.filename;
+			console.log(pp);
 			if (uname != "" && passw != "" && dob1 != "" && gender1 != "" && emailid != "" && pp != "")
 			{
 				//Pass the input to the server here
@@ -119,7 +120,7 @@ function SignupObj()
 			        gender : gender1,
 			        user_name : emailid,
 			        password : passw,
-			        pic_link : pp
+			        image_b64 : pp
 			    },
 			    function(data, status){
 			        console.log("Data: " + data + "\nStatus: " + status);
@@ -182,15 +183,16 @@ function SignupObj()
 		    //     console.log("Data: " + data + "\nStatus: " + status);
 		    // });
 		    console.log(reader.result);
-		    return reader.result;
+		    Object.filename = reader.result;
+		    // return reader.result;
 		  }
 		  reader.readAsDataURL(file);	  
 		}
 		
 		$( "#ProfilePicInput").on('change',function(){
 			var elt = document.getElementById("ProfilePicInput");
-
-			Object.filename = encodeImageFileAsURL(elt);
+			encodeImageFileAsURL(elt);
+			console.log(Object.filename);
 		});
 	}
 }

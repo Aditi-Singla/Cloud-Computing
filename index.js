@@ -109,7 +109,10 @@ mongoClient.connect(dbUrl, function(err, db) {
 
 	// API for creating new user (get just for now)
 	apiRoutes.post('/register', function(req, res) {
-		blobSvc.createBlockBlobFromText(container_name, req.body.user_name, req.body.image_b64, function(err, result, response) {
+		var hashed_uname = crypto.createHash('sha1').update(req.body.user_name).digest('hex');
+		console.log(hashed_uname);
+		console.log(req.body.image_b64);
+		blobSvc.createBlockBlobFromText(container_name, hashed_uname, req.body.image_b64, function(err, result, response) {
 			if (err)
 			{
 				console.log("Error uploading file to azure");
@@ -121,7 +124,7 @@ mongoClient.connect(dbUrl, function(err, db) {
 				"dob" : req.body.dob,
 				"gender" : req.body.gender,
 				"name" : req.body.name,
-				"pic_link" : storage_acct_id + container_name + "/" + req.body.user_name
+				"pic_link" : storage_acct_id + container_name + "/" + hashed_uname
 			},
 			"user_name" : req.body.user_name,
 			"password" : crypto.createHash('sha1').update(req.body.password).digest('hex'),
@@ -146,8 +149,18 @@ mongoClient.connect(dbUrl, function(err, db) {
 						var response = {"success" : true, "message" : result}
 						var token = jwt.sign(response, app.get('superSecret'), {
 						});
-						console.log(result);
+						// console.log(result);
 						response["token"] = token;
+						response["user_name"] = req.body.user_name;
+						response["profile"] = {
+							"dob" : req.body.dob,
+							"gender" : req.body.gender,
+							"name" : req.body.name,
+							"pic_link" : storage_acct_id + container_name + "/" + hashed_uname						
+						};
+						response["following"] = [];
+						response["followers"] = [];
+						response["posts"] = [];
 						res.send(response);
 					}
 				})
@@ -232,8 +245,10 @@ mongoClient.connect(dbUrl, function(err, db) {
 	})
 
 	// API for getting list of all users whom a user is not following  (Not Tested)
-	apiRoutes.get('/get_user_list', function(req, res) {
-		var current_following = JSON.parse(req.query.current_following);
+	apiRoutes.post('/get_user_list', function(req, res) {
+		var current_following_dict = {}
+		if ("current_following" in req.body)
+			current_following_dict = (req.body.current_following);
 		var final_list = [];
 		allUsers.find().toArray(function (err, result) {
 			if (err)
@@ -241,7 +256,7 @@ mongoClient.connect(dbUrl, function(err, db) {
 			else
 			{
 				result.forEach(function(user) {
-					if ((!(user["user_name"] in current_following)) && (user["user_name"] != req.query.user_name))
+					if ((!(user["user_name"] in current_following_dict)) && (user["user_name"] != req.body.user_name))
 						final_list.push({"user_name" : user["user_name"], "name" : user["profile"]["name"], "pic_link" : user["profile"]["pic_link"]});
 				})
 				res.send({"success" : true, "user_list" : final_list})
@@ -250,12 +265,13 @@ mongoClient.connect(dbUrl, function(err, db) {
 	})
 
 	// API for a user to follow a user
-	apiRoutes.get('/follow_user', function(req, res) {
-		var new_follow_obj = JSON.parse(req.query.new_follow);
+	apiRoutes.post('/follow_user', function(req, res) {
+		console.log(req.body);
+		var new_follow_obj = req.body.new_follow;
 		// since we only display the users who were not being followed, we know both these updates must be done.
 		// update follower
 		allUsers.updateOne(
-			{"user_name" : req.query.user_name},
+			{"user_name" : req.body.user_name},
 			{
 				$push: {"following" : new_follow_obj},
 			},
@@ -268,7 +284,7 @@ mongoClient.connect(dbUrl, function(err, db) {
 		allUsers.updateOne(
 			{"user_name" : new_follow_obj["user_name"]},
 			{
-				$push: {"followers" : {"user_name": req.query.user_name, "name": req.query.name, "pic_link": req.query.pic_link}},
+				$push: {"followers" : {"user_name": req.body.user_name, "name": req.body.name, "pic_link": req.body.pic_link}},
 			},
 			function(err, result) {
 				if (err)
