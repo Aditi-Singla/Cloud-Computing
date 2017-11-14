@@ -8,6 +8,7 @@ function UserObject()
 	this.Height = "";
 	this.Opacity = "";
 	this.UserData = {};
+	this.isEditable = false;
 	
 	var Object = this;
 	Object.filename = "";
@@ -66,20 +67,21 @@ function UserObject()
 
 		$( "#User_Div"+Object.Index+"" ).append(Object.PostsText);
 
-		Object.PostsListText = "<div id='PostsListtext"+Object.Index+"' style='position: absolute; left:4%;top:50%;width:40%;height:17%'></div>";
+		Object.PostsListText = "<div id='PostsListtext"+Object.Index+"' style='position: absolute; align:left; left:4%;top:50%;width:80%;height:17%'></div>";
 
 		$( "#User_Div"+Object.Index+"" ).append(Object.PostsListText);
 
-		var totalStr1 = "";;
+		var totalStr1 = "";
 		for (var i = 0; i < this.UserData.posts.length; i++) {
 			var p = this.UserData.posts[i];
+			console.log(p);
 			if (p.text != ""){
-				var str = "<b>"+p.date+"</b> : "+p.text+"\n";
+				var str = "<b>"+p.date+"</b> : "+p.text+" <br/>";
 				totalStr1 +=  str;
 			}
 		}
-		Object.l = "<p>" + totalStr1 + "</p>";
-		$( "PostsListtext"+Object.Index+"" ).append(Object.l);
+		console.log(totalStr1);
+		$( "#PostsListtext"+Object.Index+"" ).append(totalStr1);
 
 		Object.UploadsText = "<div id='Uploadstext"+Object.Index+"' style='color:#4d004d;font-size:1.2em;font-family:Garamond;font-weight:bold;text-align:left;position: absolute; left:4%;top:70%;width:40%;height:7%;line-height:300%'> Uploads </div>";
 
@@ -121,7 +123,7 @@ function UserObject()
 		  reader.readAsDataURL(file);	  
 		}
 		
-		if (isEditable){
+		if (Object.isEditable){
 			Object.AddPostText = "<input type='text' id='PostTextInput' spellcheck='false' placeholder='Add post'/>";
 			$( "#User_Div"+Object.Index+"" ).append(Object.AddPostText);
 			$( "#PostTextInput" ).css( {"position":"absolute","top":"40%","left":"20%", "width":"40%" , "height":"10%", "font-size":"1em", "font-weight": "none","color":"#000000","background-color":"rgb(258,258,255)","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"10px", "padding-right":"0px", "box-shadow":"0px 0px 15px #888888"});
@@ -135,7 +137,9 @@ function UserObject()
 
 			$( "#PostButton" ).on('click',function()  //edit
 			{ 
+				console.log("called post button");
 				var post = $("#PostTextInput").val();
+				var today = new Date();
 				var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
 				if (post != "")
 				{
@@ -151,7 +155,7 @@ function UserObject()
 				    },
 				    function(data, status){
 				        
-				        (Object.UserData.posts).append(
+				        (Object.UserData.posts).push(
 									{
 										date: date,
 										text: post,
@@ -182,6 +186,7 @@ function UserObject()
 
 			$( "#UploadButton" ).on('click',function()  //edit
 			{ 
+				var today = new Date();
 				var upload = Object.filename;
 				var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
 				if (upload != "")
@@ -202,7 +207,7 @@ function UserObject()
 				        if (data.success === true)
 						{
 							token = data.token;
-							(Object.UserData.posts).append(data.new_post);
+							(Object.UserData.posts).push(data.new_post);
 							alert("Uploaded successfully!");
 
 					    }

@@ -9,8 +9,7 @@ function HomePageOne()
 	this.Opacity = "";
 	this.AssociatedData = {};
 	this.uo = new UserObject();
-	this.co = new ComplaintObject();
-
+	
 
 	var Object = this;
 	Object.UserList = [];
@@ -47,7 +46,7 @@ function HomePageOne()
 		$( "#"+Object.Parent+"" ).append(Object.AccountPageDiv);
 		
 		Object.FunctionDiv = 	
-					"<div id='Function_Div"+Object.Index+"' style='position: absolute; top: 40px; left: 0px; bottom: 0px; width: 25%; opacity: "+Object.Opacity+"; border: 2px solid rgb(0,0,255);background-color:#b3b3b3; border-radius: 0px 0px 0px 0px; overflow: hidden;'></div>";
+					"<div id='Function_Div"+Object.Index+"' style='position: absolute; top: 40px; left: 0px; bottom: 0px; width: 25%; opacity: "+Object.Opacity+"; border: 2px solid #4d004d;background-color:#b3b3b3; border-radius: 0px 0px 0px 0px; overflow: hidden;'></div>";
 
 		$( "#AccountPage"+Object.Index+"" ).append(Object.FunctionDiv);
 
@@ -57,7 +56,7 @@ function HomePageOne()
 		$( "#AccountPage"+Object.Index+"" ).append(Object.WelcomeDiv);
 
 		Object.WorkAreaDiv = 	
-					"<div id='WorkArea_Div"+Object.Index+"' style='position: absolute; top: 43px; left: 25%; bottom: 0px; width: 75%; opacity: "+Object.Opacity+"; border: 2px solid rgb(0,0,255);background-color:transparent; border-radius: 0px 0px 0px 0px; overflow: scroll;'></div>";
+					"<div id='WorkArea_Div"+Object.Index+"' style='position: absolute; top: 43px; left: 25%; bottom: 0px; width: 75%; opacity: "+Object.Opacity+"; border: 2px solid #4d004d;background-color:transparent; border-radius: 0px 0px 0px 0px; overflow: scroll;'></div>";
 
 		$( "#AccountPage"+Object.Index+"" ).append(Object.WorkAreaDiv);
 		Object.uo.Initialize("ViewDO", 10 , 10 , "WorkArea_Div" + Object.Index , 80 , 80 , 1.0, Object.AssociatedData, true);
@@ -115,7 +114,7 @@ function HomePageOne()
 			var p = Object.UserList[i];
 			Object.FollowButton1 = "<input type='button' id='FollowButton"+i+"' value='"+ p.name +"' />";
 			$( "#WorkArea_Div"+Object.Index+"" ).append(Object.FollowButton1);
-			$( "#FollowButton"+i ).css( {"width":"60%" , "height":"15%", "font-size":"1.2em", "font-weight": "semibold","color":"#FFFFFF","background-color":"#800080","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"0px", "padding-right":"0px", "box-shadow":"2px 2px 5px #888888", "text-align":"center"});
+			$( "#FollowButton"+i ).css( {"width":"60%" , "height":"15%", "font-size":"1.2em", "font-weight": "semibold","color":"#FFFFFF","background-color":"#800080","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding-top":"10px", "padding-left":"0px", "padding-right":"0px", "box-shadow":"2px 2px 5px #888888", "text-align":"center"});
 			$( "#FollowButton"+i ).on('mouseover',function(){ $( this ).css( {"background-color": "#4d004d","border":"1px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #333333"}); });
 			$( "#FollowButton"+i ).on('mouseout',function(){ $( this ).css( {"background-color": "#800080","border":"0px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #999999"}); });
 			$( "#FollowButton"+i ).on('click',function()  //edit
@@ -136,7 +135,7 @@ function HomePageOne()
 					},
 				    function(data, status){
 				        console.log("Data: " + data + "\nStatus: " + status);
-							(Object.AssociatedData.following).append(
+							(Object.AssociatedData.following).push(
 									{
 										user_name: p.user_name,
 										name: p.name,
@@ -176,14 +175,14 @@ function HomePageOne()
 		
 		$( "#FollowersButton" ).on('click',function()  //edit
 		{ 
-			Object.FollowersText = "<div id='Followerstext"+Object.Index+"' style='position: absolute; left:15%;top:20%;width:70%;height:40%'></div>";
+			Object.FollowersText = "<div id='Followerstext"+Object.Index+"' style='position: absolute; font-size:1.2em;left:15%;top:20%;width:70%;height:40%;border: 0px solid #000000;background-color:#b3b3b3; border-radius: 50px 0px 50px 0px; overflow: hidden;box-shadow: 2px 2px 20px #333333;'></div>";
 			$("#WorkArea_Div"+Object.Index).empty();
 			$("#WorkArea_Div"+Object.Index+"" ).append(Object.FollowersText);
 
 			var totalStr1 = "";;
 			for (var i = 0; i < Object.AssociatedData.followers.length; i++) {
 				var p = Object.AssociatedData.followers[i];
-				var str = p.name+"\n";
+				var str = p.name+"<br/>";
 				totalStr1 +=  str;
 			}
 			$( "#Followerstext"+Object.Index+"" ).append(totalStr1);
@@ -196,7 +195,7 @@ function HomePageOne()
 			// console.log(p);
 			Object.FollowingButton1 = "<input type='button' id='FollowingButton"+i+"' value='"+ p.name +"' />";
 			$( "#WorkArea_Div"+Object.Index+"" ).append(Object.FollowingButton1);
-			$( "#FollowingButton"+i ).css( {"width":"60%" , "height":"15%", "font-size":"1.2em", "font-weight": "semibold","color":"#FFFFFF","background-color":"#800080","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"0px", "padding-right":"0px", "box-shadow":"2px 2px 5px #888888", "text-align":"center"});
+			$( "#FollowingButton"+i ).css( {"width":"60%" , "height":"15%", "font-size":"1.2em", "font-weight": "semibold","color":"#FFFFFF","background-color":"#800080","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding-top":"10px", "padding-left":"0px", "padding-right":"0px", "box-shadow":"2px 2px 5px #888888", "text-align":"center"});
 			$( "#FollowingButton"+i ).on('mouseover',function(){ $( this ).css( {"background-color": "#4d004d","border":"1px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #333333"}); });
 			$( "#FollowingButton"+i ).on('mouseout',function(){ $( this ).css( {"background-color": "#800080","border":"0px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #999999"}); });
 			$( "#FollowingButton"+i ).on('click', function() {

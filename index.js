@@ -228,7 +228,7 @@ mongoClient.connect(dbUrl, function(err, db) {
 	})
 
 	// API for uploading a file
-	apiRoutes.post('/upload_file', function(res, res) {
+	apiRoutes.post('/upload_file', function(req, res) {
 		// upload to azure storage
 		var hashed_fname = crypto.createHash('sha1').update(req.body.user_name + req.body.count).digest('hex');
 		blobSvc.createBlockBlobFromText(container_name, hashed_fname, req.body.new_post.file, function(err, result, response) {
