@@ -9,7 +9,7 @@ function SignupObj()
 	this.Opacity = "";
 
 	var Object = this;
-
+	Object.filename = "";
 	// Initialization
 
 	this.Initialize = function(Index, Left , Top , Parent , Width , Height , Opacity)
@@ -31,60 +31,64 @@ function SignupObj()
 	// Begin User Interface
 
 		Object.SignupPageDiv = 	
-					"<div id='Signup_Div"+Object.Index+"' style='position: absolute; top: "+Object.Top+"%; left: "+Object.Left+"%; height: "+Object.Height+"%; width: "+Object.Width+"%; opacity: "+Object.Opacity+"; border: 0px solid #000000;background-color:#AFC9FA; border-radius: 50px 0px 50px 0px; overflow: hidden;box-shadow: 2px 2px 20px #333333;'></div>";
+					"<div id='Signup_Div"+Object.Index+"' style='position: absolute; top: "+Object.Top+"%; left: "+Object.Left+"%; height: "+Object.Height+"%; width: "+Object.Width+"%; opacity: "+Object.Opacity+"; border: 0px solid #000000;background-color:#b3b3b3; border-radius: 20px 20px 20px 20px; overflow: hidden;box-shadow: 2px 2px 20px #333333;'></div>";
 
 		$( "#"+Object.Parent+"" ).append(Object.SignupPageDiv);
 		
-		Object.SignupText = "<div id='signuptext' style='color:blue;font-size:1em;font-family:Garamond;font-weight:bold;text-align:center;position: absolute; left:5%;top:10%;width:40%;height:10%;line-height:300%'>Name :</div>";
+		Object.SignupText = "<div id='signuptext' style='color:#4d004d;font-size:1em;font-family:Garamond;font-weight:bold;text-align:left;position: absolute; left:15%;top:10%;width:20%;height:10%;line-height:300%'>Name :</div>";
 
 		$( "#Signup_Div"+Object.Index+"" ).append(Object.SignupText);
 
-		Object.DobText = "<div id='dobtext' style='color:blue;font-size:1em;font-family:Garamond;font-weight:bold;text-align:center;position: absolute; left:5%;top:20%;width:40%;height:10%;line-height:300%'>Date of Birth :</div>";
+		Object.DobText = "<div id='dobtext' style='color:#4d004d;font-size:1em;font-family:Garamond;font-weight:bold;text-align:left;position: absolute; left:15%;top:20%;width:20%;height:10%;line-height:300%'>Date of Birth :</div>";
 
 		$( "#Signup_Div"+Object.Index+"" ).append(Object.DobText);
 
-		Object.GenderText = "<div id='signuptext' style='color:blue;font-size:1em;font-family:Garamond;font-weight:bold;text-align:center;position: absolute; left:5%;top:30%;width:40%;height:10%;line-height:300%'>Gender :</div>";
+		Object.GenderText = "<div id='signuptext' style='color:#4d004d;font-size:1em;font-family:Garamond;font-weight:bold;text-align:left;position: absolute; left:15%;top:30%;width:20%;height:10%;line-height:300%'>Gender :</div>";
 
 		$( "#Signup_Div"+Object.Index+"" ).append(Object.GenderText);
 
-		Object.EmailIdText = "<div id='signuptext' style='color:blue;font-size:1em;font-family:Garamond;font-weight:bold;text-align:center;position: absolute; left:5%;top:40%;width:40%;height:10%;line-height:300%'>Email Id :</div>";
+		Object.EmailIdText = "<div id='signuptext' style='color:#4d004d;font-size:1em;font-family:Garamond;font-weight:bold;text-align:left;position: absolute; left:15%;top:40%;width:20%;height:10%;line-height:300%'>Email Id :</div>";
 
 		$( "#Signup_Div"+Object.Index+"" ).append(Object.EmailIdText);
 
-		Object.PasswordText = "<div id='passwordtext' style='color:blue;font-size:1em;font-family:Garamond;font-weight:bold;text-align:center;position: absolute; left:5%;top:50%;width:40%;height:10%;line-height:300%'>Password :</div>";
+		Object.PasswordText = "<div id='passwordtext' style='color:#4d004d;font-size:1em;font-family:Garamond;font-weight:bold;text-align:left;position: absolute; left:15%;top:50%;width:20%;height:10%;line-height:300%'>Password :</div>";
 
 		$( "#Signup_Div"+Object.Index+"" ).append(Object.PasswordText);
 
-		Object.ProfilePicText = "<div id='signuptext' style='color:blue;font-size:1em;font-family:Garamond;font-weight:bold;text-align:center;position: absolute; left:5%;top:60%;width:40%;height:10%;line-height:300%'>Profile Picture :</div>";
+		Object.ProfilePicText = "<div id='signuptext' style='color:#4d004d;font-size:1em;font-family:Garamond;font-weight:bold;text-align:left;position: absolute; left:15%;top:60%;width:22%;height:10%;line-height:300%'>Profile Picture :</div>";
 
 		$( "#Signup_Div"+Object.Index+"" ).append(Object.ProfilePicText);
 
-
 		Object.UserNameInput = "<input type='text' id='UserNameInput' spellcheck='false' placeholder='Enter name'/>";
 		$( "#Signup_Div"+Object.Index+"" ).append(Object.UserNameInput);
-		$( "#UserNameInput" ).css( {"position":"absolute","top":"10%","left":"55%", "width":"40%" , "height":"8%", "font-size":"1em", "font-weight": "none","color":"#000000","background-color":"rgb(258,258,255)","border":"0px solid rgb(88,151,19)","border-radius":"60px","padding":"0px", "padding-left":"10px", "padding-right":"0px", "box-shadow":"0px 0px 15px #888888"});
+		$( "#UserNameInput" ).css( {"position":"absolute","top":"10%","left":"45%", "width":"40%" , "height":"8%", "font-size":"1em", "font-weight": "none","color":"#000000","background-color":"rgb(258,258,255)","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"10px", "padding-right":"0px", "box-shadow":"0px 0px 15px #888888"});
 
 		$( "#UserNameInput" ).focus();
 
 		Object.DobInput = "<input type='date' id='DobInput' placeholder='Enter Date of Birth'/>";
 		$( "#Signup_Div"+Object.Index+"" ).append(Object.DobInput);
-		$( "#DobInput" ).css( {"position":"absolute","top":"20%","left":"55%", "width":"40%" , "height":"8%", "font-size":"1em", "font-weight": "none","color":"#000000","background-color":"rgb(258,258,255)","border":"0px solid rgb(88,151,19)","border-radius":"60px","padding":"0px", "padding-left":"10px", "padding-right":"0px", "box-shadow":"0px 0px 15px #888888"});
+		$( "#DobInput" ).css( {"position":"absolute","top":"20%","left":"45%", "width":"40%" , "height":"8%", "font-size":"1em", "font-weight": "none","color":"#000000","background-color":"rgb(258,258,255)","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"10px", "padding-right":"0px", "box-shadow":"0px 0px 15px #888888"});
 
 		Object.GenderInput = "<input type='text' id='GenderInput' spellcheck='false' placeholder='F/M'/>";
 		$( "#Signup_Div"+Object.Index+"" ).append(Object.GenderInput);
-		$( "#GenderInput" ).css( {"position":"absolute","top":"30%","left":"55%", "width":"40%" , "height":"8%", "font-size":"1em", "font-weight": "none","color":"#000000","background-color":"rgb(258,258,255)","border":"0px solid rgb(88,151,19)","border-radius":"60px","padding":"0px", "padding-left":"10px", "padding-right":"0px", "box-shadow":"0px 0px 15px #888888"});
+		$( "#GenderInput" ).css( {"position":"absolute","top":"30%","left":"45%", "width":"40%" , "height":"8%", "font-size":"1em", "font-weight": "none","color":"#000000","background-color":"rgb(258,258,255)","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"10px", "padding-right":"0px", "box-shadow":"0px 0px 15px #888888"});
 
 		Object.EmailIdInput = "<input type='email' id='EmailIdInput' spellcheck='false' placeholder='Enter email id'/>";
 		$( "#Signup_Div"+Object.Index+"" ).append(Object.EmailIdInput);
-		$( "#EmailIdInput" ).css( {"position":"absolute","top":"40%","left":"55%", "width":"40%" , "height":"8%", "font-size":"1em", "font-weight": "none","color":"#000000","background-color":"rgb(258,258,255)","border":"0px solid rgb(88,151,19)","border-radius":"60px","padding":"0px", "padding-left":"10px", "padding-right":"0px", "box-shadow":"0px 0px 15px #888888"});
+		$( "#EmailIdInput" ).css( {"position":"absolute","top":"40%","left":"45%", "width":"40%" , "height":"8%", "font-size":"1em", "font-weight": "none","color":"#000000","background-color":"rgb(258,258,255)","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"10px", "padding-right":"0px", "box-shadow":"0px 0px 15px #888888"});
 
 		Object.PasswordInput = "<input type='password' id='PasswordInput' spellcheck='false' placeholder='Enter Password'/>";
 		$( "#Signup_Div"+Object.Index+"" ).append(Object.PasswordInput);
-		$( "#PasswordInput" ).css( {"position":"absolute","top":"50%","left":"55%", "width":"40%" , "height":"8%", "font-size":"1em", "font-weight": "none","color":"#000000","background-color":"rgb(258,258,255)","border":"0px solid rgb(88,151,19)","border-radius":"60px","padding":"0px", "padding-left":"10px", "padding-right":"0px", "box-shadow":"0px 0px 15px #888888"});
+		$( "#PasswordInput" ).css( {"position":"absolute","top":"50%","left":"45%", "width":"40%" , "height":"8%", "font-size":"1em", "font-weight": "none","color":"#000000","background-color":"rgb(258,258,255)","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"10px", "padding-right":"0px", "box-shadow":"0px 0px 15px #888888"});
 
-		Object.ProfilePicInput = "<input type='text' id='ProfilePicInput' spellcheck='false' placeholder='Enter link to profile picture'/>";
+		Object.ProfilePicInput = "<input type='file' id='ProfilePicInput'/>";
 		$( "#Signup_Div"+Object.Index+"" ).append(Object.ProfilePicInput);
-		$( "#ProfilePicInput" ).css( {"position":"absolute","top":"60%","left":"55%", "width":"40%" , "height":"8%", "font-size":"1em", "font-weight": "none","color":"#000000","background-color":"rgb(258,258,255)","border":"0px solid rgb(88,151,19)","border-radius":"60px","padding":"0px", "padding-left":"10px", "padding-right":"0px", "box-shadow":"0px 0px 15px #888888"});
+		$( "#ProfilePicInput" ).css( {"position":"absolute","top":"60%","left":"45%", "width":"40%" , "height":"8%", "font-size":"1em", "font-weight": "none","color":"#000000","background-color":"rgb(258,258,255)","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"10px", "padding-right":"0px", "box-shadow":"0px 0px 15px #888888"});
+		
+		// $( "#ProfilePicInput").on('change',function(){
+		// 	var elt = document.getElementById("ProfilePicInput");
+		// 	encodeImageFileAsURL(elt);
+		// });
 
 		Object.GoButton = "<input type='button' id='GoButton' value='Signup'/>";
 		$( "#Signup_Div"+Object.Index+"" ).append(Object.GoButton);
@@ -103,7 +107,8 @@ function SignupObj()
 			var gender1 = $("#GenderInput").val();
 			var emailid = $("#EmailIdInput").val();
 			var passw = $("#PasswordInput").val();
-			var pp = $("#ProfilePicInput").val();
+			// var pp = $("#ProfilePicInput").val();
+			var pp = Object.filename;
 			if (uname != "" && passw != "" && dob1 != "" && gender1 != "" && emailid != "" && pp != "")
 			{
 				//Pass the input to the server here
@@ -161,7 +166,31 @@ function SignupObj()
 				alert("Password cannot be left blank");
 				$("#PasswordInput").focus();
 			}
+		});
 
+		function encodeImageFileAsURL(element) {
+		  var file = element.files[0];
+		  var reader = new FileReader();
+		  reader.onloadend = function() {
+		    // $.post(server_url+"/upload",
+		    // {
+		    //     content: reader.result
+		    //     // path: $( "#UploadFile" +Object.Index+"").val()
+		    //     // path: element.files[0]
+		    // },
+		    // function(data, status){
+		    //     console.log("Data: " + data + "\nStatus: " + status);
+		    // });
+		    console.log(reader.result);
+		    return reader.result;
+		  }
+		  reader.readAsDataURL(file);	  
+		}
+		
+		$( "#ProfilePicInput").on('change',function(){
+			var elt = document.getElementById("ProfilePicInput");
+
+			Object.filename = encodeImageFileAsURL(elt);
 		});
 	}
 }

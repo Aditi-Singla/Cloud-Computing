@@ -33,30 +33,29 @@ function LoginObj()
 	this.Render = function()
 	{
 	// Begin User Interface
-
 		Object.LoginPageDiv = 	
-					"<div id='Login_Div"+Object.Index+"' style='position: absolute; top: "+Object.Top+"%; left: "+Object.Left+"%; height: "+Object.Height+"%; width: "+Object.Width+"%; opacity: "+Object.Opacity+"; border: 0px solid #000000;background-color:#AFC9FA; border-radius: 50px 0px 50px 0px; overflow: hidden;box-shadow: 2px 2px 20px #333333;'></div>";
+					"<div id='Login_Div"+Object.Index+"' style='position: absolute; top: "+Object.Top+"%; left: "+Object.Left+"%; height: "+Object.Height+"%; width: "+Object.Width+"%; opacity: "+Object.Opacity+"; border: 0px solid #000000;background-color:#b3b3b3; border-radius: 20px 20px 20px 20px; overflow: hidden;box-shadow: 2px 2px 20px #333333;'></div>";
 
 		$( "#"+Object.Parent+"" ).append(Object.LoginPageDiv);
 		
-		Object.LoginText = "<div id='logintext' style='color:blue;font-size:1em;font-family:Garamond;font-weight:bold;text-align:center;position: absolute; left:5%;top:10%;width:40%;height:20%;line-height:300%'>Email Id :</div>";
+		Object.LoginText = "<div id='logintext' style='color:#4d004d;font-size:1em;font:Helvetica;font-family:cursive;font-weight:bold;text-align:center;position: absolute; left:20%;top:10%;width:20%;height:30%;line-height:300%'>Email Id :</div>";
 
 		$( "#Login_Div"+Object.Index+"" ).append(Object.LoginText);
 
-		Object.PasswordText = "<div id='passwordtext' style='color:blue;font-size:1em;font-family:Garamond;font-weight:bold;text-align:center;position: absolute; left:5%;top:35%;width:40%;height:20%;line-height:300%'>Password :</div>";
+		Object.PasswordText = "<div id='passwordtext' style='color:#4d004d;font-size:1em;font:Helvetica;font-family:cursive;font-weight:bold;text-align:center;position: absolute; left:20%;top:35%;width:20%;height:30%;line-height:300%'>Password :</div>";
 
 		$( "#Login_Div"+Object.Index+"" ).append(Object.PasswordText);
 
 
 		Object.UserNameInput = "<input type='email' id='UserNameInput' spellcheck='false' placeholder='Enter username'/>";
 		$( "#Login_Div"+Object.Index+"" ).append(Object.UserNameInput);
-		$( "#UserNameInput" ).css( {"position":"absolute","top":"10%","left":"55%", "width":"40%" , "height":"20%", "font-size":"1em", "font-weight": "none","color":"#000000","background-color":"rgb(258,258,255)","border":"0px solid rgb(88,151,19)","border-radius":"60px","padding":"0px", "padding-left":"10px", "padding-right":"0px", "box-shadow":"0px 0px 15px #888888"});
+		$( "#UserNameInput" ).css( {"position":"absolute","top":"10%","left":"50%", "width":"40%" , "height":"20%", "font-size":"1em", "font-weight": "none","color":"#000000","background-color":"rgb(258,258,255)","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"10px", "padding-right":"0px", "box-shadow":"0px 0px 15px #888888"});
 
 		$( "#UserNameInput" ).focus();
 
 		Object.PasswordInput = "<input type='password' id='PasswordInput' spellcheck='false' placeholder='Enter Password'/>";
 		$( "#Login_Div"+Object.Index+"" ).append(Object.PasswordInput);
-		$( "#PasswordInput" ).css( {"position":"absolute","top":"35%","left":"55%", "width":"40%" , "height":"20%", "font-size":"1em", "font-weight": "none","color":"#000000","background-color":"rgb(258,258,255)","border":"0px solid rgb(88,151,19)","border-radius":"60px","padding":"0px", "padding-left":"10px", "padding-right":"0px", "box-shadow":"0px 0px 15px #888888"});
+		$( "#PasswordInput" ).css( {"position":"absolute","top":"35%","left":"50%", "width":"40%" , "height":"20%", "font-size":"1em", "font-weight": "none","color":"#000000","background-color":"rgb(258,258,255)","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"10px", "padding-right":"0px", "box-shadow":"0px 0px 15px #888888"});
 
 		Object.GoButton = "<input type='button' id='GoButton' value='Login'/>";
 		$( "#Login_Div"+Object.Index+"" ).append(Object.GoButton);
@@ -118,7 +117,7 @@ function LoginObj()
 		$( "#SignupButton" ).on('click',function()  //edit
 		{ 
 			$("#LoginDiv").empty();
-			signup.Initialize( "SignupObj1", 20 , 10 , "LoginDiv" , 60 , 80 , 1.0);
+			signup.Initialize( "SignupObj1", 30 , 10 , "LoginDiv" , 40 , 80 , 0.8);
 		});
 
 	}

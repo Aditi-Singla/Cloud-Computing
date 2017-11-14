@@ -16,7 +16,6 @@ body
 	/*background-color: rgb(50,187,238);*/
 	/*font-family: comic sans MS;*/
 	font-family: Segoe UI, Tahoma, sans-serif;
-
 	/*background:radial-gradient( rgb(208,255,203) , rgb(218,255,213) , rgb(188,255,183) );*/
 }
 
@@ -44,8 +43,8 @@ body
 	bottom:15px;
 	/*width:98%;*/
 	/*border: 2px solid #FFC706; */
-	background-color: #FFFFFF;
-
+	/*background-color: #FFFFFF;*/
+	background-image: url("background.jpg");
 	box-shadow: 5px 5px 40px #000000;
 
 	border-radius: 7px 7px 7px 7px;
