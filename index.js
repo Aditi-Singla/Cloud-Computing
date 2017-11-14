@@ -219,27 +219,47 @@ mongoClient.connect(dbUrl, function(err, db) {
 	})
 
 	// API for adding a post
-	apiRoutes.get('/add_post', function(req, res) {
-		// if ('obj_b64' in req.body)
-		// {
-		// 	blobSvc.createBlockBlobFromText(container_name, req.query.user_name + "_" + req.query.post_no, req.query.obj_b64, function(err, result, response) {
-		// 		if (err)
-		// 		{
-		// 			console.log("Error uploading file to azure");
-		// 			res.send({"success" : false, "message" : "Error uploading file to Azure"});
-		// 		}
-		// 	});			
-		// }
+	apiRoutes.post('/add_post', function(req, res) {
 		allUsers.updateOne(
-			{"user_name" : req.query.user_name},
+			{"user_name" : req.body.user_name},
 			{
-				$push: {"posts" : JSON.parse(req.query.new_post)},
+				$push: {"posts" : req.body.new_post},
 			},
 			function (err, result) {
 				if (err)
 					res.send({"success" : false, "message" : "Error processing Request"})
 				else
 					res.send({"success" : true, "message" : result})
+			}
+		)
+	})
+
+	// API for uploading a file
+	apiRoutes.post('/upload_file', function(res, res) {
+		// upload to azure storage
+		var hashed_fname = crypto.createHash('sha1').update(req.body.user_name + req.body.count).digest('hex');
+		blobSvc.createBlockBlobFromText(container_name, hashed_fname, req.body.new_post.file, function(err, result, response) {
+			if (err)
+			{
+				console.log("Error uploading file to azure");
+				res.send({"success" : false, "message" : "Error uploading file to Azure"});
+			}
+		});
+		var new_post = {
+			"date" : req.body.new_post.date,
+			"text" : "",
+			"file" : storage_acct_id + container_name + "/" + hashed_fname
+		};
+		allUsers.updateOne(
+			{"user_name" : req.body.user_name},
+			{
+				$push: {"posts" : new_post}
+			},
+			function (err, result) {
+				if (err)
+					res.send({"success" : false, "message" : "Error processing Request"})
+				else
+					res.send({"success" : true, "message" : result, "new_post" : new_post})
 			}
 		)
 	})
