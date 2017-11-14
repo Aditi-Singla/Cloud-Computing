@@ -32,9 +32,15 @@ app.listen(port);
 
 console.log('Server Listening at port '+port);
 
+// mongo client vars:
 var mongoClient = require("mongodb").MongoClient;
 var objectId = require('mongodb').ObjectID;
 var dbUrl = "mongodb://instabooks:jdICID8JtrKnBexeewppyvsCS7OdvMOY7hFbp68j3zRn0Bo6U6cgtksBjR3II5GjEz4cGlqo0KtjbGKlIIrM6w==@instabooks.documents.azure.com:10255/?ssl=true";
+
+// blob storage:
+var storage_acct_id = "https://csg61c421e81cdex4e5exba7.blob.core.windows.net/";
+var blobSvc = azure.createBlobService('DefaultEndpointsProtocol=https;AccountName=csg61c421e81cdex4e5exba7;AccountKey=7r1xu+1Q54cbqv4s8ihw+i+/Zy4lnTbOgLekvyKb8VoKWEYtpXVH98vIIAZ2I1gPbu/cdiTi8/YKtDVwZGm/TA==;EndpointSuffix=core.windows.net');
+var container_name = "instabooks";
 
 var apiRoutes = express.Router();
 
@@ -54,7 +60,6 @@ var apiRoutes = express.Router();
 // 		callback();
 // 	})
 // };
-
 
 mongoClient.connect(dbUrl, function(err, db) {
 	assert.equal(null, err);
@@ -104,12 +109,19 @@ mongoClient.connect(dbUrl, function(err, db) {
 
 	// API for creating new user (get just for now)
 	apiRoutes.post('/register', function(req, res) {
+		blobSvc.createBlockBlobFromText(container_name, req.body.user_name, req.body.image_b64, function(err, result, response) {
+			if (err)
+			{
+				console.log("Error uploading file to azure");
+				res.send({"success" : false, "message" : "Error uploading file to Azure"});
+			}
+		});
 		var new_user = {
 			"profile" : {
 				"dob" : req.body.dob,
 				"gender" : req.body.gender,
 				"name" : req.body.name,
-				"pic_link" : req.body.pic_link
+				"pic_link" : storage_acct_id + container_name + "/" + req.body.user_name
 			},
 			"user_name" : req.body.user_name,
 			"password" : crypto.createHash('sha1').update(req.body.password).digest('hex'),
@@ -144,33 +156,33 @@ mongoClient.connect(dbUrl, function(err, db) {
 	});
 
 	// All further APIs need to send a token with them.
-	// apiRoutes.use(function(req, res, next) {
-	// 	// check header or url parameters or post parameters for token
-	// 	var token = req.body.token || req.query.token || req.headers['x-access-token'];
-	// 	// decode token
-	// 	if (token)
-	// 	{
-	// 		// verifies secret and checks exp
-	// 		jwt.verify(token, app.get('superSecret'), function(err, decoded) {      
-	// 			if (err)
-	// 				return res.json({ success: false, message: 'Failed to authenticate token.' });    
-	// 			else
-	// 			{
-	// 				// if everything is good, save to request for use in other routes
-	// 				req.decoded = decoded;    
-	// 				next();
-	// 			}
-	// 		});
-	// 	}
-	// 	else
-	// 	{
-	// 		// if there is no token, return an error
-	// 		return res.status(403).send({ 
-	// 			success: false, 
-	// 			message: 'No token provided.' 
-	// 		});
-	// 	}
-	// });
+	apiRoutes.use(function(req, res, next) {
+		// check header or url parameters or post parameters for token
+		var token = req.body.token || req.query.token || req.headers['x-access-token'];
+		// decode token
+		if (token)
+		{
+			// verifies secret and checks exp
+			jwt.verify(token, app.get('superSecret'), function(err, decoded) {      
+				if (err)
+					return res.json({ success: false, message: 'Failed to authenticate token.' });    
+				else
+				{
+					// if everything is good, save to request for use in other routes
+					req.decoded = decoded;    
+					next();
+				}
+			});
+		}
+		else
+		{
+			// if there is no token, return an error
+			return res.status(403).send({ 
+				success: false, 
+				message: 'No token provided.' 
+			});
+		}
+	});
 
 
 	// API for getting a particular user's info.
@@ -195,6 +207,16 @@ mongoClient.connect(dbUrl, function(err, db) {
 
 	// API for adding a post
 	apiRoutes.get('/add_post', function(req, res) {
+		// if ('obj_b64' in req.body)
+		// {
+		// 	blobSvc.createBlockBlobFromText(container_name, req.query.user_name + "_" + req.query.post_no, req.query.obj_b64, function(err, result, response) {
+		// 		if (err)
+		// 		{
+		// 			console.log("Error uploading file to azure");
+		// 			res.send({"success" : false, "message" : "Error uploading file to Azure"});
+		// 		}
+		// 	});			
+		// }
 		allUsers.updateOne(
 			{"user_name" : req.query.user_name},
 			{
