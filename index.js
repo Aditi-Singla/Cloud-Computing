@@ -257,6 +257,11 @@ mongoClient.connect(dbUrl, function(err, db) {
 		)
 	})
 
+	// API to send messages
+	apiRoutes.post('/send_message', function(req, res) {
+		
+	})
+
 	// API for getting list of all users whom a user is not following  (Not Tested)
 	apiRoutes.post('/get_user_list', function(req, res) {
 		var current_following_dict = {}

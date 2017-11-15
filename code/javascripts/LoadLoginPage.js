@@ -3,8 +3,8 @@ var login = new LoginObj();
 
 var acctPage = new HomePageOne(); 
 
-// var server_url = "http://instabooks.azurewebsites.net/api";
-var server_url = "http://localhost:3000/api";
+var server_url = "http://instabooks.azurewebsites.net/api";
+// var server_url = "http://localhost:3000/api";
 
 var token = "";
 
