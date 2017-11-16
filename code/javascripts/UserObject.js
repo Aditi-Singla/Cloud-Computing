@@ -34,7 +34,7 @@ function UserObject()
 
 		$( "#"+Object.Parent+"" ).append(Object.UserDiv);
 
-		Object.TitleText = "<div id='titletext"+Object.Index+"' style='color:#4d004d;font-size:1.5em;font-family:Garamond;font-weight:bold;text-align:center;position: absolute; left:45%;top:2%;width:30%;height:7%;line-height:200%'>" + this.UserData.profile.name +" </div>";
+		Object.TitleText = "<div id='titletext"+Object.Index+"' style='color:#4d004d;font-size:1.5em;font-family:Garamond;font-weight:bold;text-align:left;position: absolute; left:40%;top:2%;width:40%;height:7%;line-height:300%'>" + this.UserData.profile.name +" </div>";
 
 		$( "#User_Div"+Object.Index+"" ).append(Object.PPText);		
 
@@ -67,7 +67,7 @@ function UserObject()
 
 		$( "#User_Div"+Object.Index+"" ).append(Object.PostsText);
 
-		Object.PostsListText = "<div id='PostsListtext"+Object.Index+"' style='position: absolute; align:left; left:4%;top:40%;width:80%;height:22%'></div>";
+		Object.PostsListText = "<div id='PostsListtext"+Object.Index+"' style='position: absolute; text-align:left; left:6%;top:40%;width:80%;height:22%'></div>";
 
 		$( "#User_Div"+Object.Index+"" ).append(Object.PostsListText);
 
