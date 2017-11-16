@@ -39,16 +39,16 @@ function UserObject()
 		$( "#User_Div"+Object.Index+"" ).append(Object.PPText);		
 
 		$.get(Object.UserData.profile.pic_link,
-		    function(data, status){
-		        console.log("Data: " + data + "\nStatus: " + status);
+			function(data, status){
+				console.log("Data: " + data + "\nStatus: " + status);
 
-		        Object.PPText = "<img id='Image"+Object.Index+"' src="+ Object.UserData.profile.pic_link +">";
-		        $( "#User_Div"+Object.Index+"" ).append(Object.PPText);
-		        
-			    $( "#Image" + Object.Index).attr("src",data);
+				Object.PPText = "<img id='Image"+Object.Index+"' src="+ Object.UserData.profile.pic_link +">";
+				$( "#User_Div"+Object.Index+"" ).append(Object.PPText);
+
+				$( "#Image" + Object.Index).attr("src",data);
 				$( "#Image" + Object.Index).css({"visibility":"visible", "position":"absolute", "top":"2%", "left":"5%", "width":"30%", "height":"25%"});
-			    
-		    });
+
+			});
 
 
 		Object.DobText = "<div id='Dobtext"+Object.Index+"' style='color:#4d004d;font-size:1.2em;font-family:Garamond;font-weight:bold;text-align:left;position: absolute; left:40%;top:9%;width:40%;height:7%;line-height:300%'> " + this.UserData.profile.dob +" </div>";
@@ -67,7 +67,7 @@ function UserObject()
 
 		$( "#User_Div"+Object.Index+"" ).append(Object.PostsText);
 
-		Object.PostsListText = "<div id='PostsListtext"+Object.Index+"' style='position: absolute; text-align:left; left:6%;top:40%;width:80%;height:22%'></div>";
+		Object.PostsListText = "<div id='PostsListtext"+Object.Index+"' style='position: absolute; text-align:left; left:6%;top:40%;width:80%;height:22%,overflow: scroll'></div>";
 
 		$( "#User_Div"+Object.Index+"" ).append(Object.PostsListText);
 
@@ -87,7 +87,7 @@ function UserObject()
 
 		$( "#User_Div"+Object.Index+"" ).append(Object.UploadsText);
 
-		Object.UploadsListText = "<div id='UploadsListtext"+Object.Index+"' style='position: absolute; left:4%;top:75%;width:40%;height:22%'></div>";
+		Object.UploadsListText = "<div id='UploadsListtext"+Object.Index+"' style='position: absolute; left:4%;top:75%;width:40%;height:22%,overflow: scroll'></div>";
 
 		$( "#User_Div"+Object.Index+"" ).append(Object.UploadsListText);
 
@@ -104,23 +104,14 @@ function UserObject()
 
 		
 		function encodeImageFileAsURL(element) {
-		  var file = element.files[0];
-		  var reader = new FileReader();
-		  reader.onloadend = function() {
-		    // $.post(server_url+"/upload",
-		    // {
-		    //     content: reader.result
-		    //     // path: $( "#UploadFile" +Object.Index+"").val()
-		    //     // path: element.files[0]
-		    // },
-		    // function(data, status){
-		    //     console.log("Data: " + data + "\nStatus: " + status);
-		    // });
-		    console.log(reader.result);
-		    Object.filename = reader.result;
-		    // return reader.result;
-		  }
-		  reader.readAsDataURL(file);	  
+			var file = element.files[0];
+			var reader = new FileReader();
+			reader.onloadend = function() {
+				console.log(reader.result);
+				Object.filename = reader.result;
+				// return reader.result;
+			}
+			reader.readAsDataURL(file);	  
 		}
 		
 		if (Object.isEditable){
@@ -145,26 +136,26 @@ function UserObject()
 				{
 					//Pass the input to the server here
 					$.post(server_url+"/add_post",
-				    {
-				        token: Object.UserData.token,
-				        user_name: Object.UserData.user_name,
-				        new_post: {
-				        			"date": date,
-				        			"text": post
-							      }
-				    },
-				    function(data, status){
-				        
-				        (Object.UserData.posts).push(
+					{
+						token: Object.UserData.token,
+						user_name: Object.UserData.user_name,
+						new_post: {
+									"date": date,
+									"text": post
+								  }
+					},
+					function(data, status){
+					
+						(Object.UserData.posts).push(
 									{
 										date: date,
 										text: post,
 										file: ""
 									}
 								);
-				        alert("Posted successfully!");
+						alert("Posted successfully!");
 
-				    });
+					});
 				}
 				else
 				{
@@ -194,12 +185,12 @@ function UserObject()
 					//Pass the input to the server here
 					$.post(server_url+"/upload_file",
 				    {
-				        token: Object.UserData.token,
-				        user_name: Object.UserData.user_name,
-				        count: Object.UserData.posts.length,
-				        new_post: {
-				        			"date": date,
-				        			"file": upload
+						token: Object.UserData.token,
+						user_name: Object.UserData.user_name,
+						count: Object.UserData.posts.length,
+						new_post: {
+								"date": date,
+								"file": upload
 							      }
 				    },
 				    function(data, status){
@@ -210,10 +201,10 @@ function UserObject()
 							(Object.UserData.posts).push(data.new_post);
 							alert("Uploaded successfully!");
 
-					    }
-					    else
-					    	alert(data.message);
-				        
+						}
+						else
+							alert(data.message);
+
 				    });
 				}
 				else
@@ -227,6 +218,47 @@ function UserObject()
 				var elt = document.getElementById("UploadTextInput");
 				encodeImageFileAsURL(elt);
 				console.log(Object.filename);
+			});
+		}
+		else{
+			Object.AddMessageText = "<input type='text' id='MessageTextInput' spellcheck='false' placeholder='Type Message'/>";
+			$( "#User_Div"+Object.Index+"" ).append(Object.AddMessageText);
+			$( "#MessageTextInput" ).css( {"position":"absolute","top":"33%","left":"30%", "width":"40%" , "height":"5%", "font-size":"1em", "font-weight": "none","color":"#000000","background-color":"rgb(258,258,255)","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"10px", "padding-right":"0px", "box-shadow":"0px 0px 15px #888888"});
+			
+			Object.MessageButton = "<input type='button' id='MessageButton' value='Send' />";
+			$( "#User_Div"+Object.Index+"" ).append(Object.MessageButton);
+			$( "#MessageButton" ).css( {"position":"absolute","top":"33%","left":"75%", "width":"20%" , "height":"5%", "font-size":"1.2em", "font-weight": "semibold","color":"#FFFFFF","background-color":"#800080","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"0px", "padding-right":"0px", "box-shadow":"2px 2px 5px #888888", "text-align":"center"});	
+
+			$( "#MessageButton" ).on('mouseover',function(){ $( this ).css( {"background-color": "#4d004d","border":"1px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #333333"}); });
+			$( "#MessageButton" ).on('mouseout',function(){ $( this ).css( {"background-color": "#800080","border":"0px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #999999"}); });
+
+			$( "#MessageButton" ).on('click',function()  //edit
+			{ 
+				var message = $("#MessageTextInput").val();
+				var today = new Date();
+				var date1 = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+				if (message != "")
+				{
+					//Pass the input to the server here
+					$.message(server_url+"/send_message",
+					{
+						token: Object.UserData.token,
+						user_name: Object.UserData.user_name,
+						name: Object.UserData.profile.name,
+						date: date1,
+						text: message
+					},
+					function(data, status){
+
+						alert("message sent successfully!");
+
+					});
+				}
+				else
+				{
+					alert("Write a message to be sent!");
+					$("#MessageTextInput").focus();
+				}
 			});
 		}
 	}

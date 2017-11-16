@@ -9,6 +9,7 @@ function HomePageOne()
 	this.Opacity = "";
 	this.AssociatedData = {};
 	this.uo = new UserObject();
+	this.message = new MessageObject(); 
 	
 	var Object = this;
 	Object.UserList = [];
@@ -110,7 +111,7 @@ function HomePageOne()
 			var p = Object.UserList[i];
 			Object.FollowButton1 = "<input type='button' id='FollowButton"+i+"' value='"+ p.name +"' />";
 			$( "#WorkArea_Div"+Object.Index+"" ).append(Object.FollowButton1);
-			$( "#FollowButton"+i ).css( {"width":"60%" , "height":"10%", "font-size":"1.2em", "font-weight": "semibold","color":"#FFFFFF","background-color":"#800080","border":"0px solid rgb(88,151,19)","border-radius":"10px","margin-top":"5px","padding-top":"10px", "padding-left":"0px", "padding-right":"0px", "box-shadow":"2px 2px 5px #888888", "text-align":"center"});
+			$( "#FollowButton"+i ).css( {"left":"10%", "width":"60%" , "height":"10%", "font-size":"1.2em", "font-weight": "semibold","color":"#FFFFFF","background-color":"#800080","border":"0px solid rgb(88,151,19)","border-radius":"10px","margin-top":"5px","padding-top":"10px", "padding-left":"0px", "padding-right":"0px", "box-shadow":"2px 2px 5px #888888", "text-align":"center"});
 			$( "#FollowButton"+i ).on('mouseover',function(){ $( this ).css( {"background-color": "#4d004d","border":"1px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #333333"}); });
 			$( "#FollowButton"+i ).on('mouseout',function(){ $( this ).css( {"background-color": "#800080","border":"0px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #999999"}); });
 			$( "#FollowButton"+i ).on('click',function()  //edit
@@ -141,6 +142,18 @@ function HomePageOne()
 							$( "#FollowButton" ).click();
 							alert("User followed");
 				    });	
+			});
+
+			Object.FollowButtonM1 = "<input type='button' id='FollowButtonM"+i+"' value='Message' />";
+			$( "#WorkArea_Div"+Object.Index+"" ).append(Object.FollowButtonM1);
+			$( "#FollowButtonM"+i ).css( {"left":"80%", "width":"10%" , "height":"10%", "font-size":"1.2em", "font-weight": "semibold","color":"#FFFFFF","background-color":"#800080","border":"0px solid rgb(88,151,19)","border-radius":"10px","margin-top":"5px","padding-top":"10px", "padding-left":"0px", "padding-right":"0px", "box-shadow":"2px 2px 5px #888888", "text-align":"center"});
+			$( "#FollowButtonM"+i ).on('mouseover',function(){ $( this ).css( {"background-color": "#4d004d","border":"1px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #333333"}); });
+			$( "#FollowButtonM"+i ).on('mouseout',function(){ $( this ).css( {"background-color": "#800080","border":"0px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #999999"}); });
+			$( "#FollowButtonM"+i ).on('click',function()  //edit
+			{
+				var i = parseInt(this.id.substr(13));
+				var p = Object.UserList[i];
+				Object.message.Initialize("ViewDO", 5 , 5 , "WorkArea_Div" + Object.Index , 90 , 90 , 1.0, Object.AssociatedData, p.user_name, p.name);			
 			});			
 		};
 
@@ -191,7 +204,7 @@ function HomePageOne()
 			// console.log(p);
 			Object.FollowingButton1 = "<input type='button' id='FollowingButton"+i+"' value='"+ p.name +"' />";
 			$( "#WorkArea_Div"+Object.Index+"" ).append(Object.FollowingButton1);
-			$( "#FollowingButton"+i ).css( {"width":"60%" , "height":"10%", "font-size":"1.2em", "font-weight": "semibold","color":"#FFFFFF","background-color":"#800080","border":"0px solid rgb(88,151,19)","border-radius":"10px","margin-top":"5px","padding-top":"10px", "padding-left":"0px", "padding-right":"0px", "box-shadow":"2px 2px 5px #888888", "text-align":"center"});
+			$( "#FollowingButton"+i ).css( {"left":"10%", "width":"60%" , "height":"10%", "font-size":"1.2em", "font-weight": "semibold","color":"#FFFFFF","background-color":"#800080","border":"0px solid rgb(88,151,19)","border-radius":"10px","margin-top":"5px","padding-top":"10px", "padding-left":"0px", "padding-right":"0px", "box-shadow":"2px 2px 5px #888888", "text-align":"center"});
 			$( "#FollowingButton"+i ).on('mouseover',function(){ $( this ).css( {"background-color": "#4d004d","border":"1px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #333333"}); });
 			$( "#FollowingButton"+i ).on('mouseout',function(){ $( this ).css( {"background-color": "#800080","border":"0px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #999999"}); });
 			$( "#FollowingButton"+i ).on('click', function() {
@@ -209,6 +222,17 @@ function HomePageOne()
 					        $("#WorkArea_Div"+Object.Index).empty();
 							Object.uo.Initialize("ViewDO", 5 , 5 , "WorkArea_Div" + Object.Index , 90 , 90 , 1.0, data,false);			
 				    });	
+			});
+			Object.FollowingButtonM1 = "<input type='button' id='FollowingButtonM"+i+"' value='Message' />";
+			$( "#WorkArea_Div"+Object.Index+"" ).append(Object.FollowingButtonM1);
+			$( "#FollowingButtonM"+i ).css( {"left":"80%", "width":"10%" , "height":"10%", "font-size":"1.2em", "font-weight": "semibold","color":"#FFFFFF","background-color":"#800080","border":"0px solid rgb(88,151,19)","border-radius":"10px","margin-top":"5px","padding-top":"10px", "padding-left":"0px", "padding-right":"0px", "box-shadow":"2px 2px 5px #888888", "text-align":"center"});
+			$( "#FollowingButtonM"+i ).on('mouseover',function(){ $( this ).css( {"background-color": "#4d004d","border":"1px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #333333"}); });
+			$( "#FollowingButtonM"+i ).on('mouseout',function(){ $( this ).css( {"background-color": "#800080","border":"0px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #999999"}); });
+			$( "#FollowingButtonM"+i ).on('click',function()  //edit
+			{
+				var i = parseInt(this.id.substr(13));
+				var p = Object.UserList[i];
+				Object.message.Initialize("ViewDO", 5 , 5 , "WorkArea_Div" + Object.Index , 90 , 90 , 1.0, Object.AssociatedData, p.user_name, p.name);			
 			});
 		};
 
