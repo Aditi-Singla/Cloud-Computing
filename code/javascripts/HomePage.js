@@ -67,7 +67,7 @@ function HomePageOne()
 
 		Object.LogoutButton = "<input type='button' id='LogoutButton' value='Logout' />";
 		$( "#Welcome_Div"+Object.Index+"" ).append(Object.LogoutButton);
-		$( "#LogoutButton" ).css( {"position":"absolute","top":"5%","right":"10%", "width":"10%" , "height":"90%", "font-size":"1.2em", "font-weight": "semibold","color":"#FFFFFF","background-color":"transparent","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"0px", "padding-right":"0px", "box-shadow":"0px 0px 0px #888888", "text-align":"center"});
+		$( "#LogoutButton" ).css( {"background-color": "#800080","position":"absolute","top":"5%","right":"10%", "width":"10%" , "height":"90%", "font-size":"1.2em", "font-weight": "semibold","color":"#FFFFFF","background-color":"transparent","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"0px", "padding-right":"0px", "box-shadow":"0px 0px 0px #888888", "text-align":"center"});
 		
 		Object.MyProfileButton = "<input type='button' id='MyProfileButton' value='My Profile' />";
 		$( "#Function_Div"+Object.Index+"" ).append(Object.MyProfileButton);
@@ -98,9 +98,6 @@ function HomePageOne()
 
 		$( "#FollowingButton" ).on('mouseover',function(){ $( this ).css( {"background-color": "#4d004d","border":"1px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #333333"}); });
 		$( "#FollowingButton" ).on('mouseout',function(){ $( this ).css( {"background-color": "#800080","border":"0px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #999999"}); });
-
-		$( "#LogoutButton" ).on('mouseover',function(){ $( this ).css( {"background-color": "transparent","border":"1px solid rgb(10,10,200)", "color": "#4d004d","box-shadow":"0px 0px 10px #333333"}); });
-		$( "#LogoutButton" ).on('mouseout',function(){ $( this ).css( {"background-color": "#800080","border":"0px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 0px #999999"}); });
 
 		$( "#MyProfileButton" ).on('click',function()  //edit
 		{ 
@@ -194,7 +191,7 @@ function HomePageOne()
 			// console.log(p);
 			Object.FollowingButton1 = "<input type='button' id='FollowingButton"+i+"' value='"+ p.name +"' />";
 			$( "#WorkArea_Div"+Object.Index+"" ).append(Object.FollowingButton1);
-			$( "#FollowingButton"+i ).css( {"width":"60%" , "height":"15%", "font-size":"1.2em", "font-weight": "semibold","color":"#FFFFFF","background-color":"#800080","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding-top":"10px", "padding-left":"0px", "padding-right":"0px", "box-shadow":"2px 2px 5px #888888", "text-align":"center"});
+			$( "#FollowingButton"+i ).css( {"width":"60%" , "height":"10%", "font-size":"1.2em", "font-weight": "semibold","color":"#FFFFFF","background-color":"#800080","border":"0px solid rgb(88,151,19)","border-radius":"10px","margin-top":"5px","padding-top":"10px", "padding-left":"0px", "padding-right":"0px", "box-shadow":"2px 2px 5px #888888", "text-align":"center"});
 			$( "#FollowingButton"+i ).on('mouseover',function(){ $( this ).css( {"background-color": "#4d004d","border":"1px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #333333"}); });
 			$( "#FollowingButton"+i ).on('mouseout',function(){ $( this ).css( {"background-color": "#800080","border":"0px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #999999"}); });
 			$( "#FollowingButton"+i ).on('click', function() {
