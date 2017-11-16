@@ -174,7 +174,7 @@ function HomePageOne()
 		
 		$( "#FollowersButton" ).on('click',function()  //edit
 		{ 
-			Object.FollowersText = "<div id='Followerstext"+Object.Index+"' style='position: absolute; font-size:1.2em;left:15%;top:20%;width:70%;height:40%;border: 0px solid #000000;background-color:#b3b3b3; border-radius: 50px 0px 50px 0px; overflow: hidden;box-shadow: 2px 2px 20px #333333;'></div>";
+			Object.FollowersText = "<div id='Followerstext"+Object.Index+"' style='color:#4d004d; position: absolute; font-size:1.2em;left:15%;top:20%;width:70%;height:40%;border: 0px solid #000000;background-color:#b3b3b3; border-radius: 20px 20px 20px 20px; padding-top:10px; overflow: hidden;box-shadow: 2px 2px 20px #333333;'></div>";
 			$("#WorkArea_Div"+Object.Index).empty();
 			$("#WorkArea_Div"+Object.Index+"" ).append(Object.FollowersText);
 

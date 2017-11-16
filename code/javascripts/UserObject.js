@@ -126,11 +126,11 @@ function UserObject()
 		if (Object.isEditable){
 			Object.AddPostText = "<input type='text' id='PostTextInput' spellcheck='false' placeholder='Add post'/>";
 			$( "#User_Div"+Object.Index+"" ).append(Object.AddPostText);
-			$( "#PostTextInput" ).css( {"position":"absolute","top":"30%","left":"30%", "width":"40%" , "height":"5%", "font-size":"1em", "font-weight": "none","color":"#000000","background-color":"rgb(258,258,255)","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"10px", "padding-right":"0px", "box-shadow":"0px 0px 15px #888888"});
+			$( "#PostTextInput" ).css( {"position":"absolute","top":"33%","left":"30%", "width":"40%" , "height":"5%", "font-size":"1em", "font-weight": "none","color":"#000000","background-color":"rgb(258,258,255)","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"10px", "padding-right":"0px", "box-shadow":"0px 0px 15px #888888"});
 			
 			Object.PostButton = "<input type='button' id='PostButton' value='Post' />";
 			$( "#User_Div"+Object.Index+"" ).append(Object.PostButton);
-			$( "#PostButton" ).css( {"position":"absolute","top":"30%","left":"75%", "width":"20%" , "height":"5%", "font-size":"1.2em", "font-weight": "semibold","color":"#FFFFFF","background-color":"#800080","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"0px", "padding-right":"0px", "box-shadow":"2px 2px 5px #888888", "text-align":"center"});	
+			$( "#PostButton" ).css( {"position":"absolute","top":"33%","left":"75%", "width":"20%" , "height":"5%", "font-size":"1.2em", "font-weight": "semibold","color":"#FFFFFF","background-color":"#800080","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"0px", "padding-right":"0px", "box-shadow":"2px 2px 5px #888888", "text-align":"center"});	
 
 			$( "#PostButton" ).on('mouseover',function(){ $( this ).css( {"background-color": "#4d004d","border":"1px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #333333"}); });
 			$( "#PostButton" ).on('mouseout',function(){ $( this ).css( {"background-color": "#800080","border":"0px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #999999"}); });
@@ -175,11 +175,11 @@ function UserObject()
 			
 			Object.AddUploadText = "<input type='file' id='UploadTextInput' spellcheck='false' placeholder='Add upload link'/>";
 			$( "#User_Div"+Object.Index+"" ).append(Object.AddUploadText);
-			$( "#UploadTextInput" ).css( {"position":"absolute","top":"65%","left":"30%", "width":"40%" , "height":"5%", "font-size":"1em", "font-weight": "none","color":"#000000","background-color":"rgb(258,258,255)","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"10px", "padding-right":"0px", "box-shadow":"0px 0px 15px #888888"});
+			$( "#UploadTextInput" ).css( {"position":"absolute","top":"68%","left":"30%", "width":"40%" , "height":"5%", "font-size":"1em", "font-weight": "none","color":"#000000","background-color":"rgb(258,258,255)","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"10px", "padding-right":"0px", "box-shadow":"0px 0px 15px #888888"});
 			
 			Object.UploadButton = "<input type='button' id='UploadButton' value='Upload' />";
 			$( "#User_Div"+Object.Index+"" ).append(Object.UploadButton);
-			$( "#UploadButton" ).css( {"position":"absolute","top":"65%","left":"75%", "width":"20%" , "height":"5%", "font-size":"1.2em", "font-weight": "semibold","color":"#FFFFFF","background-color":"#800080","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"0px", "padding-right":"0px", "box-shadow":"2px 2px 5px #888888", "text-align":"center"});	
+			$( "#UploadButton" ).css( {"position":"absolute","top":"68%","left":"75%", "width":"20%" , "height":"5%", "font-size":"1.2em", "font-weight": "semibold","color":"#FFFFFF","background-color":"#800080","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"0px", "padding-right":"0px", "box-shadow":"2px 2px 5px #888888", "text-align":"center"});	
 
 			$( "#UploadButton" ).on('mouseover',function(){ $( this ).css( {"background-color": "#4d004d","border":"1px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #333333"}); });
 			$( "#UploadButton" ).on('mouseout',function(){ $( this ).css( {"background-color": "#800080","border":"0px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #999999"}); });
