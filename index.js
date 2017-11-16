@@ -280,7 +280,10 @@ mongoClient.connect(dbUrl, function(err, db) {
 			else
 			{
 				var sender_dict = result[0].chats;
-				sender_dict[(msg.receiver_uname)].push(msg);
+				if (msg.receiver_uname in sender_dict)
+					sender_dict[(msg.receiver_uname)].push(msg);
+				else
+					sender_dict[msg.receiver_uname] = [msg];
 				console.log("new dictionary : ");
 				console.log(sender_dict);
 				sender_new_dict = sender_dict;
@@ -296,13 +299,17 @@ mongoClient.connect(dbUrl, function(err, db) {
 				)
 			}
 		})
+		// update receiver's chat
 		allUsers.find({"user_name" : msg.receiver_uname}).toArray(function (err, result) {
 			if ((err) || result.length != 1)
 				res.send({"success" : false, "message" : "Error processing Request"})
 			else
 			{
 				var recvr_dict = result[0].chats;
-				recvr_dict[msg.sender_uname].push(msg);
+				if (msg.sender_uname in recvr_dict)
+					recvr_dict[msg.sender_uname].push(msg);
+				else
+					recvr_dict[msg.sender_uname] = [msg];
 				console.log("new recvr dict :");
 				console.log(recvr_dict);
 				allUsers.updateOne(
@@ -319,8 +326,7 @@ mongoClient.connect(dbUrl, function(err, db) {
 				)
 				}
 			}
-		})
-
+		)
 	})
 
 	// API for getting list of all users whom a user is not following  (Not Tested)

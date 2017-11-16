@@ -153,6 +153,7 @@ function HomePageOne()
 			{
 				var i = parseInt(this.id.substr(13));
 				var p = Object.UserList[i];
+				$("#WorkArea_Div"+Object.Index).empty();
 				Object.message.Initialize("ViewDO", 5 , 5 , "WorkArea_Div" + Object.Index , 90 , 90 , 1.0, Object.AssociatedData, p.user_name, p.name);			
 			});			
 		};
@@ -230,8 +231,9 @@ function HomePageOne()
 			$( "#FollowingButtonM"+i ).on('mouseout',function(){ $( this ).css( {"background-color": "#800080","border":"0px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #999999"}); });
 			$( "#FollowingButtonM"+i ).on('click',function()  //edit
 			{
-				var i = parseInt(this.id.substr(13));
-				var p = Object.UserList[i];
+				var i = parseInt(this.id.substr(16));
+				var p = Object.AssociatedData.following[i];
+				$("#WorkArea_Div"+Object.Index).empty();
 				Object.message.Initialize("ViewDO", 5 , 5 , "WorkArea_Div" + Object.Index , 90 , 90 , 1.0, Object.AssociatedData, p.user_name, p.name);			
 			});
 		};

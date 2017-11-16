@@ -8,7 +8,7 @@ function MessageObject()
 	this.Height = "";
 	this.Opacity = "";
 	this.UserData = {};
-	this.Username = "";
+	this.UserName = "";
 	this.Name = "";
 	
 	var Object = this;
@@ -38,12 +38,12 @@ function MessageObject()
 
 		$( "#User_Div"+Object.Index+"" ).append(Object.NameText);
 		
-		Object.MessagesText = "<div id='MessagesText"+Object.Index+"' style='position: absolute; text-align:left; left:6%;top:15%;width:80%;height:60%,overflow: scroll'></div>";
+		Object.MessagesText = "<div id='MessagesText"+Object.Index+"' style='position: absolute; text-align:left; left:6%;top:15%;width:80%;height:60%;overflow: scroll'></div>";
 
 		$( "#User_Div"+Object.Index+"" ).append(Object.MessagesText);
 
 		var totalStr1 = "";
-		for (var i = 0; i < this.UserData.chats[this.UserName+""].length; i++) {
+		for (var i = 0; (this.UserName+"" in this.UserData.chats) && i < this.UserData.chats[this.UserName+""].length; i++) {
 			var p = (this.UserData.chats[this.UserName+""])[i];
 			console.log(p);
 			var str = "<b>"+p.date+"</b> : "+"<b>"+p.sender_uname+"</b> : "+p.text+" <br/>";
@@ -71,11 +71,11 @@ function MessageObject()
 			if (message != "")
 			{
 				//Pass the input to the server here
-				$.message(server_url+"/send_message",
+				$.post(server_url+"/send_message",
 				{
 					token: Object.UserData.token,
-					sender_uname: Object.UserData.user_name;
-					sender_name: Object.UserData.profile.name;
+					sender_uname: Object.UserData.user_name,
+					sender_name: Object.UserData.profile.name,
 					receiver_uname: Object.UserName,
 					receiver_name: Object.Name,
 					date: date1,
@@ -88,8 +88,17 @@ function MessageObject()
 				        token = data.token;
 				        Object.UserData.chats = data.sender_chats;
 						alert("message sent successfully!");
-						Object.message.Initialize("ViewDO", 5 , 5 , "WorkArea_Div" + Object.Index , 90 , 90 , 1.0, Object.UserData, p.user_name, p.name);
-
+						var totalStr1 = "";
+						for (var i = 0; (Object.UserName+"" in Object.UserData.chats) && i < Object.UserData.chats[Object.UserName+""].length; i++) {
+							var p = (Object.UserData.chats[Object.UserName+""])[i];
+							console.log(p);
+							var str = "<b>"+p.date+"</b> : "+"<b>"+p.sender_uname+"</b> : "+p.text+" <br/>";
+							totalStr1 +=  str;
+						}
+						$( "#MessagesText"+Object.Index+"" ).empty();
+						// console.log(totalStr1 + " : NEW ");
+						$( "#MessagesText"+Object.Index+"" ).append(totalStr1);
+						$( "#MessageTextInput" ).val("");
 				    }
 				    else
 				   	{

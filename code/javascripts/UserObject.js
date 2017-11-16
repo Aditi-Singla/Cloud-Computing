@@ -36,7 +36,7 @@ function UserObject()
 
 		Object.TitleText = "<div id='titletext"+Object.Index+"' style='color:#4d004d;font-size:1.5em;font-family:Garamond;font-weight:bold;text-align:left;position: absolute; left:40%;top:2%;width:40%;height:7%;line-height:300%'>" + this.UserData.profile.name +" </div>";
 
-		$( "#User_Div"+Object.Index+"" ).append(Object.PPText);		
+		$( "#User_Div"+Object.Index+"" ).append(Object.TitleText);		
 
 		$.get(Object.UserData.profile.pic_link,
 			function(data, status){
@@ -67,7 +67,7 @@ function UserObject()
 
 		$( "#User_Div"+Object.Index+"" ).append(Object.PostsText);
 
-		Object.PostsListText = "<div id='PostsListtext"+Object.Index+"' style='position: absolute; text-align:left; left:6%;top:40%;width:80%;height:22%,overflow: scroll'></div>";
+		Object.PostsListText = "<div id='PostsListtext"+Object.Index+"' style='position: absolute; text-align:left; left:6%;top:40%;width:80%;height:22%;overflow: scroll'></div>";
 
 		$( "#User_Div"+Object.Index+"" ).append(Object.PostsListText);
 
@@ -87,22 +87,27 @@ function UserObject()
 
 		$( "#User_Div"+Object.Index+"" ).append(Object.UploadsText);
 
-		Object.UploadsListText = "<div id='UploadsListtext"+Object.Index+"' style='position: absolute; left:4%;top:75%;width:40%;height:22%,overflow: scroll'></div>";
+		Object.UploadsListText = "<div id='UploadsListtext"+Object.Index+"' style='position: absolute; left:6%;top:75%;width:80%;height:22%;overflow: scroll'></div>";
 
 		$( "#User_Div"+Object.Index+"" ).append(Object.UploadsListText);
 
-		var totalStr = "";;
+		var totalStr = "";
+		Object.UnorderedList = "<table id='table1'>" + totalStr + "</table>";
+		$( "#UploadsListtext"+Object.Index+"" ).append(Object.UnorderedList);
 		for (var i = 0; i < this.UserData.posts.length; i++) {
 			var p = this.UserData.posts[i];
 			if (p.text == ""){
-				var str = "<td><img src = '"+p.file+"'></td>";
-				totalStr +=  str;
+			$.get(p.file,
+				function(data, status){
+					console.log("Data: " + data + "\nStatus: " + status);
+					var str = "<td><img src = '"+ data +"'></td>";
+					totalStr +=  str;
+					$( "#table1" ).append(str);
+				});
 			}
 		}
-		Object.UnorderedList = "<table class='images'>" + totalStr + "</table>";
-		$( "#UploadsListtext"+Object.Index+"" ).append(Object.UnorderedList);
 
-		
+
 		function encodeImageFileAsURL(element) {
 			var file = element.files[0];
 			var reader = new FileReader();
@@ -154,6 +159,19 @@ function UserObject()
 									}
 								);
 						alert("Posted successfully!");
+						$( "#PostTextInput" ).val("") ;
+						$( "#PostsListtext"+Object.Index+"" ).empty();
+						var totalStr1 = "";
+						for (var i = 0; i < Object.UserData.posts.length; i++) {
+							var p = Object.UserData.posts[i];
+							console.log(p);
+							if (p.text != ""){
+								var str = "<b>"+p.date+"</b> : "+p.text+" <br/>";
+								totalStr1 +=  str;
+							}
+						}
+						console.log(totalStr1);
+						$( "#PostsListtext"+Object.Index+"" ).append(totalStr1);
 
 					});
 				}
@@ -200,6 +218,18 @@ function UserObject()
 							token = data.token;
 							(Object.UserData.posts).push(data.new_post);
 							alert("Uploaded successfully!");
+							$( "#UploadTextInput" ).val("") ;
+							$( "#UploadsListtext"+Object.Index+"" ).empty();
+							var totalStr = "";;
+							for (var i = 0; i < Object.UserData.posts.length; i++) {
+								var p = Object.UserData.posts[i];
+								if (p.text == ""){
+									var str = "<td><img src = '"+p.file+"'></td>";
+									totalStr +=  str;
+								}
+							}
+							Object.UnorderedList = "<table class='images'>" + totalStr + "</table>";
+							$( "#UploadsListtext"+Object.Index+"" ).append(Object.UnorderedList);
 
 						}
 						else
@@ -218,47 +248,6 @@ function UserObject()
 				var elt = document.getElementById("UploadTextInput");
 				encodeImageFileAsURL(elt);
 				console.log(Object.filename);
-			});
-		}
-		else{
-			Object.AddMessageText = "<input type='text' id='MessageTextInput' spellcheck='false' placeholder='Type Message'/>";
-			$( "#User_Div"+Object.Index+"" ).append(Object.AddMessageText);
-			$( "#MessageTextInput" ).css( {"position":"absolute","top":"33%","left":"30%", "width":"40%" , "height":"5%", "font-size":"1em", "font-weight": "none","color":"#000000","background-color":"rgb(258,258,255)","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"10px", "padding-right":"0px", "box-shadow":"0px 0px 15px #888888"});
-			
-			Object.MessageButton = "<input type='button' id='MessageButton' value='Send' />";
-			$( "#User_Div"+Object.Index+"" ).append(Object.MessageButton);
-			$( "#MessageButton" ).css( {"position":"absolute","top":"33%","left":"75%", "width":"20%" , "height":"5%", "font-size":"1.2em", "font-weight": "semibold","color":"#FFFFFF","background-color":"#800080","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"0px", "padding-right":"0px", "box-shadow":"2px 2px 5px #888888", "text-align":"center"});	
-
-			$( "#MessageButton" ).on('mouseover',function(){ $( this ).css( {"background-color": "#4d004d","border":"1px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #333333"}); });
-			$( "#MessageButton" ).on('mouseout',function(){ $( this ).css( {"background-color": "#800080","border":"0px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #999999"}); });
-
-			$( "#MessageButton" ).on('click',function()  //edit
-			{ 
-				var message = $("#MessageTextInput").val();
-				var today = new Date();
-				var date1 = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-				if (message != "")
-				{
-					//Pass the input to the server here
-					$.message(server_url+"/send_message",
-					{
-						token: Object.UserData.token,
-						user_name: Object.UserData.user_name,
-						name: Object.UserData.profile.name,
-						date: date1,
-						text: message
-					},
-					function(data, status){
-
-						alert("message sent successfully!");
-
-					});
-				}
-				else
-				{
-					alert("Write a message to be sent!");
-					$("#MessageTextInput").focus();
-				}
 			});
 		}
 	}
