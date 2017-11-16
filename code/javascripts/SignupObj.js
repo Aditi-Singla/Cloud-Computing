@@ -85,11 +85,6 @@ function SignupObj()
 		$( "#Signup_Div"+Object.Index+"" ).append(Object.ProfilePicInput);
 		$( "#ProfilePicInput" ).css( {"position":"absolute","top":"60%","left":"45%", "width":"40%" , "height":"8%", "font-size":"1em", "font-weight": "none","color":"#000000","background-color":"rgb(258,258,255)","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"10px", "padding-right":"0px", "box-shadow":"0px 0px 15px #888888"});
 		
-		// $( "#ProfilePicInput").on('change',function(){
-		// 	var elt = document.getElementById("ProfilePicInput");
-		// 	encodeImageFileAsURL(elt);
-		// });
-
 		Object.GoButton = "<input type='button' id='GoButton' value='Signup'/>";
 		$( "#Signup_Div"+Object.Index+"" ).append(Object.GoButton);
 		$( "#GoButton" ).css( {"position":"absolute","top":"75%","left":"35%","height":"10%","width":"30%","background-color":"#276FF5","border":"0px solid rgb(88,151,19)","color":"#FFFFFF","font-size":"1em","border-radius":"5px", "box-shadow":"2px 2px 5px #000000"});

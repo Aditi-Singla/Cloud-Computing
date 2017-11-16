@@ -30,11 +30,11 @@ function UserObject()
 
 	this.Render = function()
 	{
-		Object.UserDiv = "<div id='User_Div"+Object.Index+"' style='position: absolute; top: "+Object.Top+"%; left: "+Object.Left+"%; height: "+Object.Height+"%; width: "+Object.Width+"%; opacity: "+Object.Opacity+"; border: 0px solid #000000;background-color:#b3b3b3; border-radius: 50px 0px 50px 0px; overflow: hidden;box-shadow: 2px 2px 20px #333333;'></div>";
+		Object.UserDiv = "<div id='User_Div"+Object.Index+"' style='position: absolute; top: "+Object.Top+"%; left: "+Object.Left+"%; height: "+Object.Height+"%; width: "+Object.Width+"%; opacity: "+Object.Opacity+"; border: 0px solid #000000;background-color:#b3b3b3; border-radius: 20px 20px 20px 20px; overflow: hidden;box-shadow: 2px 2px 20px #333333;'></div>";
 
 		$( "#"+Object.Parent+"" ).append(Object.UserDiv);
 
-		Object.TitleText = "<div id='titletext"+Object.Index+"' style='color:#4d004d;font-size:1.5em;font-family:Garamond;font-weight:bold;text-align:center;position: absolute; left:35%;top:2%;width:30%;height:7%;line-height:200%'>" + this.UserData.profile.name +" </div>";
+		Object.TitleText = "<div id='titletext"+Object.Index+"' style='color:#4d004d;font-size:1.5em;font-family:Garamond;font-weight:bold;text-align:left;position: absolute; left:40%;top:2%;width:40%;height:7%;line-height:300%'>" + this.UserData.profile.name +" </div>";
 
 		$( "#User_Div"+Object.Index+"" ).append(Object.PPText);		
 
@@ -46,28 +46,28 @@ function UserObject()
 		        $( "#User_Div"+Object.Index+"" ).append(Object.PPText);
 		        
 			    $( "#Image" + Object.Index).attr("src",data);
-				$( "#Image" + Object.Index).css({"visibility":"visible", "position":"absolute", "top":"2%", "left":"5%", "width":"30%", "height":"7%"});
+				$( "#Image" + Object.Index).css({"visibility":"visible", "position":"absolute", "top":"2%", "left":"5%", "width":"30%", "height":"25%"});
 			    
 		    });
 
 
-		Object.DobText = "<div id='Dobtext"+Object.Index+"' style='color:#4d004d;font-size:1.2em;font-family:Garamond;font-weight:bold;text-align:left;position: absolute; left:40%;top:10%;width:40%;height:7%;line-height:300%'> " + this.UserData.profile.dob +" </div>";
+		Object.DobText = "<div id='Dobtext"+Object.Index+"' style='color:#4d004d;font-size:1.2em;font-family:Garamond;font-weight:bold;text-align:left;position: absolute; left:40%;top:9%;width:40%;height:7%;line-height:300%'> " + this.UserData.profile.dob +" </div>";
 
 		$( "#User_Div"+Object.Index+"" ).append(Object.DobText);
 
-		Object.GenderText = "<div id='Gendertext"+Object.Index+"' style='color:#4d004d;font-size:1.2em;font-family:Garamond;font-weight:bold;text-align:left;position: absolute; left:40%;top:20%;width:40%;height:7%;line-height:300%'> " + this.UserData.profile.gender +" </div>";
+		Object.GenderText = "<div id='Gendertext"+Object.Index+"' style='color:#4d004d;font-size:1.2em;font-family:Garamond;font-weight:bold;text-align:left;position: absolute; left:40%;top:16%;width:40%;height:7%;line-height:300%'> " + this.UserData.profile.gender +" </div>";
 
 		$( "#User_Div"+Object.Index+"" ).append(Object.GenderText);
 
-		Object.EmailIdText = "<div id='EmailIdtext"+Object.Index+"' style='color:#4d004d;font-size:1.2em;font-family:Garamond;font-weight:bold;text-align:left;position: absolute; left:40%;top:30%;width:40%;height:7%;line-height:300%'> " + this.UserData.user_name +" </div>";
+		Object.EmailIdText = "<div id='EmailIdtext"+Object.Index+"' style='color:#4d004d;font-size:1.2em;font-family:Garamond;font-weight:bold;text-align:left;position: absolute; left:40%;top:23%;width:40%;height:7%;line-height:300%'> " + this.UserData.user_name +" </div>";
 
 		$( "#User_Div"+Object.Index+"" ).append(Object.EmailIdText);
 
-		Object.PostsText = "<div id='Poststext"+Object.Index+"' style='color:#4d004d;font-size:1.2em;font-family:Garamond;font-weight:bold;text-align:left;position: absolute; left:4%;top:40%;width:40%;height:7%;line-height:300%'> Posts </div>";
+		Object.PostsText = "<div id='Poststext"+Object.Index+"' style='color:#4d004d;font-size:1.2em;font-family:Garamond;font-weight:bold;text-align:left;position: absolute; left:4%;top:30%;width:40%;height:7%;line-height:300%'> Posts </div>";
 
 		$( "#User_Div"+Object.Index+"" ).append(Object.PostsText);
 
-		Object.PostsListText = "<div id='PostsListtext"+Object.Index+"' style='position: absolute; align:left; left:4%;top:50%;width:80%;height:17%'></div>";
+		Object.PostsListText = "<div id='PostsListtext"+Object.Index+"' style='position: absolute; text-align:left; left:6%;top:40%;width:80%;height:22%'></div>";
 
 		$( "#User_Div"+Object.Index+"" ).append(Object.PostsListText);
 
@@ -83,11 +83,11 @@ function UserObject()
 		console.log(totalStr1);
 		$( "#PostsListtext"+Object.Index+"" ).append(totalStr1);
 
-		Object.UploadsText = "<div id='Uploadstext"+Object.Index+"' style='color:#4d004d;font-size:1.2em;font-family:Garamond;font-weight:bold;text-align:left;position: absolute; left:4%;top:70%;width:40%;height:7%;line-height:300%'> Uploads </div>";
+		Object.UploadsText = "<div id='Uploadstext"+Object.Index+"' style='color:#4d004d;font-size:1.2em;font-family:Garamond;font-weight:bold;text-align:left;position: absolute; left:4%;top:65%;width:40%;height:7%;line-height:300%'> Uploads </div>";
 
 		$( "#User_Div"+Object.Index+"" ).append(Object.UploadsText);
 
-		Object.UploadsListText = "<div id='UploadsListtext"+Object.Index+"' style='position: absolute; left:4%;top:80%;width:40%;height:17%'></div>";
+		Object.UploadsListText = "<div id='UploadsListtext"+Object.Index+"' style='position: absolute; left:4%;top:75%;width:40%;height:22%'></div>";
 
 		$( "#User_Div"+Object.Index+"" ).append(Object.UploadsListText);
 
@@ -95,11 +95,11 @@ function UserObject()
 		for (var i = 0; i < this.UserData.posts.length; i++) {
 			var p = this.UserData.posts[i];
 			if (p.text == ""){
-				var str = "<li><img src = '"+p.file+"'></li>";
+				var str = "<td><img src = '"+p.file+"'></td>";
 				totalStr +=  str;
 			}
 		}
-		Object.UnorderedList = "<ul class='images'>" + totalStr + "</ul>";
+		Object.UnorderedList = "<table class='images'>" + totalStr + "</table>";
 		$( "#UploadsListtext"+Object.Index+"" ).append(Object.UnorderedList);
 
 		
@@ -126,11 +126,11 @@ function UserObject()
 		if (Object.isEditable){
 			Object.AddPostText = "<input type='text' id='PostTextInput' spellcheck='false' placeholder='Add post'/>";
 			$( "#User_Div"+Object.Index+"" ).append(Object.AddPostText);
-			$( "#PostTextInput" ).css( {"position":"absolute","top":"40%","left":"20%", "width":"40%" , "height":"10%", "font-size":"1em", "font-weight": "none","color":"#000000","background-color":"rgb(258,258,255)","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"10px", "padding-right":"0px", "box-shadow":"0px 0px 15px #888888"});
+			$( "#PostTextInput" ).css( {"position":"absolute","top":"33%","left":"30%", "width":"40%" , "height":"5%", "font-size":"1em", "font-weight": "none","color":"#000000","background-color":"rgb(258,258,255)","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"10px", "padding-right":"0px", "box-shadow":"0px 0px 15px #888888"});
 			
 			Object.PostButton = "<input type='button' id='PostButton' value='Post' />";
 			$( "#User_Div"+Object.Index+"" ).append(Object.PostButton);
-			$( "#PostButton" ).css( {"position":"absolute","top":"40%","left":"70%", "width":"20%" , "height":"10%", "font-size":"1.2em", "font-weight": "semibold","color":"#FFFFFF","background-color":"#800080","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"0px", "padding-right":"0px", "box-shadow":"2px 2px 5px #888888", "text-align":"center"});	
+			$( "#PostButton" ).css( {"position":"absolute","top":"33%","left":"75%", "width":"20%" , "height":"5%", "font-size":"1.2em", "font-weight": "semibold","color":"#FFFFFF","background-color":"#800080","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"0px", "padding-right":"0px", "box-shadow":"2px 2px 5px #888888", "text-align":"center"});	
 
 			$( "#PostButton" ).on('mouseover',function(){ $( this ).css( {"background-color": "#4d004d","border":"1px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #333333"}); });
 			$( "#PostButton" ).on('mouseout',function(){ $( this ).css( {"background-color": "#800080","border":"0px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #999999"}); });
@@ -175,11 +175,11 @@ function UserObject()
 			
 			Object.AddUploadText = "<input type='file' id='UploadTextInput' spellcheck='false' placeholder='Add upload link'/>";
 			$( "#User_Div"+Object.Index+"" ).append(Object.AddUploadText);
-			$( "#UploadTextInput" ).css( {"position":"absolute","top":"70%","left":"20%", "width":"40%" , "height":"10%", "font-size":"1em", "font-weight": "none","color":"#000000","background-color":"rgb(258,258,255)","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"10px", "padding-right":"0px", "box-shadow":"0px 0px 15px #888888"});
+			$( "#UploadTextInput" ).css( {"position":"absolute","top":"68%","left":"30%", "width":"40%" , "height":"5%", "font-size":"1em", "font-weight": "none","color":"#000000","background-color":"rgb(258,258,255)","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"10px", "padding-right":"0px", "box-shadow":"0px 0px 15px #888888"});
 			
 			Object.UploadButton = "<input type='button' id='UploadButton' value='Upload' />";
 			$( "#User_Div"+Object.Index+"" ).append(Object.UploadButton);
-			$( "#UploadButton" ).css( {"position":"absolute","top":"70%","left":"70%", "width":"20%" , "height":"10%", "font-size":"1.2em", "font-weight": "semibold","color":"#FFFFFF","background-color":"#800080","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"0px", "padding-right":"0px", "box-shadow":"2px 2px 5px #888888", "text-align":"center"});	
+			$( "#UploadButton" ).css( {"position":"absolute","top":"68%","left":"75%", "width":"20%" , "height":"5%", "font-size":"1.2em", "font-weight": "semibold","color":"#FFFFFF","background-color":"#800080","border":"0px solid rgb(88,151,19)","border-radius":"10px","padding":"0px", "padding-left":"0px", "padding-right":"0px", "box-shadow":"2px 2px 5px #888888", "text-align":"center"});	
 
 			$( "#UploadButton" ).on('mouseover',function(){ $( this ).css( {"background-color": "#4d004d","border":"1px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #333333"}); });
 			$( "#UploadButton" ).on('mouseout',function(){ $( this ).css( {"background-color": "#800080","border":"0px solid rgb(145,141,2)", "color": "#FFFFFF","box-shadow":"0px 0px 10px #999999"}); });
