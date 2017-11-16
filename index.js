@@ -31,7 +31,7 @@ var objectId = require('mongodb').ObjectID;
 var dbUrl = "mongodb://instabooks:jdICID8JtrKnBexeewppyvsCS7OdvMOY7hFbp68j3zRn0Bo6U6cgtksBjR3II5GjEz4cGlqo0KtjbGKlIIrM6w==@instabooks.documents.azure.com:10255/?ssl=true";
 
 // blob storage:
-var storage_acct_id = "https://csg61c421e81cdex4e5exba7.blob.core.windows.net/";
+var storage_acct_id = "http://csg61c421e81cdex4e5exba7.blob.core.windows.net/";
 var blobSvc = azure.createBlobService('DefaultEndpointsProtocol=https;AccountName=csg61c421e81cdex4e5exba7;AccountKey=7r1xu+1Q54cbqv4s8ihw+i+/Zy4lnTbOgLekvyKb8VoKWEYtpXVH98vIIAZ2I1gPbu/cdiTi8/YKtDVwZGm/TA==;EndpointSuffix=core.windows.net');
 var container_name = "instabooks";
 
@@ -93,7 +93,9 @@ mongoClient.connect(dbUrl, function(err, db) {
 					"profile" : result[0].profile,
 					"followers" : result[0].followers,
 					"following" : result[0].following,
-					"posts" : result[0].posts
+					"posts" : result[0].posts,
+					"received_msgs" : result[0].received_msgs
+					"sent_msgs" : result[0].sent_msgs
 				});
 			}
 		})
@@ -123,7 +125,9 @@ mongoClient.connect(dbUrl, function(err, db) {
 			"password" : crypto.createHash('sha1').update(req.body.password).digest('hex'),
 			"following" : [],
 			"followers" : [],
-			"posts" : []
+			"posts" : [],
+			"received_msgs" : [],
+			"sent_msgs" : []
 		}
 		// checking if the user name already exists.
 		allUsers.find({"user_name" : req.body.user_name}).toArray(function (err, result) {
@@ -154,6 +158,8 @@ mongoClient.connect(dbUrl, function(err, db) {
 						response["following"] = [];
 						response["followers"] = [];
 						response["posts"] = [];
+						response["received_msgs"] = [];
+						response["sent_msgs"] = [];
 						res.send(response);
 					}
 				})
@@ -205,7 +211,9 @@ mongoClient.connect(dbUrl, function(err, db) {
 					"profile" : result[0].profile,
 					"followers" : result[0].followers,
 					"following" : result[0].following,
-					"posts" : result[0].posts				
+					"posts" : result[0].posts,
+					"received_msgs" : result[0].received_msgs,
+					"sent_msgs" : result[0].sent_msgs		
 				})
 			}
 		})
@@ -259,7 +267,45 @@ mongoClient.connect(dbUrl, function(err, db) {
 
 	// API to send messages
 	apiRoutes.post('/send_message', function(req, res) {
-		
+		// add message to recvd_msgs of receiver.
+		var msg = {
+			"user_name" :req.body.sender_uname,
+			"name" : req.body.sender_name,
+			"date" : req.body.date,
+			"text" : req.body.text
+		}
+		allUsers.updateOne(
+			{"user_name" : req.body.receiver_uname},
+			{
+				$push: {"received_msgs" : msg}
+			},
+			function(err, result) {
+				if (err)
+					res.send({"success" : false, "message" : "1. Error processing Request"});
+				else
+					console.log("added to receiver.");				
+			}
+		)
+
+		// add message to 'following' list of sender.
+		var msg = {
+			"user_name" :req.body.receiver_uname,
+			"name" : req.body.receiver_name,
+			"date" : req.body.date,
+			"text" : req.body.text
+		}
+		allUsers.updateOne{
+			{"user_name" : req.body.sender_uname},
+			{
+				$push: {"sent_msgs" : msg}
+			},
+			function(err, result) {
+				if (err)
+					res.send({"success" : false, "message" : "2. Error processing Request"});
+				else
+					res.send({"success" : true, "message" : result});
+			}
+		}
 	})
 
 	// API for getting list of all users whom a user is not following  (Not Tested)
