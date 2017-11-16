@@ -94,8 +94,7 @@ mongoClient.connect(dbUrl, function(err, db) {
 					"followers" : result[0].followers,
 					"following" : result[0].following,
 					"posts" : result[0].posts,
-					"received_msgs" : result[0].received_msgs
-					"sent_msgs" : result[0].sent_msgs
+					"chats" : result[0].chats
 				});
 			}
 		})
@@ -126,8 +125,7 @@ mongoClient.connect(dbUrl, function(err, db) {
 			"following" : [],
 			"followers" : [],
 			"posts" : [],
-			"received_msgs" : [],
-			"sent_msgs" : []
+			"chats" : {}
 		}
 		// checking if the user name already exists.
 		allUsers.find({"user_name" : req.body.user_name}).toArray(function (err, result) {
@@ -158,8 +156,7 @@ mongoClient.connect(dbUrl, function(err, db) {
 						response["following"] = [];
 						response["followers"] = [];
 						response["posts"] = [];
-						response["received_msgs"] = [];
-						response["sent_msgs"] = [];
+						response["chats"] = {};
 						res.send(response);
 					}
 				})
@@ -212,8 +209,7 @@ mongoClient.connect(dbUrl, function(err, db) {
 					"followers" : result[0].followers,
 					"following" : result[0].following,
 					"posts" : result[0].posts,
-					"received_msgs" : result[0].received_msgs,
-					"sent_msgs" : result[0].sent_msgs		
+					"chats" : result[0].chats
 				})
 			}
 		})
@@ -267,45 +263,64 @@ mongoClient.connect(dbUrl, function(err, db) {
 
 	// API to send messages
 	apiRoutes.post('/send_message', function(req, res) {
-		// add message to recvd_msgs of receiver.
+		// message obj
 		var msg = {
-			"user_name" :req.body.sender_uname,
-			"name" : req.body.sender_name,
+			"sender_uname" :req.body.sender_uname,
+			"sender_name" : req.body.sender_name,
 			"date" : req.body.date,
-			"text" : req.body.text
-		}
-		allUsers.updateOne(
-			{"user_name" : req.body.receiver_uname},
+			"text" : req.body.text,
+			"receiver_name" : req.body.receiver_name,
+			"receiver_uname" : req.body.receiver_uname
+		};
+		// update sender's chat
+		var sender_new_dict = {};
+		allUsers.find({"user_name" : msg.sender_uname}).toArray(function (err, result) {
+			if ((err) || result.length != 1)
+				res.send({"success" : false, "message" : "Error processing Request"});
+			else
 			{
-				$push: {"received_msgs" : msg}
-			},
-			function(err, result) {
-				if (err)
-					res.send({"success" : false, "message" : "1. Error processing Request"});
-				else
-					console.log("added to receiver.");				
+				var sender_dict = result[0].chats;
+				sender_dict[(msg.receiver_uname)].push(msg);
+				console.log("new dictionary : ");
+				console.log(sender_dict);
+				sender_new_dict = sender_dict;
+				allUsers.updateOne(
+					{"user_name" : msg.sender_uname},
+					{
+						$set: {"chats" : sender_dict}
+					},
+					function (err, result) {
+						if (err)
+							res.send({"success" : false, "message" : "Error processing Request"});
+					}
+				)
 			}
-		)
+		})
+		allUsers.find({"user_name" : msg.receiver_uname}).toArray(function (err, result) {
+			if ((err) || result.length != 1)
+				res.send({"success" : false, "message" : "Error processing Request"})
+			else
+			{
+				var recvr_dict = result[0].chats;
+				recvr_dict[msg.sender_uname].push(msg);
+				console.log("new recvr dict :");
+				console.log(recvr_dict);
+				allUsers.updateOne(
+					{"user_name" : msg.receiver_uname},
+					{
+						$set: {"chats" : recvr_dict}
+					},
+					function (err, result) {
+						if (err)
+							res.send({"success" : false, "message" : "Error processing Request"});
+						else
+							res.send({"success" : true, "message" : result, "sender_chats" : sender_new_dict})
+					}
+				)
+				}
+			}
+		})
 
-		// add message to 'following' list of sender.
-		var msg = {
-			"user_name" :req.body.receiver_uname,
-			"name" : req.body.receiver_name,
-			"date" : req.body.date,
-			"text" : req.body.text
-		}
-		allUsers.updateOne{
-			{"user_name" : req.body.sender_uname},
-			{
-				$push: {"sent_msgs" : msg}
-			},
-			function(err, result) {
-				if (err)
-					res.send({"success" : false, "message" : "2. Error processing Request"});
-				else
-					res.send({"success" : true, "message" : result});
-			}
-		}
 	})
 
 	// API for getting list of all users whom a user is not following  (Not Tested)
