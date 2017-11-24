@@ -34,7 +34,7 @@ function MessageObject()
 
 		$( "#"+Object.Parent+"" ).append(Object.UserDiv);
 
-		Object.NameText = "<div id='NameText"+Object.Index+"' style='position: absolute; text-align:left; left:6%;top:2%;width:80%;height:10%'>"+this.Name+"</div>";
+		Object.NameText = "<div id='NameText"+Object.Index+"' style='color:#4d004d; position: absolute; font-weight: bold; text-align:left; left:6%;top:5%;width:80%;height:10%'>"+this.Name+"</div>";
 
 		$( "#User_Div"+Object.Index+"" ).append(Object.NameText);
 		

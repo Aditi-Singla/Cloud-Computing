@@ -172,6 +172,7 @@ function UserObject()
 						}
 						console.log(totalStr1);
 						$( "#PostsListtext"+Object.Index+"" ).append(totalStr1);
+						$( "#MyProfileButton" ).click();
 
 					});
 				}
@@ -230,6 +231,7 @@ function UserObject()
 							}
 							Object.UnorderedList = "<table class='images'>" + totalStr + "</table>";
 							$( "#UploadsListtext"+Object.Index+"" ).append(Object.UnorderedList);
+							$( "#MyProfileButton" ).click();
 
 						}
 						else
