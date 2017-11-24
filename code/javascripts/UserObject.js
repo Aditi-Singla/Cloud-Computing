@@ -100,13 +100,21 @@ function UserObject()
 			$.get(p.file,
 				function(data, status){
 					console.log("Data: " + data + "\nStatus: " + status);
-					var str = "<td><img src = '"+ data +"'></td>";
-					totalStr +=  str;
-					$( "#table1" ).append(str);
+					if (data.substr(5,9) == "video")
+					{
+						var str = "<td><video controls><source type='video/webm' src = '"+ data +"'></video></td>";
+						totalStr +=  str;
+						$( "#table1" ).append(str);	
+					}
+					else
+					{
+						var str = "<td><img src = '"+ data +"'></td>";
+						totalStr +=  str;
+						$( "#table1" ).append(str);
+					}
 				});
 			}
 		}
-
 
 		function encodeImageFileAsURL(element) {
 			var file = element.files[0];
@@ -225,7 +233,7 @@ function UserObject()
 							for (var i = 0; i < Object.UserData.posts.length; i++) {
 								var p = Object.UserData.posts[i];
 								if (p.text == ""){
-									var str = "<td><img src = '"+p.file+"'></td>";
+									var str = "<td><img src = '"+p.file+" height=20% width=20%'></td>";
 									totalStr +=  str;
 								}
 							}
