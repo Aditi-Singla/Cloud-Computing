@@ -40,7 +40,7 @@ function UserObject()
 
 		$.get(Object.UserData.profile.pic_link,
 			function(data, status){
-				console.log("Data: " + data + "\nStatus: " + status);
+				// console.log("Data: " + data + "\nStatus: " + status);
 
 				Object.PPText = "<img id='Image"+Object.Index+"' src="+ Object.UserData.profile.pic_link +">";
 				$( "#User_Div"+Object.Index+"" ).append(Object.PPText);
@@ -80,7 +80,7 @@ function UserObject()
 				totalStr1 +=  str;
 			}
 		}
-		console.log(totalStr1);
+		// console.log(totalStr1);
 		$( "#PostsListtext"+Object.Index+"" ).append(totalStr1);
 
 		Object.UploadsText = "<div id='Uploadstext"+Object.Index+"' style='color:#4d004d;font-size:1.2em;font-family:Garamond;font-weight:bold;text-align:left;position: absolute; left:4%;top:65%;width:40%;height:7%;line-height:300%'> Uploads </div>";
@@ -99,16 +99,17 @@ function UserObject()
 			if (p.text == ""){
 			$.get(p.file,
 				function(data, status){
-					console.log("Data: " + data + "\nStatus: " + status);
-					if (data.substr(5,9) == "video")
+					// console.log("Data: " + data + "\nStatus: " + status);
+					console.log(data.substr(5,5));
+					if (data.substr(5,5) == "video")
 					{
-						var str = "<td><video controls><source type='video/webm' src = '"+ data +"'></video></td>";
+						var str = "<td><video height=80% width=80% controls><source type='video/webm' src = '"+ data +"'></video></td>";
 						totalStr +=  str;
-						$( "#table1" ).append(str);	
+						$( "#table1" ).append(str);
 					}
 					else
 					{
-						var str = "<td><img src = '"+ data +"'></td>";
+						var str = "<td><img src = '"+ data +"' height=80% width=80%></td>";
 						totalStr +=  str;
 						$( "#table1" ).append(str);
 					}
@@ -233,8 +234,17 @@ function UserObject()
 							for (var i = 0; i < Object.UserData.posts.length; i++) {
 								var p = Object.UserData.posts[i];
 								if (p.text == ""){
-									var str = "<td><img src = '"+p.file+" height=20% width=20%'></td>";
-									totalStr +=  str;
+									var data = p.file;
+									if (data.substr(5,5) == "video")
+									{
+										var str = "<td><video height=80% width=80% controls><source type='video/webm' src = '"+ data +"'></video></td>";
+										totalStr +=  str;
+									}
+									else
+									{
+										var str = "<td><img src = '"+ data +"' height=80% width=80%></td>";
+										totalStr +=  str;
+									}
 								}
 							}
 							Object.UnorderedList = "<table class='images'>" + totalStr + "</table>";
